@@ -1,0 +1,10 @@
+{
+  "tshark": "/Applications/Wireshark.app/Contents/MacOS/tshark",
+  "missing_dissector_fields": [],
+  "independent_pcaps_registered": 0,
+  "external_import_executed": false,
+  "importer": "scripts/import_external_pcap.py",
+  "frozen_inference_replay_passed": true,
+  "pending": "Actual independent PCAP extraction, field-value quality, frame attribution, lineage/device review",
+  "note": "Distinct file hashes do not prove independent sessions or unseen physical APs"
+}

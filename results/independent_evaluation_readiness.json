@@ -1,0 +1,24 @@
+{
+  "status": "blocked_waiting_for_independent_evidence",
+  "scoring_authorized_by_data_gate": false,
+  "session_manifest_count": 0,
+  "valid_session_count": 0,
+  "duplicate_session_ids": [],
+  "countable_independent_sessions_by_role": {
+    "verified_legitimate": 0,
+    "verified_evil_twin": 0
+  },
+  "minimum_independent_sessions_per_class": 2,
+  "sessions": [],
+  "no_scores_computed": true,
+  "timestamp_utc": "2026-10-30T15:26:03.158541+00:00",
+  "protocol_id": "independent-evaluation-readiness-v1",
+  "protocol_sha256": "0f5ca08e04efb5cee1feaa314d4e50b924f9e5e0e4e71c78e4b01811f89aab1b",
+  "registry": "data/independent/session_registry.json",
+  "registry_sha256": "3c3cf19d5a590ca15c3df303a24ac9983ef53d36228f93b3b05d4d789528524e",
+  "frozen_selection_manifest": "models/preliminary_non_temporal_v1/selection_manifest.json",
+  "frozen_selection_manifest_sha256": "bcdb51cd92b38366420862b89940d1f762a66579cf8b83aaa9f20b68238c408b",
+  "frozen_artifact_count": 13,
+  "frozen_artifact_errors": [],
+  "models_loaded_or_scored": false
+}

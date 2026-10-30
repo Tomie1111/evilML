@@ -1,0 +1,16 @@
+{
+  "repeats": 30,
+  "warmup": 5,
+  "median_ms": 2.9465,
+  "p95_ms": 3.1624792,
+  "cpu_seconds": 0.08870608000000005,
+  "cpu_percent_one_core_scale": 100.28503078118449,
+  "baseline_rss_mib": 95.796875,
+  "peak_rss_mib": 96.265625,
+  "rss_growth_mib": 0.46875,
+  "memory_sample_period_s": 0.002,
+  "elapsed_seconds": 0.0884539589897031,
+  "scope": "candidate-legitimate n20 temporal scoring including distance, EWMA and persistence; excludes extraction",
+  "batch_windows": 87,
+  "amortized_median_ms": 0.03386781609195402
+}

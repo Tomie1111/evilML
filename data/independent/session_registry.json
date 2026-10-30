@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "sessions": [],
+  "status": "awaiting_independently_labeled_captures",
+  "notes": "Do not add a session unless capture bytes and external device/event evidence are available."
+}

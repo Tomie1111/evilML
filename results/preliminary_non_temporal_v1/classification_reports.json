@@ -1,0 +1,769 @@
+{
+  "n10_decision_tree_configuration_radio_frame": {
+    "validation": {
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1": 0.8,
+      "tn": 172,
+      "fp": 0,
+      "fn": 47,
+      "tp": 94,
+      "support_legitimate": 172,
+      "support_evil_twin": 141,
+      "independently_verified_fpr": null,
+      "candidate_legitimate_alert_fraction": 0.0,
+      "label_scope": "accepted author-documented candidate dataset roles",
+      "positive_class": "Evil Twin (1)",
+      "decision_threshold": 0.5
+    },
+    "development_test": {
+      "candidate_legitimate": {
+        "precision": 0.5457413249211357,
+        "recall": 1.0,
+        "f1-score": 0.7061224489795919,
+        "support": 173.0
+      },
+      "candidate_evil_twin": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 144.0
+      },
+      "accuracy": 0.5457413249211357,
+      "macro avg": {
+        "precision": 0.27287066246056785,
+        "recall": 0.5,
+        "f1-score": 0.35306122448979593,
+        "support": 317.0
+      },
+      "weighted avg": {
+        "precision": 0.29783359372667656,
+        "recall": 0.5457413249211357,
+        "f1-score": 0.38536020086267947,
+        "support": 317.0
+      }
+    },
+    "train_counts": {
+      "0": 521,
+      "1": 90
+    },
+    "validation_counts": {
+      "0": 172,
+      "1": 141
+    },
+    "development_test_counts": {
+      "0": 173,
+      "1": 144
+    },
+    "independent_test": false,
+    "physical_identity_verified": false
+  },
+  "n10_random_forest_configuration_radio_frame": {
+    "validation": {
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1": 0.8,
+      "tn": 172,
+      "fp": 0,
+      "fn": 47,
+      "tp": 94,
+      "support_legitimate": 172,
+      "support_evil_twin": 141,
+      "independently_verified_fpr": null,
+      "candidate_legitimate_alert_fraction": 0.0,
+      "label_scope": "accepted author-documented candidate dataset roles",
+      "positive_class": "Evil Twin (1)",
+      "decision_threshold": 0.5
+    },
+    "development_test": {
+      "candidate_legitimate": {
+        "precision": 0.5457413249211357,
+        "recall": 1.0,
+        "f1-score": 0.7061224489795919,
+        "support": 173.0
+      },
+      "candidate_evil_twin": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 144.0
+      },
+      "accuracy": 0.5457413249211357,
+      "macro avg": {
+        "precision": 0.27287066246056785,
+        "recall": 0.5,
+        "f1-score": 0.35306122448979593,
+        "support": 317.0
+      },
+      "weighted avg": {
+        "precision": 0.29783359372667656,
+        "recall": 0.5457413249211357,
+        "f1-score": 0.38536020086267947,
+        "support": 317.0
+      }
+    },
+    "train_counts": {
+      "0": 521,
+      "1": 90
+    },
+    "validation_counts": {
+      "0": 172,
+      "1": 141
+    },
+    "development_test_counts": {
+      "0": 173,
+      "1": 144
+    },
+    "independent_test": false,
+    "physical_identity_verified": false
+  },
+  "n10_logistic_regression_configuration_radio_frame": {
+    "validation": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tn": 172,
+      "fp": 0,
+      "fn": 0,
+      "tp": 141,
+      "support_legitimate": 172,
+      "support_evil_twin": 141,
+      "independently_verified_fpr": null,
+      "candidate_legitimate_alert_fraction": 0.0,
+      "label_scope": "accepted author-documented candidate dataset roles",
+      "positive_class": "Evil Twin (1)",
+      "decision_threshold": 0.5
+    },
+    "development_test": {
+      "candidate_legitimate": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 173.0
+      },
+      "candidate_evil_twin": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 144.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 317.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 317.0
+      }
+    },
+    "train_counts": {
+      "0": 521,
+      "1": 90
+    },
+    "validation_counts": {
+      "0": 172,
+      "1": 141
+    },
+    "development_test_counts": {
+      "0": 173,
+      "1": 144
+    },
+    "independent_test": false,
+    "physical_identity_verified": false
+  },
+  "n20_decision_tree_configuration_radio_frame": {
+    "validation": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tn": 86,
+      "fp": 0,
+      "fn": 0,
+      "tp": 70,
+      "support_legitimate": 86,
+      "support_evil_twin": 70,
+      "independently_verified_fpr": null,
+      "candidate_legitimate_alert_fraction": 0.0,
+      "label_scope": "accepted author-documented candidate dataset roles",
+      "positive_class": "Evil Twin (1)",
+      "decision_threshold": 0.5
+    },
+    "development_test": {
+      "candidate_legitimate": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 86.0
+      },
+      "candidate_evil_twin": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 72.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 158.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 158.0
+      }
+    },
+    "train_counts": {
+      "0": 260,
+      "1": 45
+    },
+    "validation_counts": {
+      "0": 86,
+      "1": 70
+    },
+    "development_test_counts": {
+      "0": 86,
+      "1": 72
+    },
+    "independent_test": false,
+    "physical_identity_verified": false
+  },
+  "n20_random_forest_configuration_radio_frame": {
+    "validation": {
+      "precision": 1.0,
+      "recall": 0.6714285714285714,
+      "f1": 0.8034188034188035,
+      "tn": 86,
+      "fp": 0,
+      "fn": 23,
+      "tp": 47,
+      "support_legitimate": 86,
+      "support_evil_twin": 70,
+      "independently_verified_fpr": null,
+      "candidate_legitimate_alert_fraction": 0.0,
+      "label_scope": "accepted author-documented candidate dataset roles",
+      "positive_class": "Evil Twin (1)",
+      "decision_threshold": 0.5
+    },
+    "development_test": {
+      "candidate_legitimate": {
+        "precision": 0.5443037974683544,
+        "recall": 1.0,
+        "f1-score": 0.7049180327868853,
+        "support": 86.0
+      },
+      "candidate_evil_twin": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 72.0
+      },
+      "accuracy": 0.5443037974683544,
+      "macro avg": {
+        "precision": 0.2721518987341772,
+        "recall": 0.5,
+        "f1-score": 0.3524590163934426,
+        "support": 158.0
+      },
+      "weighted avg": {
+        "precision": 0.2962666239384714,
+        "recall": 0.5443037974683544,
+        "f1-score": 0.38368956214982364,
+        "support": 158.0
+      }
+    },
+    "train_counts": {
+      "0": 260,
+      "1": 45
+    },
+    "validation_counts": {
+      "0": 86,
+      "1": 70
+    },
+    "development_test_counts": {
+      "0": 86,
+      "1": 72
+    },
+    "independent_test": false,
+    "physical_identity_verified": false
+  },
+  "n20_logistic_regression_configuration_radio_frame": {
+    "validation": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tn": 86,
+      "fp": 0,
+      "fn": 0,
+      "tp": 70,
+      "support_legitimate": 86,
+      "support_evil_twin": 70,
+      "independently_verified_fpr": null,
+      "candidate_legitimate_alert_fraction": 0.0,
+      "label_scope": "accepted author-documented candidate dataset roles",
+      "positive_class": "Evil Twin (1)",
+      "decision_threshold": 0.5
+    },
+    "development_test": {
+      "candidate_legitimate": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 86.0
+      },
+      "candidate_evil_twin": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 72.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 158.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 158.0
+      }
+    },
+    "train_counts": {
+      "0": 260,
+      "1": 45
+    },
+    "validation_counts": {
+      "0": 86,
+      "1": 70
+    },
+    "development_test_counts": {
+      "0": 86,
+      "1": 72
+    },
+    "independent_test": false,
+    "physical_identity_verified": false
+  },
+  "n20_decision_tree_configuration_only": {
+    "validation": {
+      "precision": 1.0,
+      "recall": 0.6714285714285714,
+      "f1": 0.8034188034188035,
+      "tn": 86,
+      "fp": 0,
+      "fn": 23,
+      "tp": 47,
+      "support_legitimate": 86,
+      "support_evil_twin": 70,
+      "independently_verified_fpr": null,
+      "candidate_legitimate_alert_fraction": 0.0,
+      "label_scope": "accepted author-documented candidate dataset roles",
+      "positive_class": "Evil Twin (1)",
+      "decision_threshold": 0.5
+    },
+    "development_test": {
+      "candidate_legitimate": {
+        "precision": 0.5443037974683544,
+        "recall": 1.0,
+        "f1-score": 0.7049180327868853,
+        "support": 86.0
+      },
+      "candidate_evil_twin": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 72.0
+      },
+      "accuracy": 0.5443037974683544,
+      "macro avg": {
+        "precision": 0.2721518987341772,
+        "recall": 0.5,
+        "f1-score": 0.3524590163934426,
+        "support": 158.0
+      },
+      "weighted avg": {
+        "precision": 0.2962666239384714,
+        "recall": 0.5443037974683544,
+        "f1-score": 0.38368956214982364,
+        "support": 158.0
+      }
+    },
+    "train_counts": {
+      "0": 260,
+      "1": 45
+    },
+    "validation_counts": {
+      "0": 86,
+      "1": 70
+    },
+    "development_test_counts": {
+      "0": 86,
+      "1": 72
+    },
+    "independent_test": false,
+    "physical_identity_verified": false
+  },
+  "n20_decision_tree_radio_only": {
+    "validation": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tn": 86,
+      "fp": 0,
+      "fn": 0,
+      "tp": 70,
+      "support_legitimate": 86,
+      "support_evil_twin": 70,
+      "independently_verified_fpr": null,
+      "candidate_legitimate_alert_fraction": 0.0,
+      "label_scope": "accepted author-documented candidate dataset roles",
+      "positive_class": "Evil Twin (1)",
+      "decision_threshold": 0.5
+    },
+    "development_test": {
+      "candidate_legitimate": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 86.0
+      },
+      "candidate_evil_twin": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 72.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 158.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 158.0
+      }
+    },
+    "train_counts": {
+      "0": 260,
+      "1": 45
+    },
+    "validation_counts": {
+      "0": 86,
+      "1": 70
+    },
+    "development_test_counts": {
+      "0": 86,
+      "1": 72
+    },
+    "independent_test": false,
+    "physical_identity_verified": false
+  },
+  "n20_decision_tree_frame_only": {
+    "validation": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tn": 86,
+      "fp": 0,
+      "fn": 0,
+      "tp": 70,
+      "support_legitimate": 86,
+      "support_evil_twin": 70,
+      "independently_verified_fpr": null,
+      "candidate_legitimate_alert_fraction": 0.0,
+      "label_scope": "accepted author-documented candidate dataset roles",
+      "positive_class": "Evil Twin (1)",
+      "decision_threshold": 0.5
+    },
+    "development_test": {
+      "candidate_legitimate": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 86.0
+      },
+      "candidate_evil_twin": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 72.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 158.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 158.0
+      }
+    },
+    "train_counts": {
+      "0": 260,
+      "1": 45
+    },
+    "validation_counts": {
+      "0": 86,
+      "1": 70
+    },
+    "development_test_counts": {
+      "0": 86,
+      "1": 72
+    },
+    "independent_test": false,
+    "physical_identity_verified": false
+  },
+  "n20_decision_tree_configuration_radio": {
+    "validation": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tn": 86,
+      "fp": 0,
+      "fn": 0,
+      "tp": 70,
+      "support_legitimate": 86,
+      "support_evil_twin": 70,
+      "independently_verified_fpr": null,
+      "candidate_legitimate_alert_fraction": 0.0,
+      "label_scope": "accepted author-documented candidate dataset roles",
+      "positive_class": "Evil Twin (1)",
+      "decision_threshold": 0.5
+    },
+    "development_test": {
+      "candidate_legitimate": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 86.0
+      },
+      "candidate_evil_twin": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 72.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 158.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 158.0
+      }
+    },
+    "train_counts": {
+      "0": 260,
+      "1": 45
+    },
+    "validation_counts": {
+      "0": 86,
+      "1": 70
+    },
+    "development_test_counts": {
+      "0": 86,
+      "1": 72
+    },
+    "independent_test": false,
+    "physical_identity_verified": false
+  },
+  "n20_decision_tree_configuration_frame": {
+    "validation": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tn": 86,
+      "fp": 0,
+      "fn": 0,
+      "tp": 70,
+      "support_legitimate": 86,
+      "support_evil_twin": 70,
+      "independently_verified_fpr": null,
+      "candidate_legitimate_alert_fraction": 0.0,
+      "label_scope": "accepted author-documented candidate dataset roles",
+      "positive_class": "Evil Twin (1)",
+      "decision_threshold": 0.5
+    },
+    "development_test": {
+      "candidate_legitimate": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 86.0
+      },
+      "candidate_evil_twin": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 72.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 158.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 158.0
+      }
+    },
+    "train_counts": {
+      "0": 260,
+      "1": 45
+    },
+    "validation_counts": {
+      "0": 86,
+      "1": 70
+    },
+    "development_test_counts": {
+      "0": 86,
+      "1": 72
+    },
+    "independent_test": false,
+    "physical_identity_verified": false
+  },
+  "n20_decision_tree_radio_frame": {
+    "validation": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tn": 86,
+      "fp": 0,
+      "fn": 0,
+      "tp": 70,
+      "support_legitimate": 86,
+      "support_evil_twin": 70,
+      "independently_verified_fpr": null,
+      "candidate_legitimate_alert_fraction": 0.0,
+      "label_scope": "accepted author-documented candidate dataset roles",
+      "positive_class": "Evil Twin (1)",
+      "decision_threshold": 0.5
+    },
+    "development_test": {
+      "candidate_legitimate": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 86.0
+      },
+      "candidate_evil_twin": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 72.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 158.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 158.0
+      }
+    },
+    "train_counts": {
+      "0": 260,
+      "1": 45
+    },
+    "validation_counts": {
+      "0": 86,
+      "1": 70
+    },
+    "development_test_counts": {
+      "0": 86,
+      "1": 72
+    },
+    "independent_test": false,
+    "physical_identity_verified": false
+  },
+  "n20_decision_tree_configuration_without_ie_radio_frame": {
+    "validation": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tn": 86,
+      "fp": 0,
+      "fn": 0,
+      "tp": 70,
+      "support_legitimate": 86,
+      "support_evil_twin": 70,
+      "independently_verified_fpr": null,
+      "candidate_legitimate_alert_fraction": 0.0,
+      "label_scope": "accepted author-documented candidate dataset roles",
+      "positive_class": "Evil Twin (1)",
+      "decision_threshold": 0.5
+    },
+    "development_test": {
+      "candidate_legitimate": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 86.0
+      },
+      "candidate_evil_twin": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 72.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 158.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 158.0
+      }
+    },
+    "train_counts": {
+      "0": 260,
+      "1": 45
+    },
+    "validation_counts": {
+      "0": 86,
+      "1": 70
+    },
+    "development_test_counts": {
+      "0": 86,
+      "1": 72
+    },
+    "independent_test": false,
+    "physical_identity_verified": false
+  }
+}

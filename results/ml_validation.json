@@ -1,0 +1,100 @@
+{
+  "passed": true,
+  "config_matches_prepared_windows": true,
+  "all_split_checks": {
+    "10": {
+      "frame_conservation": true,
+      "disjoint_membership": true,
+      "global_chronology": true,
+      "support": {
+        "train": {
+          "0": 449,
+          "1": 18
+        },
+        "validation": {
+          "0": 149,
+          "1": 32
+        },
+        "development_test": {
+          "0": 152,
+          "1": 39
+        }
+      },
+      "trainable": true,
+      "limitation": "One previously inspected capture; no independent session or AP generalization"
+    },
+    "20": {
+      "frame_conservation": true,
+      "disjoint_membership": true,
+      "global_chronology": true,
+      "support": {
+        "train": {
+          "0": 192,
+          "1": 2
+        },
+        "validation": {
+          "0": 65,
+          "1": 5
+        },
+        "development_test": {
+          "0": 66,
+          "1": 6
+        }
+      },
+      "trainable": true,
+      "limitation": "One previously inspected capture; no independent session or AP generalization"
+    },
+    "50": {
+      "frame_conservation": true,
+      "disjoint_membership": true,
+      "global_chronology": true,
+      "support": {
+        "train": {
+          "0": 55,
+          "1": 0
+        },
+        "validation": {
+          "0": 16,
+          "1": 0
+        },
+        "development_test": {
+          "0": 17,
+          "1": 0
+        }
+      },
+      "trainable": false,
+      "limitation": "One previously inspected capture; no independent session or AP generalization"
+    }
+  },
+  "all_selections_frozen_before_test_scores": true,
+  "preprocessing_fit_train_only": true,
+  "all_saved_models_reloaded_with_identical_validation_decisions": true,
+  "serialization_probability_tolerance": 1e-12,
+  "selection_manifest_sha256": "bc59029d838448a4f22ef141d20113b89fb700384aa73d80fb57bb8766d2602f",
+  "skipped_experiments": [
+    {
+      "window_size": 50,
+      "reason": "one_or_more_splits_lack_both_eligible_classes",
+      "support": {
+        "train": {
+          "0": 55,
+          "1": 0
+        },
+        "validation": {
+          "0": 16,
+          "1": 0
+        },
+        "development_test": {
+          "0": 17,
+          "1": 0
+        }
+      }
+    }
+  ],
+  "label_protocol_accepted": true,
+  "independent_generalization_validated": false,
+  "python": "3.14.7",
+  "numpy": "2.5.4",
+  "pandas": "3.1.0",
+  "sklearn": "1.9.1"
+}

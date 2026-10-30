@@ -1,0 +1,49 @@
+id,claim_type,claim_or_method,evidence_source,scope
+E01,MEASURED RESULT,"AWID3 inventory contains 14 PCAP/PCAPNG files",results/audit/dataset_audit.json,Inventory only
+E02,MEASURED RESULT,"Evil_Twin capture contains 12461 Beacon frames",results/audit/label_distribution.csv,Audited extraction
+E03,MEASURED RESULT,"Candidate legitimate=8685 and candidate Evil Twin=3776 Beacon frames",results/audit/label_distribution.csv,Capture-specific candidate roles
+E04,MEASURED RESULT,"Rogue_AP capture contains 6946 Beacons with unknown identity",results/audit/label_distribution.csv,Excluded from supervised task
+E05,LIMITATION / NOT YET VALIDATED,"Verified legitimate observations=0",configs/label_protocol_acceptance.json; results/audit/label_provenance.csv,No independent device logs
+E06,IMPLEMENTED DESIGN,"Frame joins use PCAP plus original frame number",src/common.py; src/dataset_audit.py,Prevents row-index joins
+E07,IMPLEMENTED DESIGN,"Primary stream grouping uses capture+BSSID+capabilities",src/stream_grouping.py; configs/ml_experiment.yaml,Candidate stream only
+E08,IMPLEMENTED DESIGN,"Non-overlapping windows use sizes 10 20 50",src/window_aggregation.py; configs/ml_experiment.yaml,Incomplete tails flagged
+E09,IMPLEMENTED DESIGN,"TSF slope is centered OLS and never crosses a reset",src/window_aggregation.py,Requires positive receive and TSF deltas
+E10,IMPLEMENTED DESIGN,"ML and Time-Shield eligibility are separate",src/window_policy.py,Temporal invalidity does not discard valid non-temporal features
+E11,MEASURED RESULT,"Strict n20 Evil Twin windows total=190 ML-eligible=187 temporal-eligible=13",results/audit/window_attrition_v2/window_attrition.csv,Includes boundary/tail candidates
+E12,MEASURED RESULT,"Strict n50 Evil Twin temporal-eligible=0 of 76",results/audit/window_attrition_v2/window_attrition.csv,Capture gaps dominate
+E13,MEASURED RESULT,"n20 Evil Twin temporal reasons include arrival_gap=176 and TSF nonpositive=1",results/audit/window_attrition_v2/window_attrition.csv,Reasons overlap within windows
+E14,MEASURED RESULT,"ML n10 train/validation/dev candidate Evil counts=90/141/144",data/processed/ml_non_temporal_v1/support.csv,Same original capture
+E15,MEASURED RESULT,"ML n20 train/validation/dev candidate Evil counts=45/70/72",data/processed/ml_non_temporal_v1/support.csv,Same original capture
+E16,LIMITATION / NOT YET VALIDATED,"n50 train has only 18 candidate Evil windows and was not compared",data/processed/ml_non_temporal_v1/support.csv,Failed predeclared exploratory heuristic
+E17,IMPLEMENTED DESIGN,"Global chronological 60/20/20 split with boundary exclusion",src/dataset_splitting.py; configs/ml_experiment.yaml,No random frame split
+E18,IMPLEMENTED DESIGN,"Forbidden predictive fields include BSSID SSID MAC frame/time raw TSF capture labels",results/audit/forbidden_features.csv,Used only for provenance/grouping
+E19,MEASURED RESULT,"n10 DT/RF/LR dev F1=0/0/1",results/preliminary_non_temporal_v1/model_comparison.csv,Same-capture candidate labels
+E20,MEASURED RESULT,"n20 DT/RF/LR dev F1=1/0/1",results/preliminary_non_temporal_v1/model_comparison.csv,Same-capture candidate labels
+E21,MEASURED RESULT,"n20 configuration-only CART dev F1=0",results/preliminary_non_temporal_v1/feature_ablation.csv,72 false negatives
+E22,MEASURED RESULT,"n20 radio-only and frame-only CART dev F1=1",results/preliminary_non_temporal_v1/feature_ablation.csv,Shortcut risk
+E23,MEASURED RESULT,"All candidate Evil dev windows have unseen values for five configuration fields",results/preliminary_non_temporal_v1/categorical_novelty.csv,Configuration distribution shift
+E24,MEASURED RESULT,"Frozen primary model sizes span 4262 to 8447 bytes",results/preliminary_non_temporal_v1/resource_benchmarks.csv,Warm inference artifacts
+E25,MEASURED RESULT,"RF single-window median inference is about 15.55-16.11 ms",results/preliminary_non_temporal_v1/resource_benchmarks.csv,Includes preprocessing
+E26,MEASURED RESULT,"DT/LR single-window median inference is about 1.92-1.97 ms",results/preliminary_non_temporal_v1/resource_benchmarks.csv,Includes preprocessing
+E27,IMPLEMENTED DESIGN,"Time-Shield vector is median interarrival MAD and TSF slope",src/temporal_drift.py,Three-dimensional temporal vector
+E28,IMPLEMENTED DESIGN,"Regularized correlation and Mahalanobis distance are implemented",src/temporal_drift.py,Shrinkage after train-only standardization
+E29,IMPLEMENTED DESIGN,"EWMA and K-consecutive persistence produce STABLE DRIFT UNAVAILABLE",src/temporal_drift.py,Invalid data resets state
+E30,MEASURED RESULT,"Exploratory v2.1 candidate enrollment uses 120 valid n20 windows",results/time_shield_exploratory_v2_1/manifest.json,Verified enrollment disabled
+E31,MEASURED RESULT,"Primary Mahalanobis p99 threshold=7.334245 at shrinkage 0.1",results/time_shield_exploratory_v2_1/calibration_thresholds.csv,72 valid calibration scores
+E32,MEASURED RESULT,"Validation states STABLE=37 DRIFT=0 UNAVAILABLE=49",results/time_shield_exploratory_v2_1/state_counts.csv,Candidate legitimate same capture
+E33,MEASURED RESULT,"Development states STABLE=32 DRIFT=0 UNAVAILABLE=55",results/time_shield_exploratory_v2_1/state_counts.csv,Candidate legitimate same capture
+E34,MEASURED RESULT,"Development Mahalanobis smoothed median=1.1935 p95=5.1080 p99=9.0931",results/time_shield_exploratory_v2_1/score_distributions.csv,Shrinkage 0.1
+E35,MEASURED RESULT,"Shrinkage 0.01 0.1 0.5 1.0 yields zero persistent DRIFT",results/time_shield_exploratory_v2_1/regularization_sensitivity.csv,Candidate legitimate monitoring only
+E36,LIMITATION / NOT YET VALIDATED,"Time-Shield drift is not Evil Twin ground truth",results/time_shield_exploratory_v2_1/manifest.json,No verified attack performance claim
+E37,IMPLEMENTED DESIGN,"Fusion has four outcomes and separate ML/temporal validity",src/decision_fusion.py,High valid ML takes priority
+E38,MEASURED RESULT,"Fusion rule table covers 120 combinations",results/operational_validation_v1/fusion_rule_table.csv,Engineering validation
+E39,LIMITATION / NOT YET VALIDATED,"Fusion replay has no independently verified accuracy",results/time_shield_exploratory_v2_1/fusion_engineering_replay.csv,Candidate baseline and frozen scores
+E40,MEASURED RESULT,"Exploratory Time-Shield batch median=2.9465 ms for 87 windows",results/time_shield_exploratory_v2_1/runtime.json,Distance EWMA persistence; excludes extraction
+E41,IMPLEMENTED DESIGN,"External PCAP importer streams Beacons and audits fields",scripts/import_external_pcap.py,No independent PCAP imported
+E42,IMPLEMENTED DESIGN,"Frozen inference verifies model hash and feature order",src/external_inference.py,No fit or threshold changes
+E43,LIMITATION / NOT YET VALIDATED,"Independent eligible sessions=0",results/independent_evaluation_readiness.json,Minimum protocol is two sessions per verified role
+E44,LIMITATION / NOT YET VALIDATED,"Pending AMID compatibility not assessed",data/independent/README.md,Dataset file not present/inspected
+E45,MEASURED RESULT,"66 tests and 152 subtests pass",tests/; current pytest run,Unit and engineering coverage
+E46,MEASURED RESULT,"Strict checkpoint 20 of 20 files unchanged",results/strict_policy_checkpoint.json,Hash verification after new work
+E47,MEASURED RESULT,"Time-Shield v2.1 output hashes 14 of 14 verified",results/time_shield_exploratory_v2_1/manifest.json,Versioned output integrity
+E48,LIMITATION / NOT YET VALIDATED,"Final FPR false alerts/AP-hour and unseen-AP generalization are unavailable",results/independent_evaluation_readiness.json,Independent exposure and labels absent

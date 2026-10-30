@@ -1,0 +1,4 @@
+split,candidate_windows,valid_windows,valid_before_first_observed_evil,valid_after_first_observed_evil,valid_straddling_first_observed_evil
+enrollment,173,130,130,0,0
+calibration,130,95,23,71,1
+holdout,132,100,0,100,0

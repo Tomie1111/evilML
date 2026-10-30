@@ -1,0 +1,9 @@
+split,identity_status,windows,temporal_valid,temporal_valid_fraction,verified_windows
+boundary_excluded,candidate_evil_twin,1,0,0.0,0
+boundary_excluded,candidate_legitimate,2,2,1.0,0
+development_test,candidate_evil_twin,73,6,0.0821917808219178,0
+development_test,candidate_legitimate,87,66,0.7586206896551724,0
+train,candidate_evil_twin,45,2,0.044444444444444446,0
+train,candidate_legitimate,260,192,0.7384615384615385,0
+validation,candidate_evil_twin,71,5,0.07042253521126761,0
+validation,candidate_legitimate,86,65,0.7558139534883721,0

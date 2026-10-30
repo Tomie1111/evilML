@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "random_seed": 42,
+  "dataset_root": "../../..",
+  "pcap_directory": "pcaps",
+  "labeled_csv": "pcaps/labeled_beacons.csv",
+  "attack_labels_csv": "pcaps/attack_frame_labels.csv",
+  "readme": "Read_me.txt",
+  "role_builder": "build_labeled_beacons.py",
+  "prior_windows": "evilML/time_shield/results/windows.csv",
+  "tshark": null,
+  "capinfos": null,
+  "captures": [
+    {"scenario": "Evil_Twin", "pcap": "pcaps/7. Evil_Twin.pcap", "raw_csv": "pcaps/Evil_Twin_beacons.csv"},
+    {"scenario": "Rogue_AP", "pcap": "pcaps/4. Rogue_AP.pcap", "raw_csv": "pcaps/Rogue_AP.csv"}
+  ],
+  "identity_evidence": "identity_evidence.json",
+  "label_policy": {
+    "id": "awid3-author-role-v1-proposed",
+    "approval": null,
+    "verified_definition": "Independent device/event evidence bound to this capture; CSV consistency alone does not qualify.",
+    "candidate_definition": "Role consistent with author testbed description and legacy annotation; physical identity not independently verified.",
+    "mappings": [
+      {"pcap": "pcaps/7. Evil_Twin.pcap", "bssid": "0c:9d:92:54:fe:34", "legacy_role": "NORMAL", "status": "candidate_legitimate", "evidence_id": "awid3-author-evil-twin"},
+      {"pcap": "pcaps/7. Evil_Twin.pcap", "bssid": "0c:9d:92:54:fe:35", "legacy_role": "EVIL_TWIN", "status": "candidate_evil_twin", "evidence_id": "awid3-author-evil-twin"}
+    ]
+  },
+  "planned_windows": [10, 20, 50],
+  "planned_quality": {"gap_factor": 1.5, "reject_tsf_reset": true},
+  "planned_split": "Chronological preliminary development only; validate class support before training. No independent AP test session available."
+}

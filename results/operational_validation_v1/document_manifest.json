@@ -1,0 +1,7 @@
+{
+  "scope": "Documents added after the operational artifact run; primary manifest remains unchanged",
+  "documents_sha256": {
+    "report_th.md": "a51c12661222002eb4d976a3ceeec223c0bd1faa723b4a3d3bbffee7acfc6a50",
+    "completion_matrix.csv": "b65a14ef3997dfe70a87a6560359e48cfcb0ee39c7d6ddb7b5b5e27641f1f6c2"
+  }
+}

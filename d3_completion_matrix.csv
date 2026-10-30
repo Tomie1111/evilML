@@ -1,0 +1,21 @@
+component,status,evidence,scope_or_blocker
+AWID3 dataset preparation and labeling protocol,COMPLETED AND TESTED,results/audit/dataset_audit.json; labeling_protocol_accepted.md,"Audit complete; candidate roles retained"
+Ground-truth evidence and label confidence,COMPLETED AND TESTED,results/audit/label_provenance.csv; configs/identity_evidence.json,"Evidence levels audited; verified legitimate count is zero"
+Beacon-frame extraction and preprocessing,COMPLETED AND TESTED,scripts/extract_audit_inputs.py; data/raw/audit/extraction_manifest.json,"Streaming TShark extraction for audited captures"
+Multi-factor AP fingerprint definition,COMPLETED AND TESTED,src/feature_extraction.py; src/preprocessing.py,21 implemented features across four groups
+AP candidate stream grouping,COMPLETED AND TESTED,src/stream_grouping.py; tests/test_ml.py,"Primary key is capture+BSSID+capabilities; not physical identity proof"
+Window construction 10/20/50,COMPLETED AND TESTED,src/window_aggregation.py; data/processed/ml_non_temporal_v1/,Non-overlapping windows and conservative labels
+Window attrition and quality analysis,COMPLETED AND TESTED,results/audit/window_attrition_v2/,Reasons and sensitivity by policy/size/class/stream/split
+Separate ML and Time-Shield eligibility,COMPLETED AND TESTED,src/window_policy.py; data/processed/ml_non_temporal_v1/,Temporal-invalid values masked for non-temporal ML
+CART Random Forest Logistic Regression,COMPLETED AND TESTED,models/preliminary_non_temporal_v1/; results/preliminary_non_temporal_v1/model_comparison.csv,Preliminary same-capture scope
+Model training validation and splitting,COMPLETED AND TESTED,src/dataset_splitting.py; models/preliminary_non_temporal_v1/selection_manifest.json,Chronological 60/20/20 and train-only preprocessing
+Model comparison and feature ablation,COMPLETED AND TESTED,results/preliminary_non_temporal_v1/model_comparison.csv; feature_ablation.csv,No final classifier selected
+Configuration novelty and shortcut analysis,COMPLETED AND TESTED,results/preliminary_non_temporal_v1/categorical_novelty.csv; report_th.md,Unseen categories and RSSI/frame-length shortcuts documented
+Computational resource benchmarking,IMPLEMENTED BUT NOT FULLY VALIDATED,results/preliminary_non_temporal_v1/resource_benchmarks.csv; results/time_shield_exploratory_v2_1/runtime.json,"Inference measured; end-to-end extraction and training peak not measured"
+Time-Shield implementation and operational validation,IMPLEMENTED BUT NOT FULLY VALIDATED,src/temporal_drift.py; src/exploratory_temporal.py; results/time_shield_exploratory_v2_1/,Candidate-role same-capture exploratory validation only
+Trusted AP baseline enrollment,IMPLEMENTED BUT NOT FULLY VALIDATED,src/trusted_temporal.py; results/time_shield_exploratory_v2_1/baseline_candidate_exploratory.json,"Verified enrollment disabled; candidate enrollment exploratory"
+Decision fusion implementation and testing,IMPLEMENTED BUT NOT FULLY VALIDATED,src/decision_fusion.py; results/operational_validation_v1/fusion_rule_table.csv,"Rules tested; no independent fusion accuracy"
+Independent dataset intake and readiness validation,COMPLETED AND TESTED,src/independent_evaluation.py; scripts/import_external_pcap.py; results/independent_evaluation_readiness.json,Zero eligible independent sessions
+Cross-dataset and unseen-AP evaluation,BLOCKED BY MISSING DATA,results/independent_evaluation_readiness.json,"No independently labeled AP captures; pending AMID file not inspected"
+Frozen artifacts and reproducibility,COMPLETED AND TESTED,results/strict_policy_checkpoint.json; results/time_shield_exploratory_v2_1/manifest.json,"Strict checkpoint 20/20 unchanged; new outputs hash verified"
+Automated tests,COMPLETED AND TESTED,tests/; results/operational_validation_v1/test_results.txt,Current run 66 tests and 152 subtests passed

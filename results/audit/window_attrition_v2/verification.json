@@ -1,0 +1,23 @@
+{
+  "checked_at_utc": "2026-10-30T15:00:31.496829+00:00",
+  "checks": {
+    "strict_policy_files_hash_unchanged": true,
+    "attrition_repeat_byte_identical_outputs": 7,
+    "attrition_manifest_equal_except_timestamp": true,
+    "frame_conservation": true,
+    "unique_membership": true,
+    "separate_quality_flags_consistent": true,
+    "invalid_temporal_features_masked": true,
+    "non_temporal_features_retained": true,
+    "pilot_validation_only": true,
+    "unit_tests_passed": 54,
+    "unit_subtests_passed": 24,
+    "independent_test_sessions": 0,
+    "synthetic_windows": 0,
+    "oversampling": false
+  },
+  "original_strict_checkpoint_sha256": "8d24a3f140cb8d8d22d24d8879292f2a5f44818b4762d77afceb7cde48b0b2e0",
+  "attrition_manifest_sha256": "06ef01771cf5740f61a3c5dd9c763d334ce7c0a7b72b97d500366f207ecf8c36",
+  "prepared_manifest_sha256": "e1ccd123adf2bd9703a89c60b2f1bf30f738ed54af1c3ae89e845c6ab6db2421",
+  "pilot_validation_sha256": "93ba3df0dd569b614321b85a39f2f31d4d13c3190bf864d799ed4f164dd3b521"
+}

@@ -1,0 +1,4 @@
+window_size,scope,windows,STABLE,DRIFT,UNAVAILABLE,verified_enrollment_windows,baseline_status
+10,candidate legitimate availability replay,869,0,0,869,0,blocked_no_verified_legitimate
+20,candidate legitimate availability replay,435,0,0,435,0,blocked_no_verified_legitimate
+50,candidate legitimate availability replay,174,0,0,174,0,blocked_no_verified_legitimate

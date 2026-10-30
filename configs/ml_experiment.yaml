@@ -1,0 +1,27 @@
+{
+  "run_id": "preliminary_v1",
+  "random_seed": 42,
+  "audit_config": "experiment.yaml",
+  "acceptance": "label_protocol_acceptance.json",
+  "source_beacons": "data/raw/audit/Evil_Twin_beacons.csv",
+  "audited_identities": "results/audit/identity_label_audit.csv",
+  "canonical_pcap": "pcaps/7. Evil_Twin.pcap",
+  "grouping": "bssid_capabilities",
+  "window_sizes": [10, 20, 50],
+  "primary_window_size": 20,
+  "quality": {"gap_factor": 1.5, "check_incoming_boundary": true, "reject_incomplete": true, "reject_tsf_reset": true},
+  "split": {"method": "global_capture_time", "train_fraction": 0.6, "validation_fraction": 0.2, "cross_boundary_policy": "exclude", "evaluation_scope": "previously_audited_same_capture_development_test_not_untouched_or_unseen_AP"},
+  "hyperparameters": {
+    "decision_tree": {"max_depth": [3, 4, 5, 6], "min_samples_leaf": [5, 10, 20], "class_weight": [null, "balanced"]},
+    "random_forest": {"n_estimators": [50, 100], "max_depth": [5, 8, 10], "min_samples_leaf": [2, 5], "class_weight": [null, "balanced"]},
+    "logistic_regression": {"C": [0.1, 1, 10], "class_weight": [null, "balanced"]}
+  },
+  "model_selection": {"metric": "validation_positive_f1", "tie_break": "first_in_declared_parameter_grid", "classification_threshold": 0.5, "refit_on_validation": false},
+  "ablation_model": "decision_tree",
+  "primary_model": "decision_tree",
+  "temporal": {"baseline_path_relative_to_dataset": "evilML/time_shield/results/baseline_model.json", "enrollment_path_relative_to_dataset": "evilML/time_shield/results/valid_windows.csv", "trusted_bssid": "0c:9d:92:54:fe:34", "beta": 0.3, "percentile": 99, "K": 3, "methods": ["mahalanobis", "standardized_euclidean"], "selection": "fixed_before_ML_evaluation; thresholds_estimated_from_new_validation_trusted_windows_only", "baseline_updates": false},
+  "fusion": {"high_threshold_candidates": [0.5, 0.6, 0.7, 0.8, 0.9], "low_threshold_candidates": [0.1, 0.2, 0.3, 0.4], "high_selection": "maximize_validation_positive_f1_then_first", "low_selection": "largest_candidate_with_zero_observed_rogue_acceptances_on_validation", "temporal_method": "mahalanobis"},
+  "resource_benchmark": {"repeats": 30, "warmup": 5, "memory_sample_period_s": 0.002},
+  "allow_independently_verified_fpr": false,
+  "independent_test_session_available": false
+}

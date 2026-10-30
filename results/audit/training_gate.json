@@ -1,0 +1,18 @@
+{
+  "supervised_training_allowed": false,
+  "integrity_checks_passed": true,
+  "identity_counts": {
+    "verified_legitimate": 0,
+    "verified_evil_twin": 0,
+    "candidate_legitimate": 8685,
+    "candidate_evil_twin": 3776,
+    "unknown": 6946
+  },
+  "author_documented_candidate_roles_exist": true,
+  "blockers": [
+    "Approve the proposed author-documented dataset-role protocol, or supply independent device/session evidence"
+  ],
+  "independent_unseen_ap_evaluation_supported": false,
+  "normal_class_fpr_on_independently_verified_identity_supported": false,
+  "note": "Candidate roles are not automatically promoted. This audit does not train any classifier."
+}

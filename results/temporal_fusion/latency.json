@@ -1,0 +1,18 @@
+[
+  {
+    "system": "ML only",
+    "first_observed_rogue_ns": 1608066384359945000,
+    "first_alert_window_end_ns": 1608066458327319000,
+    "first_alert_after_test_first_observed_rogue_s": 73.967374,
+    "physical_attack_onset_detection_delay_s": null,
+    "scope": "Start of development-test observation, not true attack onset; includes waiting through invalid windows"
+  },
+  {
+    "system": "ML + Time-Shield",
+    "first_observed_rogue_ns": 1608066384359945000,
+    "first_alert_window_end_ns": 1608066458327319000,
+    "first_alert_after_test_first_observed_rogue_s": 73.967374,
+    "physical_attack_onset_detection_delay_s": null,
+    "scope": "Start of development-test observation, not true attack onset; includes waiting through invalid windows"
+  }
+]

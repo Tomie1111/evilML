@@ -1,0 +1,1411 @@
+{
+  "timestamp_utc": "2026-10-30T15:08:27.420919+00:00",
+  "protocol": {
+    "id": "non-temporal-exploratory-v1",
+    "declared_before_development_test_evaluation": true,
+    "scope": "preliminary same-capture evaluation; not final or independent-AP evidence",
+    "window_sizes": [
+      10,
+      20
+    ],
+    "models": [
+      "decision_tree",
+      "random_forest",
+      "logistic_regression"
+    ],
+    "primary_features": "configuration_radio_frame",
+    "ablations": {
+      "configuration_only": [
+        "configuration"
+      ],
+      "radio_only": [
+        "radio"
+      ],
+      "frame_only": [
+        "frame"
+      ],
+      "configuration_radio": [
+        "configuration",
+        "radio"
+      ],
+      "configuration_frame": [
+        "configuration",
+        "frame"
+      ],
+      "radio_frame": [
+        "radio",
+        "frame"
+      ],
+      "configuration_radio_frame": [
+        "configuration",
+        "radio",
+        "frame"
+      ],
+      "configuration_without_ie_radio_frame": [
+        "configuration_without_ie",
+        "radio",
+        "frame"
+      ]
+    },
+    "ablation_model": "decision_tree",
+    "selection": "Fit train only; select hyperparameters by validation F1; freeze artifacts and manifest before development-test scoring",
+    "test": "One chronological development-test evaluation after selection; same original capture",
+    "threshold": 0.5,
+    "forbidden_claims": [
+      "final model comparison",
+      "unseen AP generalization",
+      "independently verified FPR"
+    ],
+    "temporal_ablation": "not evaluated under this policy because temporal-invalid windows are retained and temporal values are masked",
+    "no_oversampling": true,
+    "no_smote": true
+  },
+  "protocol_sha256": "8018dccfbb39a6349bfc4aaa37b8ddbeb446983fa1560cada29de678eff249a0",
+  "prepared_manifest_sha256": "e1ccd123adf2bd9703a89c60b2f1bf30f738ed54af1c3ae89e845c6ab6db2421",
+  "selected": {
+    "n10_decision_tree_configuration_radio_frame": {
+      "window_size": 10,
+      "model": "decision_tree",
+      "ablation": "configuration_radio_frame",
+      "features": [
+        "capabilities_encoded",
+        "rsn_present",
+        "rsn_capabilities_encoded",
+        "group_cipher_encoded",
+        "pairwise_ciphers_encoded",
+        "akm_suites_encoded",
+        "supported_rates_encoded",
+        "stable_ie_structure_encoded",
+        "beacon_interval_tu",
+        "rssi_median_dbm",
+        "rssi_std_dbm",
+        "channel_frequency_mhz",
+        "frame_len_mean",
+        "frame_len_std",
+        "sequence_increment_median",
+        "sequence_discontinuity_rate",
+        "retry_fraction"
+      ],
+      "parameters": {
+        "class_weight": null,
+        "max_depth": 3,
+        "min_samples_leaf": 5
+      },
+      "validation_metrics": {
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "tn": 172,
+        "fp": 0,
+        "fn": 47,
+        "tp": 94,
+        "support_legitimate": 172,
+        "support_evil_twin": 141,
+        "independently_verified_fpr": null,
+        "candidate_legitimate_alert_fraction": 0.0,
+        "label_scope": "accepted author-documented candidate dataset roles",
+        "positive_class": "Evil Twin (1)",
+        "decision_threshold": 0.5
+      },
+      "validation_search_index": 0,
+      "train_counts": {
+        "0": 521,
+        "1": 90
+      },
+      "validation_counts": {
+        "0": 172,
+        "1": 141
+      },
+      "artifact": "models/preliminary_non_temporal_v1/n10_decision_tree_configuration_radio_frame.joblib",
+      "artifact_sha256": "fc39599826e66fa187d9dbd9a2db32fb952c46c8375deb12410a11be46443621",
+      "model_size_bytes": 5602,
+      "explanation": {
+        "kind": "impurity_feature_importance",
+        "transformed_features": [
+          "numeric__rsn_present",
+          "numeric__beacon_interval_tu",
+          "numeric__rssi_median_dbm",
+          "numeric__rssi_std_dbm",
+          "numeric__channel_frequency_mhz",
+          "numeric__frame_len_mean",
+          "numeric__frame_len_std",
+          "numeric__sequence_increment_median",
+          "numeric__sequence_discontinuity_rate",
+          "numeric__retry_fraction",
+          "categorical__capabilities_encoded_0x1",
+          "categorical__capabilities_encoded_0x1111",
+          "categorical__rsn_capabilities_encoded_141",
+          "categorical__rsn_capabilities_encoded_ABSENT_RSN",
+          "categorical__group_cipher_encoded_4",
+          "categorical__group_cipher_encoded_ABSENT_RSN",
+          "categorical__pairwise_ciphers_encoded_4",
+          "categorical__pairwise_ciphers_encoded_ABSENT_RSN",
+          "categorical__akm_suites_encoded_1",
+          "categorical__akm_suites_encoded_ABSENT_RSN",
+          "categorical__supported_rates_encoded_12:1;18:0;24:1;36:0;48:0;54:0;6:1;9:0",
+          "categorical__stable_ie_structure_encoded_1;3;7;45;61;127;191;192;195",
+          "categorical__stable_ie_structure_encoded_1;7;32;35;45;48;61;70;127;191;192;195"
+        ],
+        "weights": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "tree_depth": 1,
+        "leaf_count": 2,
+        "note": "Configuration importance may reflect same-device shortcuts; not causal attack evidence"
+      },
+      "constant_train_features": [
+        "supported_rates_encoded",
+        "beacon_interval_tu",
+        "channel_frequency_mhz",
+        "retry_fraction"
+      ]
+    },
+    "n10_random_forest_configuration_radio_frame": {
+      "window_size": 10,
+      "model": "random_forest",
+      "ablation": "configuration_radio_frame",
+      "features": [
+        "capabilities_encoded",
+        "rsn_present",
+        "rsn_capabilities_encoded",
+        "group_cipher_encoded",
+        "pairwise_ciphers_encoded",
+        "akm_suites_encoded",
+        "supported_rates_encoded",
+        "stable_ie_structure_encoded",
+        "beacon_interval_tu",
+        "rssi_median_dbm",
+        "rssi_std_dbm",
+        "channel_frequency_mhz",
+        "frame_len_mean",
+        "frame_len_std",
+        "sequence_increment_median",
+        "sequence_discontinuity_rate",
+        "retry_fraction"
+      ],
+      "parameters": {
+        "class_weight": null,
+        "max_depth": 5,
+        "min_samples_leaf": 2,
+        "n_estimators": 50
+      },
+      "validation_metrics": {
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "tn": 172,
+        "fp": 0,
+        "fn": 47,
+        "tp": 94,
+        "support_legitimate": 172,
+        "support_evil_twin": 141,
+        "independently_verified_fpr": null,
+        "candidate_legitimate_alert_fraction": 0.0,
+        "label_scope": "accepted author-documented candidate dataset roles",
+        "positive_class": "Evil Twin (1)",
+        "decision_threshold": 0.5
+      },
+      "validation_search_index": 0,
+      "train_counts": {
+        "0": 521,
+        "1": 90
+      },
+      "validation_counts": {
+        "0": 172,
+        "1": 141
+      },
+      "artifact": "models/preliminary_non_temporal_v1/n10_random_forest_configuration_radio_frame.joblib",
+      "artifact_sha256": "fae6b69b3381f2897d44ab5e54da2765f6f17de11a957e6ef5dae3ff901070e5",
+      "model_size_bytes": 8447,
+      "explanation": {
+        "kind": "impurity_feature_importance",
+        "transformed_features": [
+          "numeric__rsn_present",
+          "numeric__beacon_interval_tu",
+          "numeric__rssi_median_dbm",
+          "numeric__rssi_std_dbm",
+          "numeric__channel_frequency_mhz",
+          "numeric__frame_len_mean",
+          "numeric__frame_len_std",
+          "numeric__sequence_increment_median",
+          "numeric__sequence_discontinuity_rate",
+          "numeric__retry_fraction",
+          "categorical__capabilities_encoded_0x1",
+          "categorical__capabilities_encoded_0x1111",
+          "categorical__rsn_capabilities_encoded_141",
+          "categorical__rsn_capabilities_encoded_ABSENT_RSN",
+          "categorical__group_cipher_encoded_4",
+          "categorical__group_cipher_encoded_ABSENT_RSN",
+          "categorical__pairwise_ciphers_encoded_4",
+          "categorical__pairwise_ciphers_encoded_ABSENT_RSN",
+          "categorical__akm_suites_encoded_1",
+          "categorical__akm_suites_encoded_ABSENT_RSN",
+          "categorical__supported_rates_encoded_12:1;18:0;24:1;36:0;48:0;54:0;6:1;9:0",
+          "categorical__stable_ie_structure_encoded_1;3;7;45;61;127;191;192;195",
+          "categorical__stable_ie_structure_encoded_1;7;32;35;45;48;61;70;127;191;192;195"
+        ],
+        "weights": [
+          0.08,
+          0.0,
+          0.06,
+          0.0,
+          0.0,
+          0.02,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.1,
+          0.08,
+          0.04,
+          0.06,
+          0.08,
+          0.06,
+          0.04,
+          0.1,
+          0.02,
+          0.12,
+          0.0,
+          0.08,
+          0.06
+        ],
+        "tree_depth": null,
+        "leaf_count": null,
+        "note": "Configuration importance may reflect same-device shortcuts; not causal attack evidence"
+      },
+      "constant_train_features": [
+        "supported_rates_encoded",
+        "beacon_interval_tu",
+        "channel_frequency_mhz",
+        "retry_fraction"
+      ]
+    },
+    "n10_logistic_regression_configuration_radio_frame": {
+      "window_size": 10,
+      "model": "logistic_regression",
+      "ablation": "configuration_radio_frame",
+      "features": [
+        "capabilities_encoded",
+        "rsn_present",
+        "rsn_capabilities_encoded",
+        "group_cipher_encoded",
+        "pairwise_ciphers_encoded",
+        "akm_suites_encoded",
+        "supported_rates_encoded",
+        "stable_ie_structure_encoded",
+        "beacon_interval_tu",
+        "rssi_median_dbm",
+        "rssi_std_dbm",
+        "channel_frequency_mhz",
+        "frame_len_mean",
+        "frame_len_std",
+        "sequence_increment_median",
+        "sequence_discontinuity_rate",
+        "retry_fraction"
+      ],
+      "parameters": {
+        "C": 0.1,
+        "class_weight": null
+      },
+      "validation_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tn": 172,
+        "fp": 0,
+        "fn": 0,
+        "tp": 141,
+        "support_legitimate": 172,
+        "support_evil_twin": 141,
+        "independently_verified_fpr": null,
+        "candidate_legitimate_alert_fraction": 0.0,
+        "label_scope": "accepted author-documented candidate dataset roles",
+        "positive_class": "Evil Twin (1)",
+        "decision_threshold": 0.5
+      },
+      "validation_search_index": 0,
+      "train_counts": {
+        "0": 521,
+        "1": 90
+      },
+      "validation_counts": {
+        "0": 172,
+        "1": 141
+      },
+      "artifact": "models/preliminary_non_temporal_v1/n10_logistic_regression_configuration_radio_frame.joblib",
+      "artifact_sha256": "4d0e5d2788d7b796eaabd66747f4ab118ac0fc39be7fe1f133d3ab5c0eb8b355",
+      "model_size_bytes": 5770,
+      "explanation": {
+        "kind": "logistic_coefficient_after_train_only_preprocessing",
+        "transformed_features": [
+          "numeric__rsn_present",
+          "numeric__beacon_interval_tu",
+          "numeric__rssi_median_dbm",
+          "numeric__rssi_std_dbm",
+          "numeric__channel_frequency_mhz",
+          "numeric__frame_len_mean",
+          "numeric__frame_len_std",
+          "numeric__sequence_increment_median",
+          "numeric__sequence_discontinuity_rate",
+          "numeric__retry_fraction",
+          "categorical__capabilities_encoded_0x1",
+          "categorical__capabilities_encoded_0x1111",
+          "categorical__rsn_capabilities_encoded_141",
+          "categorical__rsn_capabilities_encoded_ABSENT_RSN",
+          "categorical__group_cipher_encoded_4",
+          "categorical__group_cipher_encoded_ABSENT_RSN",
+          "categorical__pairwise_ciphers_encoded_4",
+          "categorical__pairwise_ciphers_encoded_ABSENT_RSN",
+          "categorical__akm_suites_encoded_1",
+          "categorical__akm_suites_encoded_ABSENT_RSN",
+          "categorical__supported_rates_encoded_12:1;18:0;24:1;36:0;48:0;54:0;6:1;9:0",
+          "categorical__stable_ie_structure_encoded_1;3;7;45;61;127;191;192;195",
+          "categorical__stable_ie_structure_encoded_1;7;32;35;45;48;61;70;127;191;192;195"
+        ],
+        "weights": [
+          -0.7068138955601424,
+          0.0,
+          -0.6547816268708188,
+          0.07081090315713501,
+          0.0,
+          -0.7067308930372499,
+          -0.14775669033743766,
+          0.006354219677774064,
+          -0.021780466581224543,
+          0.0,
+          0.2504037454194733,
+          -0.2510425417254538,
+          -0.2510425417254538,
+          0.2504037454194733,
+          -0.2510425417254538,
+          0.2504037454194733,
+          -0.2510425417254538,
+          0.2504037454194733,
+          -0.2510425417254538,
+          0.2504037454194733,
+          -0.0006387963059801342,
+          0.2504037454194733,
+          -0.2510425417254538
+        ],
+        "tree_depth": null,
+        "leaf_count": null,
+        "note": "Configuration importance may reflect same-device shortcuts; not causal attack evidence"
+      },
+      "constant_train_features": [
+        "supported_rates_encoded",
+        "beacon_interval_tu",
+        "channel_frequency_mhz",
+        "retry_fraction"
+      ]
+    },
+    "n20_decision_tree_configuration_radio_frame": {
+      "window_size": 20,
+      "model": "decision_tree",
+      "ablation": "configuration_radio_frame",
+      "features": [
+        "capabilities_encoded",
+        "rsn_present",
+        "rsn_capabilities_encoded",
+        "group_cipher_encoded",
+        "pairwise_ciphers_encoded",
+        "akm_suites_encoded",
+        "supported_rates_encoded",
+        "stable_ie_structure_encoded",
+        "beacon_interval_tu",
+        "rssi_median_dbm",
+        "rssi_std_dbm",
+        "channel_frequency_mhz",
+        "frame_len_mean",
+        "frame_len_std",
+        "sequence_increment_median",
+        "sequence_discontinuity_rate",
+        "retry_fraction"
+      ],
+      "parameters": {
+        "class_weight": "balanced",
+        "max_depth": 3,
+        "min_samples_leaf": 5
+      },
+      "validation_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tn": 86,
+        "fp": 0,
+        "fn": 0,
+        "tp": 70,
+        "support_legitimate": 86,
+        "support_evil_twin": 70,
+        "independently_verified_fpr": null,
+        "candidate_legitimate_alert_fraction": 0.0,
+        "label_scope": "accepted author-documented candidate dataset roles",
+        "positive_class": "Evil Twin (1)",
+        "decision_threshold": 0.5
+      },
+      "validation_search_index": 12,
+      "train_counts": {
+        "0": 260,
+        "1": 45
+      },
+      "validation_counts": {
+        "0": 86,
+        "1": 70
+      },
+      "artifact": "models/preliminary_non_temporal_v1/n20_decision_tree_configuration_radio_frame.joblib",
+      "artifact_sha256": "9031faa1f24552a8153488c9bbe15d6302718267cf4f9936280cd0fc5c6e0790",
+      "model_size_bytes": 4262,
+      "explanation": {
+        "kind": "impurity_feature_importance",
+        "transformed_features": [
+          "numeric__rsn_present",
+          "numeric__beacon_interval_tu",
+          "numeric__rssi_median_dbm",
+          "numeric__rssi_std_dbm",
+          "numeric__channel_frequency_mhz",
+          "numeric__frame_len_mean",
+          "numeric__frame_len_std",
+          "numeric__sequence_increment_median",
+          "numeric__sequence_discontinuity_rate",
+          "numeric__retry_fraction",
+          "categorical__capabilities_encoded_0x1",
+          "categorical__capabilities_encoded_0x1111",
+          "categorical__rsn_capabilities_encoded_141",
+          "categorical__rsn_capabilities_encoded_ABSENT_RSN",
+          "categorical__group_cipher_encoded_4",
+          "categorical__group_cipher_encoded_ABSENT_RSN",
+          "categorical__pairwise_ciphers_encoded_4",
+          "categorical__pairwise_ciphers_encoded_ABSENT_RSN",
+          "categorical__akm_suites_encoded_1",
+          "categorical__akm_suites_encoded_ABSENT_RSN",
+          "categorical__supported_rates_encoded_12:1;18:0;24:1;36:0;48:0;54:0;6:1;9:0",
+          "categorical__stable_ie_structure_encoded_1;3;7;45;61;127;191;192;195",
+          "categorical__stable_ie_structure_encoded_1;7;32;35;45;48;61;70;127;191;192;195"
+        ],
+        "weights": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          5.107025913275704e-15,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.9999999999999949
+        ],
+        "tree_depth": 2,
+        "leaf_count": 3,
+        "note": "Configuration importance may reflect same-device shortcuts; not causal attack evidence"
+      },
+      "constant_train_features": [
+        "supported_rates_encoded",
+        "beacon_interval_tu",
+        "channel_frequency_mhz",
+        "retry_fraction"
+      ]
+    },
+    "n20_random_forest_configuration_radio_frame": {
+      "window_size": 20,
+      "model": "random_forest",
+      "ablation": "configuration_radio_frame",
+      "features": [
+        "capabilities_encoded",
+        "rsn_present",
+        "rsn_capabilities_encoded",
+        "group_cipher_encoded",
+        "pairwise_ciphers_encoded",
+        "akm_suites_encoded",
+        "supported_rates_encoded",
+        "stable_ie_structure_encoded",
+        "beacon_interval_tu",
+        "rssi_median_dbm",
+        "rssi_std_dbm",
+        "channel_frequency_mhz",
+        "frame_len_mean",
+        "frame_len_std",
+        "sequence_increment_median",
+        "sequence_discontinuity_rate",
+        "retry_fraction"
+      ],
+      "parameters": {
+        "class_weight": null,
+        "max_depth": 5,
+        "min_samples_leaf": 2,
+        "n_estimators": 50
+      },
+      "validation_metrics": {
+        "precision": 1.0,
+        "recall": 0.6714285714285714,
+        "f1": 0.8034188034188035,
+        "tn": 86,
+        "fp": 0,
+        "fn": 23,
+        "tp": 47,
+        "support_legitimate": 86,
+        "support_evil_twin": 70,
+        "independently_verified_fpr": null,
+        "candidate_legitimate_alert_fraction": 0.0,
+        "label_scope": "accepted author-documented candidate dataset roles",
+        "positive_class": "Evil Twin (1)",
+        "decision_threshold": 0.5
+      },
+      "validation_search_index": 0,
+      "train_counts": {
+        "0": 260,
+        "1": 45
+      },
+      "validation_counts": {
+        "0": 86,
+        "1": 70
+      },
+      "artifact": "models/preliminary_non_temporal_v1/n20_random_forest_configuration_radio_frame.joblib",
+      "artifact_sha256": "32f65ac9b129d21c33ac79bd22a1a2a1e894982396644441c783b4b2a48c790d",
+      "model_size_bytes": 7009,
+      "explanation": {
+        "kind": "impurity_feature_importance",
+        "transformed_features": [
+          "numeric__rsn_present",
+          "numeric__beacon_interval_tu",
+          "numeric__rssi_median_dbm",
+          "numeric__rssi_std_dbm",
+          "numeric__channel_frequency_mhz",
+          "numeric__frame_len_mean",
+          "numeric__frame_len_std",
+          "numeric__sequence_increment_median",
+          "numeric__sequence_discontinuity_rate",
+          "numeric__retry_fraction",
+          "categorical__capabilities_encoded_0x1",
+          "categorical__capabilities_encoded_0x1111",
+          "categorical__rsn_capabilities_encoded_141",
+          "categorical__rsn_capabilities_encoded_ABSENT_RSN",
+          "categorical__group_cipher_encoded_4",
+          "categorical__group_cipher_encoded_ABSENT_RSN",
+          "categorical__pairwise_ciphers_encoded_4",
+          "categorical__pairwise_ciphers_encoded_ABSENT_RSN",
+          "categorical__akm_suites_encoded_1",
+          "categorical__akm_suites_encoded_ABSENT_RSN",
+          "categorical__supported_rates_encoded_12:1;18:0;24:1;36:0;48:0;54:0;6:1;9:0",
+          "categorical__stable_ie_structure_encoded_1;3;7;45;61;127;191;192;195",
+          "categorical__stable_ie_structure_encoded_1;7;32;35;45;48;61;70;127;191;192;195"
+        ],
+        "weights": [
+          0.08,
+          0.0,
+          0.06,
+          0.0,
+          0.0,
+          0.02,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.1,
+          0.08,
+          0.04,
+          0.06,
+          0.08,
+          0.06,
+          0.04,
+          0.1,
+          0.02,
+          0.12,
+          0.0,
+          0.08,
+          0.06
+        ],
+        "tree_depth": null,
+        "leaf_count": null,
+        "note": "Configuration importance may reflect same-device shortcuts; not causal attack evidence"
+      },
+      "constant_train_features": [
+        "supported_rates_encoded",
+        "beacon_interval_tu",
+        "channel_frequency_mhz",
+        "retry_fraction"
+      ]
+    },
+    "n20_logistic_regression_configuration_radio_frame": {
+      "window_size": 20,
+      "model": "logistic_regression",
+      "ablation": "configuration_radio_frame",
+      "features": [
+        "capabilities_encoded",
+        "rsn_present",
+        "rsn_capabilities_encoded",
+        "group_cipher_encoded",
+        "pairwise_ciphers_encoded",
+        "akm_suites_encoded",
+        "supported_rates_encoded",
+        "stable_ie_structure_encoded",
+        "beacon_interval_tu",
+        "rssi_median_dbm",
+        "rssi_std_dbm",
+        "channel_frequency_mhz",
+        "frame_len_mean",
+        "frame_len_std",
+        "sequence_increment_median",
+        "sequence_discontinuity_rate",
+        "retry_fraction"
+      ],
+      "parameters": {
+        "C": 0.1,
+        "class_weight": null
+      },
+      "validation_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tn": 86,
+        "fp": 0,
+        "fn": 0,
+        "tp": 70,
+        "support_legitimate": 86,
+        "support_evil_twin": 70,
+        "independently_verified_fpr": null,
+        "candidate_legitimate_alert_fraction": 0.0,
+        "label_scope": "accepted author-documented candidate dataset roles",
+        "positive_class": "Evil Twin (1)",
+        "decision_threshold": 0.5
+      },
+      "validation_search_index": 0,
+      "train_counts": {
+        "0": 260,
+        "1": 45
+      },
+      "validation_counts": {
+        "0": 86,
+        "1": 70
+      },
+      "artifact": "models/preliminary_non_temporal_v1/n20_logistic_regression_configuration_radio_frame.joblib",
+      "artifact_sha256": "a8af28ca033fdc70708b8367db3d4e14843fb807591a71f6a7145d80cb551e74",
+      "model_size_bytes": 4366,
+      "explanation": {
+        "kind": "logistic_coefficient_after_train_only_preprocessing",
+        "transformed_features": [
+          "numeric__rsn_present",
+          "numeric__beacon_interval_tu",
+          "numeric__rssi_median_dbm",
+          "numeric__rssi_std_dbm",
+          "numeric__channel_frequency_mhz",
+          "numeric__frame_len_mean",
+          "numeric__frame_len_std",
+          "numeric__sequence_increment_median",
+          "numeric__sequence_discontinuity_rate",
+          "numeric__retry_fraction",
+          "categorical__capabilities_encoded_0x1",
+          "categorical__capabilities_encoded_0x1111",
+          "categorical__rsn_capabilities_encoded_141",
+          "categorical__rsn_capabilities_encoded_ABSENT_RSN",
+          "categorical__group_cipher_encoded_4",
+          "categorical__group_cipher_encoded_ABSENT_RSN",
+          "categorical__pairwise_ciphers_encoded_4",
+          "categorical__pairwise_ciphers_encoded_ABSENT_RSN",
+          "categorical__akm_suites_encoded_1",
+          "categorical__akm_suites_encoded_ABSENT_RSN",
+          "categorical__supported_rates_encoded_12:1;18:0;24:1;36:0;48:0;54:0;6:1;9:0",
+          "categorical__stable_ie_structure_encoded_1;3;7;45;61;127;191;192;195",
+          "categorical__stable_ie_structure_encoded_1;7;32;35;45;48;61;70;127;191;192;195"
+        ],
+        "weights": [
+          -0.606286378061256,
+          0.0,
+          -0.5682469770742438,
+          0.12735782074238727,
+          0.0,
+          -0.6062118919173002,
+          -0.16388351158532583,
+          0.01706957449056233,
+          -0.02639437204283503,
+          0.0,
+          0.215013819925563,
+          -0.21502901179577164,
+          -0.21502901179577164,
+          0.215013819925563,
+          -0.21502901179577164,
+          0.215013819925563,
+          -0.21502901179577164,
+          0.215013819925563,
+          -0.21502901179577164,
+          0.215013819925563,
+          -1.5191870208605272e-05,
+          0.215013819925563,
+          -0.21502901179577164
+        ],
+        "tree_depth": null,
+        "leaf_count": null,
+        "note": "Configuration importance may reflect same-device shortcuts; not causal attack evidence"
+      },
+      "constant_train_features": [
+        "supported_rates_encoded",
+        "beacon_interval_tu",
+        "channel_frequency_mhz",
+        "retry_fraction"
+      ]
+    },
+    "n20_decision_tree_configuration_only": {
+      "window_size": 20,
+      "model": "decision_tree",
+      "ablation": "configuration_only",
+      "features": [
+        "capabilities_encoded",
+        "rsn_present",
+        "rsn_capabilities_encoded",
+        "group_cipher_encoded",
+        "pairwise_ciphers_encoded",
+        "akm_suites_encoded",
+        "supported_rates_encoded",
+        "stable_ie_structure_encoded",
+        "beacon_interval_tu"
+      ],
+      "parameters": {
+        "class_weight": null,
+        "max_depth": 3,
+        "min_samples_leaf": 5
+      },
+      "validation_metrics": {
+        "precision": 1.0,
+        "recall": 0.6714285714285714,
+        "f1": 0.8034188034188035,
+        "tn": 86,
+        "fp": 0,
+        "fn": 23,
+        "tp": 47,
+        "support_legitimate": 86,
+        "support_evil_twin": 70,
+        "independently_verified_fpr": null,
+        "candidate_legitimate_alert_fraction": 0.0,
+        "label_scope": "accepted author-documented candidate dataset roles",
+        "positive_class": "Evil Twin (1)",
+        "decision_threshold": 0.5
+      },
+      "validation_search_index": 0,
+      "train_counts": {
+        "0": 260,
+        "1": 45
+      },
+      "validation_counts": {
+        "0": 86,
+        "1": 70
+      },
+      "artifact": "models/preliminary_non_temporal_v1/n20_decision_tree_configuration_only.joblib",
+      "artifact_sha256": "6ba5ed133112376fc6a32177f187b838f2f52d0c1cacd11d1364d2cfdfddde2f",
+      "model_size_bytes": 4026,
+      "explanation": {
+        "kind": "impurity_feature_importance",
+        "transformed_features": [
+          "numeric__rsn_present",
+          "numeric__beacon_interval_tu",
+          "categorical__capabilities_encoded_0x1",
+          "categorical__capabilities_encoded_0x1111",
+          "categorical__rsn_capabilities_encoded_141",
+          "categorical__rsn_capabilities_encoded_ABSENT_RSN",
+          "categorical__group_cipher_encoded_4",
+          "categorical__group_cipher_encoded_ABSENT_RSN",
+          "categorical__pairwise_ciphers_encoded_4",
+          "categorical__pairwise_ciphers_encoded_ABSENT_RSN",
+          "categorical__akm_suites_encoded_1",
+          "categorical__akm_suites_encoded_ABSENT_RSN",
+          "categorical__supported_rates_encoded_12:1;18:0;24:1;36:0;48:0;54:0;6:1;9:0",
+          "categorical__stable_ie_structure_encoded_1;3;7;45;61;127;191;192;195",
+          "categorical__stable_ie_structure_encoded_1;7;32;35;45;48;61;70;127;191;192;195"
+        ],
+        "weights": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "tree_depth": 1,
+        "leaf_count": 2,
+        "note": "Configuration importance may reflect same-device shortcuts; not causal attack evidence"
+      },
+      "constant_train_features": [
+        "supported_rates_encoded",
+        "beacon_interval_tu"
+      ]
+    },
+    "n20_decision_tree_radio_only": {
+      "window_size": 20,
+      "model": "decision_tree",
+      "ablation": "radio_only",
+      "features": [
+        "rssi_median_dbm",
+        "rssi_std_dbm",
+        "channel_frequency_mhz"
+      ],
+      "parameters": {
+        "class_weight": null,
+        "max_depth": 3,
+        "min_samples_leaf": 5
+      },
+      "validation_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tn": 86,
+        "fp": 0,
+        "fn": 0,
+        "tp": 70,
+        "support_legitimate": 86,
+        "support_evil_twin": 70,
+        "independently_verified_fpr": null,
+        "candidate_legitimate_alert_fraction": 0.0,
+        "label_scope": "accepted author-documented candidate dataset roles",
+        "positive_class": "Evil Twin (1)",
+        "decision_threshold": 0.5
+      },
+      "validation_search_index": 0,
+      "train_counts": {
+        "0": 260,
+        "1": 45
+      },
+      "validation_counts": {
+        "0": 86,
+        "1": 70
+      },
+      "artifact": "models/preliminary_non_temporal_v1/n20_decision_tree_radio_only.joblib",
+      "artifact_sha256": "5e2a78913968ee7ef3cdc0be928e63522ae8a106a06b75035b4e45640b58f0e5",
+      "model_size_bytes": 3310,
+      "explanation": {
+        "kind": "impurity_feature_importance",
+        "transformed_features": [
+          "numeric__rssi_median_dbm",
+          "numeric__rssi_std_dbm",
+          "numeric__channel_frequency_mhz"
+        ],
+        "weights": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "tree_depth": 1,
+        "leaf_count": 2,
+        "note": "Configuration importance may reflect same-device shortcuts; not causal attack evidence"
+      },
+      "constant_train_features": [
+        "channel_frequency_mhz"
+      ]
+    },
+    "n20_decision_tree_frame_only": {
+      "window_size": 20,
+      "model": "decision_tree",
+      "ablation": "frame_only",
+      "features": [
+        "frame_len_mean",
+        "frame_len_std",
+        "sequence_increment_median",
+        "sequence_discontinuity_rate",
+        "retry_fraction"
+      ],
+      "parameters": {
+        "class_weight": null,
+        "max_depth": 3,
+        "min_samples_leaf": 5
+      },
+      "validation_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tn": 86,
+        "fp": 0,
+        "fn": 0,
+        "tp": 70,
+        "support_legitimate": 86,
+        "support_evil_twin": 70,
+        "independently_verified_fpr": null,
+        "candidate_legitimate_alert_fraction": 0.0,
+        "label_scope": "accepted author-documented candidate dataset roles",
+        "positive_class": "Evil Twin (1)",
+        "decision_threshold": 0.5
+      },
+      "validation_search_index": 0,
+      "train_counts": {
+        "0": 260,
+        "1": 45
+      },
+      "validation_counts": {
+        "0": 86,
+        "1": 70
+      },
+      "artifact": "models/preliminary_non_temporal_v1/n20_decision_tree_frame_only.joblib",
+      "artifact_sha256": "705ae7f02852573ce9c84ec7415e5acf9148b7e3d4621764c15a3300e7fdc38b",
+      "model_size_bytes": 3346,
+      "explanation": {
+        "kind": "impurity_feature_importance",
+        "transformed_features": [
+          "numeric__frame_len_mean",
+          "numeric__frame_len_std",
+          "numeric__sequence_increment_median",
+          "numeric__sequence_discontinuity_rate",
+          "numeric__retry_fraction"
+        ],
+        "weights": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "tree_depth": 1,
+        "leaf_count": 2,
+        "note": "Configuration importance may reflect same-device shortcuts; not causal attack evidence"
+      },
+      "constant_train_features": [
+        "retry_fraction"
+      ]
+    },
+    "n20_decision_tree_configuration_radio": {
+      "window_size": 20,
+      "model": "decision_tree",
+      "ablation": "configuration_radio",
+      "features": [
+        "capabilities_encoded",
+        "rsn_present",
+        "rsn_capabilities_encoded",
+        "group_cipher_encoded",
+        "pairwise_ciphers_encoded",
+        "akm_suites_encoded",
+        "supported_rates_encoded",
+        "stable_ie_structure_encoded",
+        "beacon_interval_tu",
+        "rssi_median_dbm",
+        "rssi_std_dbm",
+        "channel_frequency_mhz"
+      ],
+      "parameters": {
+        "class_weight": "balanced",
+        "max_depth": 3,
+        "min_samples_leaf": 5
+      },
+      "validation_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tn": 86,
+        "fp": 0,
+        "fn": 0,
+        "tp": 70,
+        "support_legitimate": 86,
+        "support_evil_twin": 70,
+        "independently_verified_fpr": null,
+        "candidate_legitimate_alert_fraction": 0.0,
+        "label_scope": "accepted author-documented candidate dataset roles",
+        "positive_class": "Evil Twin (1)",
+        "decision_threshold": 0.5
+      },
+      "validation_search_index": 12,
+      "train_counts": {
+        "0": 260,
+        "1": 45
+      },
+      "validation_counts": {
+        "0": 86,
+        "1": 70
+      },
+      "artifact": "models/preliminary_non_temporal_v1/n20_decision_tree_configuration_radio.joblib",
+      "artifact_sha256": "cfa4fd5b701c7693fc634b841d481399dbe92ea7953e7eb9fd73cde4073b2a43",
+      "model_size_bytes": 4144,
+      "explanation": {
+        "kind": "impurity_feature_importance",
+        "transformed_features": [
+          "numeric__rsn_present",
+          "numeric__beacon_interval_tu",
+          "numeric__rssi_median_dbm",
+          "numeric__rssi_std_dbm",
+          "numeric__channel_frequency_mhz",
+          "categorical__capabilities_encoded_0x1",
+          "categorical__capabilities_encoded_0x1111",
+          "categorical__rsn_capabilities_encoded_141",
+          "categorical__rsn_capabilities_encoded_ABSENT_RSN",
+          "categorical__group_cipher_encoded_4",
+          "categorical__group_cipher_encoded_ABSENT_RSN",
+          "categorical__pairwise_ciphers_encoded_4",
+          "categorical__pairwise_ciphers_encoded_ABSENT_RSN",
+          "categorical__akm_suites_encoded_1",
+          "categorical__akm_suites_encoded_ABSENT_RSN",
+          "categorical__supported_rates_encoded_12:1;18:0;24:1;36:0;48:0;54:0;6:1;9:0",
+          "categorical__stable_ie_structure_encoded_1;3;7;45;61;127;191;192;195",
+          "categorical__stable_ie_structure_encoded_1;7;32;35;45;48;61;70;127;191;192;195"
+        ],
+        "weights": [
+          0.0,
+          0.0,
+          0.0,
+          5.107025913275704e-15,
+          0.0,
+          0.0,
+          0.9999999999999949,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "tree_depth": 2,
+        "leaf_count": 3,
+        "note": "Configuration importance may reflect same-device shortcuts; not causal attack evidence"
+      },
+      "constant_train_features": [
+        "supported_rates_encoded",
+        "beacon_interval_tu",
+        "channel_frequency_mhz"
+      ]
+    },
+    "n20_decision_tree_configuration_frame": {
+      "window_size": 20,
+      "model": "decision_tree",
+      "ablation": "configuration_frame",
+      "features": [
+        "capabilities_encoded",
+        "rsn_present",
+        "rsn_capabilities_encoded",
+        "group_cipher_encoded",
+        "pairwise_ciphers_encoded",
+        "akm_suites_encoded",
+        "supported_rates_encoded",
+        "stable_ie_structure_encoded",
+        "beacon_interval_tu",
+        "frame_len_mean",
+        "frame_len_std",
+        "sequence_increment_median",
+        "sequence_discontinuity_rate",
+        "retry_fraction"
+      ],
+      "parameters": {
+        "class_weight": null,
+        "max_depth": 3,
+        "min_samples_leaf": 5
+      },
+      "validation_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tn": 86,
+        "fp": 0,
+        "fn": 0,
+        "tp": 70,
+        "support_legitimate": 86,
+        "support_evil_twin": 70,
+        "independently_verified_fpr": null,
+        "candidate_legitimate_alert_fraction": 0.0,
+        "label_scope": "accepted author-documented candidate dataset roles",
+        "positive_class": "Evil Twin (1)",
+        "decision_threshold": 0.5
+      },
+      "validation_search_index": 0,
+      "train_counts": {
+        "0": 260,
+        "1": 45
+      },
+      "validation_counts": {
+        "0": 86,
+        "1": 70
+      },
+      "artifact": "models/preliminary_non_temporal_v1/n20_decision_tree_configuration_frame.joblib",
+      "artifact_sha256": "13cb9c0b50acc28496afe8551e49050c8aa776d6322f748b9c74238fbfa19494",
+      "model_size_bytes": 4118,
+      "explanation": {
+        "kind": "impurity_feature_importance",
+        "transformed_features": [
+          "numeric__rsn_present",
+          "numeric__beacon_interval_tu",
+          "numeric__frame_len_mean",
+          "numeric__frame_len_std",
+          "numeric__sequence_increment_median",
+          "numeric__sequence_discontinuity_rate",
+          "numeric__retry_fraction",
+          "categorical__capabilities_encoded_0x1",
+          "categorical__capabilities_encoded_0x1111",
+          "categorical__rsn_capabilities_encoded_141",
+          "categorical__rsn_capabilities_encoded_ABSENT_RSN",
+          "categorical__group_cipher_encoded_4",
+          "categorical__group_cipher_encoded_ABSENT_RSN",
+          "categorical__pairwise_ciphers_encoded_4",
+          "categorical__pairwise_ciphers_encoded_ABSENT_RSN",
+          "categorical__akm_suites_encoded_1",
+          "categorical__akm_suites_encoded_ABSENT_RSN",
+          "categorical__supported_rates_encoded_12:1;18:0;24:1;36:0;48:0;54:0;6:1;9:0",
+          "categorical__stable_ie_structure_encoded_1;3;7;45;61;127;191;192;195",
+          "categorical__stable_ie_structure_encoded_1;7;32;35;45;48;61;70;127;191;192;195"
+        ],
+        "weights": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "tree_depth": 1,
+        "leaf_count": 2,
+        "note": "Configuration importance may reflect same-device shortcuts; not causal attack evidence"
+      },
+      "constant_train_features": [
+        "supported_rates_encoded",
+        "beacon_interval_tu",
+        "retry_fraction"
+      ]
+    },
+    "n20_decision_tree_radio_frame": {
+      "window_size": 20,
+      "model": "decision_tree",
+      "ablation": "radio_frame",
+      "features": [
+        "rssi_median_dbm",
+        "rssi_std_dbm",
+        "channel_frequency_mhz",
+        "frame_len_mean",
+        "frame_len_std",
+        "sequence_increment_median",
+        "sequence_discontinuity_rate",
+        "retry_fraction"
+      ],
+      "parameters": {
+        "class_weight": null,
+        "max_depth": 3,
+        "min_samples_leaf": 5
+      },
+      "validation_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tn": 86,
+        "fp": 0,
+        "fn": 0,
+        "tp": 70,
+        "support_legitimate": 86,
+        "support_evil_twin": 70,
+        "independently_verified_fpr": null,
+        "candidate_legitimate_alert_fraction": 0.0,
+        "label_scope": "accepted author-documented candidate dataset roles",
+        "positive_class": "Evil Twin (1)",
+        "decision_threshold": 0.5
+      },
+      "validation_search_index": 0,
+      "train_counts": {
+        "0": 260,
+        "1": 45
+      },
+      "validation_counts": {
+        "0": 86,
+        "1": 70
+      },
+      "artifact": "models/preliminary_non_temporal_v1/n20_decision_tree_radio_frame.joblib",
+      "artifact_sha256": "15c01614cffef684b3163887fbf6834b16552283febac3c422aa611e6aef15af",
+      "model_size_bytes": 3417,
+      "explanation": {
+        "kind": "impurity_feature_importance",
+        "transformed_features": [
+          "numeric__rssi_median_dbm",
+          "numeric__rssi_std_dbm",
+          "numeric__channel_frequency_mhz",
+          "numeric__frame_len_mean",
+          "numeric__frame_len_std",
+          "numeric__sequence_increment_median",
+          "numeric__sequence_discontinuity_rate",
+          "numeric__retry_fraction"
+        ],
+        "weights": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "tree_depth": 1,
+        "leaf_count": 2,
+        "note": "Configuration importance may reflect same-device shortcuts; not causal attack evidence"
+      },
+      "constant_train_features": [
+        "channel_frequency_mhz",
+        "retry_fraction"
+      ]
+    },
+    "n20_decision_tree_configuration_without_ie_radio_frame": {
+      "window_size": 20,
+      "model": "decision_tree",
+      "ablation": "configuration_without_ie_radio_frame",
+      "features": [
+        "capabilities_encoded",
+        "rsn_present",
+        "rsn_capabilities_encoded",
+        "group_cipher_encoded",
+        "pairwise_ciphers_encoded",
+        "akm_suites_encoded",
+        "supported_rates_encoded",
+        "beacon_interval_tu",
+        "rssi_median_dbm",
+        "rssi_std_dbm",
+        "channel_frequency_mhz",
+        "frame_len_mean",
+        "frame_len_std",
+        "sequence_increment_median",
+        "sequence_discontinuity_rate",
+        "retry_fraction"
+      ],
+      "parameters": {
+        "class_weight": "balanced",
+        "max_depth": 3,
+        "min_samples_leaf": 5
+      },
+      "validation_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tn": 86,
+        "fp": 0,
+        "fn": 0,
+        "tp": 70,
+        "support_legitimate": 86,
+        "support_evil_twin": 70,
+        "independently_verified_fpr": null,
+        "candidate_legitimate_alert_fraction": 0.0,
+        "label_scope": "accepted author-documented candidate dataset roles",
+        "positive_class": "Evil Twin (1)",
+        "decision_threshold": 0.5
+      },
+      "validation_search_index": 12,
+      "train_counts": {
+        "0": 260,
+        "1": 45
+      },
+      "validation_counts": {
+        "0": 86,
+        "1": 70
+      },
+      "artifact": "models/preliminary_non_temporal_v1/n20_decision_tree_configuration_without_ie_radio_frame.joblib",
+      "artifact_sha256": "f65143ac87145300ddae18f640cf77f9a799469553ded8141dfdcd521bbea6b1",
+      "model_size_bytes": 4183,
+      "explanation": {
+        "kind": "impurity_feature_importance",
+        "transformed_features": [
+          "numeric__rsn_present",
+          "numeric__beacon_interval_tu",
+          "numeric__rssi_median_dbm",
+          "numeric__rssi_std_dbm",
+          "numeric__channel_frequency_mhz",
+          "numeric__frame_len_mean",
+          "numeric__frame_len_std",
+          "numeric__sequence_increment_median",
+          "numeric__sequence_discontinuity_rate",
+          "numeric__retry_fraction",
+          "categorical__capabilities_encoded_0x1",
+          "categorical__capabilities_encoded_0x1111",
+          "categorical__rsn_capabilities_encoded_141",
+          "categorical__rsn_capabilities_encoded_ABSENT_RSN",
+          "categorical__group_cipher_encoded_4",
+          "categorical__group_cipher_encoded_ABSENT_RSN",
+          "categorical__pairwise_ciphers_encoded_4",
+          "categorical__pairwise_ciphers_encoded_ABSENT_RSN",
+          "categorical__akm_suites_encoded_1",
+          "categorical__akm_suites_encoded_ABSENT_RSN",
+          "categorical__supported_rates_encoded_12:1;18:0;24:1;36:0;48:0;54:0;6:1;9:0"
+        ],
+        "weights": [
+          0.0,
+          0.0,
+          0.0,
+          5.107025913275704e-15,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.9999999999999949,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "tree_depth": 2,
+        "leaf_count": 3,
+        "note": "Configuration importance may reflect same-device shortcuts; not causal attack evidence"
+      },
+      "constant_train_features": [
+        "supported_rates_encoded",
+        "beacon_interval_tu",
+        "channel_frequency_mhz",
+        "retry_fraction"
+      ]
+    }
+  },
+  "development_test_opened": false,
+  "final_model_comparison": false,
+  "independent_sessions": 0
+}

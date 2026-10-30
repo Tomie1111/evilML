@@ -1,0 +1,9 @@
+{
+  "ml_checkpoint_verified": true,
+  "thresholds_validation_only": true,
+  "baseline_enrollment_precedes_validation": true,
+  "baseline_unchanged": true,
+  "invalid_always_pending": true,
+  "rogue_has_no_assumed_trusted_baseline": true,
+  "no_independent_session_results_invented": true
+}

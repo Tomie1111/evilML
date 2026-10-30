@@ -1,0 +1,17 @@
+{
+  "verified_legitimate_frames": 0,
+  "verified_enrollment_windows": 0,
+  "baseline_created": false,
+  "chronological_enrollment_monitoring_performed": false,
+  "blocker": "Only candidate/unknown identities exist; independent_identity_verification=false",
+  "previous_baseline_status": "Historical candidate-role baseline, not admitted as verified enrollment",
+  "threshold": null,
+  "drift_score_distribution": null,
+  "covariance_sensitivity_results": null,
+  "planned_shrinkage_values": [
+    0.01,
+    0.1,
+    0.5,
+    1.0
+  ]
+}

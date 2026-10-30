@@ -1,0 +1,31 @@
+test_allowlist (test_audit.FeatureTests.test_allowlist) ... ok
+test_dynamic_ie_exclusion (test_audit.FeatureTests.test_dynamic_ie_exclusion) ... ok
+test_large_gap_detected (test_audit.FeatureTests.test_large_gap_detected) ... ok
+test_leakage_deny_all_unapproved_names (test_audit.FeatureTests.test_leakage_deny_all_unapproved_names) ... ok
+test_rssi_antenna_median (test_audit.FeatureTests.test_rssi_antenna_median) ... ok
+test_sequence_range (test_audit.FeatureTests.test_sequence_range) ... ok
+test_sequence_wraparound (test_audit.FeatureTests.test_sequence_wraparound) ... ok
+test_tsf_reset_detected_without_regression (test_audit.FeatureTests.test_tsf_reset_detected_without_regression) ... ok
+test_duplicate_key_rejected_even_if_identical (test_audit.JoinTests.test_duplicate_key_rejected_even_if_identical) ... ok
+test_metadata_mismatch_detected (test_audit.JoinTests.test_metadata_mismatch_detected) ... ok
+test_missing_reextracted_frame_reported (test_audit.JoinTests.test_missing_reextracted_frame_reported) ... ok
+test_nonpositive_frame_rejected (test_audit.JoinTests.test_nonpositive_frame_rejected) ... ok
+test_one_nanosecond_is_preserved (test_audit.JoinTests.test_one_nanosecond_is_preserved) ... ok
+test_original_frame_required (test_audit.JoinTests.test_original_frame_required) ... ok
+test_rssi_separator_normalized (test_audit.JoinTests.test_rssi_separator_normalized) ... ok
+test_same_frame_different_capture_is_distinct (test_audit.JoinTests.test_same_frame_different_capture_is_distinct) ... ok
+test_subnanosecond_rejected (test_audit.JoinTests.test_subnanosecond_rejected) ... ok
+test_unknown_not_promoted_by_missing_attack_row (test_audit.JoinTests.test_unknown_not_promoted_by_missing_attack_row) ... ok
+test_candidate_classes_do_not_unlock_training (test_audit.LabelTests.test_candidate_classes_do_not_unlock_training) ... ok
+test_documented_mapping_is_candidate_only (test_audit.LabelTests.test_documented_mapping_is_candidate_only) ... ok
+test_integrity_failure_blocks_verified_classes (test_audit.LabelTests.test_integrity_failure_blocks_verified_classes) ... ok
+test_legacy_role_conflict_is_unknown (test_audit.LabelTests.test_legacy_role_conflict_is_unknown) ... ok
+test_same_bssid_other_capture_remains_unknown (test_audit.LabelTests.test_same_bssid_other_capture_remains_unknown) ... ok
+test_beacon_before_filter_is_not_filter_positive (test_audit.SourceTests.test_beacon_before_filter_is_not_filter_positive) ... ok
+test_csv_missing_counts (test_audit.SourceTests.test_csv_missing_counts) ... ok
+test_filter_read_from_document (test_audit.SourceTests.test_filter_read_from_document) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.003s
+
+OK

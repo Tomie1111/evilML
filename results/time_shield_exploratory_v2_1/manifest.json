@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-10-30T15:57:27.091753+00:00",
+  "python": "3.14.7",
+  "protocol": {
+    "id": "time-shield-exploratory-v2",
+    "declared_scope": "candidate-legitimate same-capture engineering validation only",
+    "window_size": 20,
+    "source": "data/processed/ml_non_temporal_v1/window_features_20.csv",
+    "candidate_role": "candidate_legitimate",
+    "enrollment_fraction_of_ordered_train_windows": 0.6,
+    "minimum_valid_enrollment_windows": 20,
+    "minimum_valid_calibration_windows": 10,
+    "methods": [
+      "mahalanobis",
+      "standardized_euclidean"
+    ],
+    "primary_method": "mahalanobis",
+    "shrinkage_values": [
+      0.01,
+      0.1,
+      0.5,
+      1.0
+    ],
+    "primary_shrinkage": 0.1,
+    "threshold_percentile": 99,
+    "beta": 0.3,
+    "K": 3,
+    "gap_factor_primary": 1.5,
+    "fusion_low": 0.2,
+    "fusion_high": 0.8,
+    "verified_enrollment_enabled": false,
+    "baseline_updates": false,
+    "test_use": "monitoring and reporting only; never parameter selection",
+    "forbidden_claims": [
+      "verified trusted baseline",
+      "verified FPR",
+      "Evil Twin proof from drift",
+      "unseen-AP generalization"
+    ]
+  },
+  "protocol_sha256": "b8d3d8d0098853bff2e7576fe3a8b13cb8b9cdad60adcc1b94e0496305276acf",
+  "source": "data/processed/ml_non_temporal_v1/window_features_20.csv",
+  "source_sha256": "4ca13897376379be9c071e1a575e6aa31884d794c3975d045dab2e8c899b70ae",
+  "verified_legitimate_windows": 0,
+  "verified_enrollment_enabled": false,
+  "candidate_enrollment_windows": 120,
+  "candidate_calibration_windows": 104,
+  "historical_artifacts_changed": false,
+  "outputs_sha256": {
+    "fusion_engineering_replay.csv": "1e7638cd6966d047ebb57da261281d63f06bd3bda9fba7fc686457a90527f386",
+    "mahalanobis_distributions.png": "9291815b94f9a298f0a2e3ce54183547aaac4b46359843844c70487584e00762",
+    "runtime.json": "ac8c5d0dabbf7ae93e1bda2c570980cd69fd3ab49e9607bab572b5c403392fcf",
+    "calibration_thresholds.csv": "65f527bc38632584e90b595cf0e4850d7e6a5a4bd9a4067806cdf88bbf237bbd",
+    "regularization_sensitivity.csv": "7145f4843876a3dbc9702f1d145adaa275bea59b68cb8f1e73df9376c245456a",
+    "score_distributions.csv": "da3fa2704ac132f2f4ca64e21b20d8820bae7b86e85c317c007c73c1c695cf34",
+    "temporal_coverage.csv": "9bb3c2b94de75a2def9e8f088a654fc35237060378b3d98a19179e81ec192ba0",
+    "validation_mahalanobis_trace.csv": "c191411bb2c7085d92ec735db1c3867508cd299eb034223bb867e175c5afe3c1",
+    "baseline_candidate_exploratory.json": "596f908cd15b81afa6a00b8d67543e4bba1369eaea5a5dc9e743e28f3d1c81cb",
+    "state_counts.csv": "8dbea9c7e1f792b33007fa3a349b8c1b5b0a590a819662d70c07e8781270c910",
+    "regularization_sensitivity.png": "95d7942b2f19d024ede4164500a7753ac24381ff3548e473825c2c93c00b8cce",
+    "development_test_mahalanobis_trace.csv": "d9c6d1425d6c361975b92bed57cd5e416bf75ccac77d6d7b64976fe9d2204f8d",
+    "enrollment_calibration_membership.csv": "abec073da8ceffa2d93fc498a703bbcba6523fbdc1a9d819bb991177916c5526",
+    "integrity.json": "f815c7d6f0028b7b27199d28fe54d2898d05b65e3ced0104b6b2cd95a4a06780"
+  },
+  "claims_scope": "exploratory same-capture temporal behavior; no verified detection metrics"
+}

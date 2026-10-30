@@ -1,0 +1,35 @@
+{
+  "batch_windows": 160,
+  "temporal_batch": {
+    "repeats": 30,
+    "warmup": 5,
+    "median_ms": 13.184292,
+    "p95_ms": 16.91732965,
+    "cpu_seconds": 0.41043003199999983,
+    "cpu_percent_one_core_scale": 97.86315345368514,
+    "baseline_rss_mib": 165.9375,
+    "peak_rss_mib": 165.9375,
+    "rss_growth_mib": 0.0,
+    "memory_sample_period_s": 0.002,
+    "elapsed_seconds": 0.41939179100154433,
+    "scope": "Warm inference incl preprocessing; sampled process RSS includes interpreter/libraries, not training peak"
+  },
+  "fusion_rules_batch": {
+    "repeats": 30,
+    "warmup": 5,
+    "median_ms": 2.1053125,
+    "p95_ms": 4.09538315,
+    "cpu_seconds": 0.06855859200000014,
+    "cpu_percent_one_core_scale": 89.45021121542376,
+    "baseline_rss_mib": 120.34375,
+    "peak_rss_mib": 120.390625,
+    "rss_growth_mib": 0.046875,
+    "memory_sample_period_s": 0.002,
+    "elapsed_seconds": 0.07664441600354621,
+    "scope": "Warm inference incl preprocessing; sampled process RSS includes interpreter/libraries, not training peak"
+  },
+  "temporal_amortized_median_ms": 0.082401825,
+  "fusion_rules_amortized_median_ms": 0.013158203125,
+  "classifier_cost_source": "results/metrics/resource_benchmarks.csv",
+  "note": "Separate module timings; not an end-to-end PCAP-to-alert benchmark"
+}

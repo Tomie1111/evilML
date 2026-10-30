@@ -1,0 +1,16 @@
+{
+  "id": "awid3-author-evil-twin",
+  "review_date": "2026-10-30",
+  "doi": "10.1109/ACCESS.2021.3061609",
+  "source_url": "https://www.researchgate.net/publication/349539294_Empirical_Evaluation_of_Attacks_Against_IEEE_80211_Enterprise_Networks_The_AWID3_Dataset",
+  "section": "III-B, Evil_Twin; published page 34196; footnote 8",
+  "access_method": "Author paper full text rendered by web tool; Evil_Twin section inspected, not search snippet alone.",
+  "supported_statement": "Authors describe the rogue AP using the legitimate AP's channel and SSID, with MAC ending in 5 instead of 4. The second implementation uses the same AP configuration. Footnote 8 explains that matching MAC addresses were avoided.",
+  "exact_full_bssid_anchor": "Local Read_me.txt Evil_Twin filter specifies wlan.addr == 0c:9d:92:54:fe:35. This is a filter anchor, not independent transmitter authentication.",
+  "inference": "Combining the author suffix description, local filter, and observed CSV roles supports the proposed capture-specific .fe:34/.fe:35 dataset-role mapping.",
+  "scope": "Author-documented dataset role; not independent per-device identity or attack-success verification.",
+  "original_pdf_url": "https://icsdweb.aegean.gr/awid/Empirical-evaluation-of-attacks-against-IEEE-802.11-enterprise-networks-The-AWID3-dataset.pdf",
+  "original_pdf_access": "404 during review",
+  "independent_device_logs_available": false,
+  "protocol_approval": null
+}

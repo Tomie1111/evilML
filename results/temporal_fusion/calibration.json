@@ -1,0 +1,54 @@
+{
+  "timestamp_utc": "2026-10-30T09:38:35.286451+00:00",
+  "thresholds": {
+    "mahalanobis": {
+      "threshold": 4.03156593903217,
+      "calibration_n": 65
+    },
+    "standardized_euclidean": {
+      "threshold": 4.087363117311258,
+      "calibration_n": 65
+    }
+  },
+  "beta": 0.3,
+  "K": 3,
+  "percentile": 99,
+  "high_ml": 0.5,
+  "low_ml": 0.4,
+  "high_threshold_search": [
+    {
+      "high": 0.5,
+      "f1": 1.0
+    },
+    {
+      "high": 0.6,
+      "f1": 1.0
+    },
+    {
+      "high": 0.7,
+      "f1": 1.0
+    },
+    {
+      "high": 0.8,
+      "f1": 1.0
+    },
+    {
+      "high": 0.9,
+      "f1": 1.0
+    }
+  ],
+  "source_split": "validation only",
+  "baseline_sha256": "8792c988c5e40f8acb99ab84f9f42f07986d16a7b3a88fd7b0a9af05c7cc6530",
+  "baseline_fit_n": 130,
+  "baseline_registry": [
+    {
+      "pcap": "pcaps/7. Evil_Twin.pcap",
+      "bssid": "0c:9d:92:54:fe:34"
+    }
+  ],
+  "baseline_trust_scope": "Accepted author-documented legitimate role in this capture only",
+  "baseline_updated": false,
+  "primary_model": "n20_decision_tree_all",
+  "no_drift_is_not_automatically_stable": true,
+  "stable_policy": "K consecutive valid smoothed scores <= threshold; intermediate evidence is UNAVAILABLE"
+}

@@ -1,0 +1,17 @@
+shrinkage,method,split,windows,temporal_valid,STABLE,DRIFT,UNAVAILABLE,threshold
+0.01,mahalanobis,validation,86,65,37,0,49,7.339257788742586
+0.01,mahalanobis,development_test,87,66,32,0,55,7.339257788742586
+0.01,standardized_euclidean,validation,86,65,37,0,49,7.300807400877844
+0.01,standardized_euclidean,development_test,87,66,32,0,55,7.300807400877844
+0.1,mahalanobis,validation,86,65,37,0,49,7.334245195140204
+0.1,mahalanobis,development_test,87,66,32,0,55,7.334245195140204
+0.1,standardized_euclidean,validation,86,65,37,0,49,7.300807400877844
+0.1,standardized_euclidean,development_test,87,66,32,0,55,7.300807400877844
+0.5,mahalanobis,validation,86,65,37,0,49,7.315737385147832
+0.5,mahalanobis,development_test,87,66,32,0,55,7.315737385147832
+0.5,standardized_euclidean,validation,86,65,37,0,49,7.300807400877844
+0.5,standardized_euclidean,development_test,87,66,32,0,55,7.300807400877844
+1.0,mahalanobis,validation,86,65,37,0,49,7.300807400877844
+1.0,mahalanobis,development_test,87,66,32,0,55,7.300807400877844
+1.0,standardized_euclidean,validation,86,65,37,0,49,7.300807400877844
+1.0,standardized_euclidean,development_test,87,66,32,0,55,7.300807400877844

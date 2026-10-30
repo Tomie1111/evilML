@@ -1,0 +1,20 @@
+{
+  "id": "window-attrition-v1",
+  "planned_before_analysis": "2026-10-30; evaluates data availability and physical quality only, not classifier scores",
+  "session_definition": "Original PCAP capture; profile streams within the same PCAP are not independent sessions",
+  "class_source": "Previously accepted author-documented candidate roles; original labels unchanged",
+  "policies": [
+    {"id": "strict_fixed_1p5", "construction": "fixed", "grouping": "bssid_capabilities", "gap_factor": 1.5, "role": "frozen_strict_baseline"},
+    {"id": "fixed_2p0", "construction": "fixed", "grouping": "bssid_capabilities", "gap_factor": 2.0, "role": "gap_threshold_sensitivity_only"},
+    {"id": "fixed_3p0", "construction": "fixed", "grouping": "bssid_capabilities", "gap_factor": 3.0, "role": "gap_threshold_sensitivity_only"},
+    {"id": "segmented_1p5", "construction": "gap_segmented", "grouping": "bssid_capabilities", "gap_factor": 1.5, "role": "window_boundary_sensitivity_only"},
+    {"id": "bssid_fixed_1p5", "construction": "fixed", "grouping": "bssid", "gap_factor": 1.5, "role": "grouping_sensitivity_only"},
+    {"id": "stable_profile_fixed_1p5", "construction": "fixed", "grouping": "stable_profile", "gap_factor": 1.5, "role": "grouping_sensitivity_only"}
+  ],
+  "window_sizes": [10, 20, 50],
+  "recommended_ml_quality": "Full capture-ordered non-overlapping windows; complete and consistent configuration/radio/frame fields; accepted single candidate role; temporal gaps and TSF resets do not disqualify non-temporal features. Use only configuration+radio+frame features on such windows.",
+  "recommended_time_shield_quality": "Retain original fixed-window 1.5 gap criterion, incoming-boundary check and TSF reset rejection. No slope across TSF reset.",
+  "preliminary_support_heuristic": {"minimum_train_windows_per_class": 20, "minimum_validation_windows_per_class": 10, "minimum_development_test_windows_per_class": 10},
+  "final_evaluation_requirement": {"minimum_independent_labeled_sessions_per_class": 2, "currently_available_independent_test_sessions": 0},
+  "selection_rule": "Recommendations are based on which feature groups remain valid under capture artifacts. No final-test classifier scores are used. Gap-threshold relaxations are descriptive only."
+}

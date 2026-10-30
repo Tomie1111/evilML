@@ -1,0 +1,97 @@
+{
+  "timestamp_utc": "2026-10-30T15:08:27.674796+00:00",
+  "protocol": {
+    "id": "non-temporal-exploratory-v1",
+    "declared_before_development_test_evaluation": true,
+    "scope": "preliminary same-capture evaluation; not final or independent-AP evidence",
+    "window_sizes": [
+      10,
+      20
+    ],
+    "models": [
+      "decision_tree",
+      "random_forest",
+      "logistic_regression"
+    ],
+    "primary_features": "configuration_radio_frame",
+    "ablations": {
+      "configuration_only": [
+        "configuration"
+      ],
+      "radio_only": [
+        "radio"
+      ],
+      "frame_only": [
+        "frame"
+      ],
+      "configuration_radio": [
+        "configuration",
+        "radio"
+      ],
+      "configuration_frame": [
+        "configuration",
+        "frame"
+      ],
+      "radio_frame": [
+        "radio",
+        "frame"
+      ],
+      "configuration_radio_frame": [
+        "configuration",
+        "radio",
+        "frame"
+      ],
+      "configuration_without_ie_radio_frame": [
+        "configuration_without_ie",
+        "radio",
+        "frame"
+      ]
+    },
+    "ablation_model": "decision_tree",
+    "selection": "Fit train only; select hyperparameters by validation F1; freeze artifacts and manifest before development-test scoring",
+    "test": "One chronological development-test evaluation after selection; same original capture",
+    "threshold": 0.5,
+    "forbidden_claims": [
+      "final model comparison",
+      "unseen AP generalization",
+      "independently verified FPR"
+    ],
+    "temporal_ablation": "not evaluated under this policy because temporal-invalid windows are retained and temporal values are masked",
+    "no_oversampling": true,
+    "no_smote": true
+  },
+  "protocol_sha256": "8018dccfbb39a6349bfc4aaa37b8ddbeb446983fa1560cada29de678eff249a0",
+  "selection_manifest_sha256": "bcdb51cd92b38366420862b89940d1f762a66579cf8b83aaa9f20b68238c408b",
+  "random_seed": 42,
+  "runtime": {
+    "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 17.0.0 (clang-1700.6.4.2)]",
+    "platform": "macOS-15.7.9-arm64-arm-64bit-Mach-O",
+    "packages": {
+      "numpy": "2.5.4",
+      "pandas": "3.1.0",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1",
+      "joblib": "1.6.0"
+    }
+  },
+  "inputs": {
+    "prepared_manifest": "data/processed/ml_non_temporal_v1/manifest.json",
+    "prepared_manifest_sha256": "e1ccd123adf2bd9703a89c60b2f1bf30f738ed54af1c3ae89e845c6ab6db2421",
+    "window_features": {
+      "window_features_10.csv": "6c02e95749d10965277f76c2b1970b389201415ace1ac92b7341d9ccb54ba730",
+      "window_features_20.csv": "4ca13897376379be9c071e1a575e6aa31884d794c3975d045dab2e8c899b70ae"
+    }
+  },
+  "selection_frozen_before_test": true,
+  "development_test_opened_once_by_this_run": true,
+  "results_sha256": {
+    "model_comparison.csv": "f83f9a3c97b3db3c49e75935bd99ff7a03ed2932185770347ac46d174817bf76",
+    "feature_ablation.csv": "8a418c56536aff268dcb9c18de499c3cd5c1abc32abaff410ad14171480c2c7b",
+    "categorical_novelty.csv": "9708dba11962fb814467032d1911f95f36469397b74af78a99896e5ce2b30c34"
+  },
+  "no_oversampling": true,
+  "no_smote": true,
+  "independent_test_sessions": 0,
+  "final_model_comparison": false,
+  "limitation": "Same original capture; AP identity candidate roles; configuration shortcut risk"
+}

@@ -1,0 +1,15 @@
+task,implementation_status,experimental_status,remaining_blocker
+AWID3 audit/features/windows,complete,historical results preserved,none for preliminary scope
+Preliminary ML/ablation/resources,complete,historical results preserved,no independent generalization
+Time-Shield vector/distance/EWMA/persistence,implemented and unit tested,verified operational scoring blocked,no verified legitimate enrollment
+Evidence-gated enrollment and frozen monitoring,implemented and unit tested,baseline not fitted,no reviewed device-to-window evidence
+Gap sensitivity and quality coverage,complete,reused existing attrition observations,candidate roles only
+Covariance sensitivity,numerical fixtures tested,empirical distributions blocked,no verified enrollment/calibration
+Time-Shield score plots,output records missing baseline,actual drift distributions blocked,no baseline or calibrated threshold
+Runtime and memory,UNAVAILABLE path measured,full scoring overhead blocked,no verified baseline
+Four-state fusion,120 combinations tested,frozen-score engineering replay complete,no independent fusion ground truth
+External PCAP importer,streaming import CLI and field audit implemented,actual external import not executed,no independent PCAP registered
+Frozen preprocessing/inference,6 primary artifacts replayed unchanged,engineering verification complete,new capture feature compatibility untested
+Legitimate-only evaluation,undefined attack metrics return null,unit tested,no independently verified legitimate capture
+Independent intake,existing validator strengthened,0 sessions,external evidence and lineage review needed
+Final evaluation and classifier selection,deliberately deferred,blocked,independent labeled sessions needed

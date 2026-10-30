@@ -1,0 +1,24 @@
+{
+  "timestamp_utc": "2026-10-30T14:54:23.171530+00:00",
+  "source_beacons_sha256": "f06bf7b9c392e00ab8c36fa48aff1a9f86d072f6fa92bd25cc594853227dd58a",
+  "identity_table_sha256": "3c665927cb4b0deec4703c9b85d792ffb286b10d07f8f19d17afa0fdf3c1d960",
+  "attrition_manifest_sha256": "06ef01771cf5740f61a3c5dd9c763d334ce7c0a7b72b97d500366f207ecf8c36",
+  "output_sha256": {
+    "window_features_10.csv": "6c02e95749d10965277f76c2b1970b389201415ace1ac92b7341d9ccb54ba730",
+    "window_features_20.csv": "4ca13897376379be9c071e1a575e6aa31884d794c3975d045dab2e8c899b70ae",
+    "window_features_50.csv": "f8fb71eee927c380eff4258419e60cbca4d66893565d682242a6a17bb4483487"
+  },
+  "grouping": "bssid_capabilities",
+  "construction": "fixed",
+  "gap_factor_for_temporal": 1.5,
+  "ml_feature_groups": [
+    "configuration",
+    "radio",
+    "frame"
+  ],
+  "temporal_feature_policy": "Set temporal features to missing where Time-Shield eligibility fails; do not use them for non-temporal ML training",
+  "original_strict_files_unchanged": true,
+  "independent_test_sessions": 0,
+  "oversampling": false,
+  "model_training_or_final_comparison_performed": false
+}

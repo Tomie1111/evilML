@@ -1,0 +1,3 @@
+pcap,frame_number,frame_len,reasons
+pcaps/4. Rogue_AP.pcap,211266,1618,missing_ssid_hex;missing_tsf;missing_capabilities;missing_beacon_interval_tu
+pcaps/4. Rogue_AP.pcap,231295,1618,missing_ssid_hex;missing_tsf;missing_capabilities;missing_beacon_interval_tu

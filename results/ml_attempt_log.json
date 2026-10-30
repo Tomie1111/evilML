@@ -1,0 +1,12 @@
+{
+  "attempts": [
+    {
+      "id": 1,
+      "stage": "validation_model_selection",
+      "failure": "Bitwise equality check on parallel RandomForest probability reductions was too strict. Replaced with 1e-12 allclose plus identical decisions.",
+      "development_test_scores_evaluated": false,
+      "archived_partial_models": "models/attempt_01_numerical_check",
+      "timestamp_utc": "2026-10-30T09:36:11.927684+00:00"
+    }
+  ]
+}

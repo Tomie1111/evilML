@@ -1,0 +1,3 @@
+method,total_windows,baseline_available,stable,drift,unavailable,attack_precision,attack_recall,reason
+mahalanobis,160,87,31,0,129,,,Drift is not an attack label; rogue stream has no trusted baseline
+standardized_euclidean,160,87,31,0,129,,,Drift is not an attack label; rogue stream has no trusted baseline

@@ -1,0 +1,23 @@
+field,eligible,permitted_use
+ap_tsf,False,grouping/provenance/validation only
+attack_label_status,False,grouping/provenance/validation only
+attack_related_label,False,grouping/provenance/validation only
+beacon_role_label,False,grouping/provenance/validation only
+bssid,False,grouping/provenance/validation only
+candidate_stream_id,False,grouping/provenance/validation only
+capture_filename,False,grouping/provenance/validation only
+capture_label,False,grouping/provenance/validation only
+end_epoch,False,grouping/provenance/validation only
+frame_number,False,grouping/provenance/validation only
+frame_time_epoch,False,grouping/provenance/validation only
+identity_status,False,grouping/provenance/validation only
+original_frame_number,False,grouping/provenance/validation only
+pcap,False,grouping/provenance/validation only
+source_mac,False,grouping/provenance/validation only
+split,False,grouping/provenance/validation only
+ssid,False,grouping/provenance/validation only
+ssid_hex,False,grouping/provenance/validation only
+start_epoch,False,grouping/provenance/validation only
+tsf,False,grouping/provenance/validation only
+wlan.sa,False,grouping/provenance/validation only
+wlan.ta,False,grouping/provenance/validation only

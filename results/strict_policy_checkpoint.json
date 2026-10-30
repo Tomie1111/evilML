@@ -1,0 +1,29 @@
+{
+  "recorded_at_utc": "2026-10-30T14:47:35.729512+00:00",
+  "status": "frozen_strict_policy_exploratory_only",
+  "reason": "User requested attrition investigation and meaningful-evaluation gate before further final comparison",
+  "source_policy": "configs/ml_experiment.yaml quality gap_factor=1.5 fixed windows, combined strict eligibility",
+  "caveat": "Existing preliminary metrics were produced before the user stop; not final evidence",
+  "files_sha256": {
+    "data/processed/window_features_10.csv": "a571b4189cf3d4406607d441c0b9fa9dcc8fbf891449e479ee4974555b586075",
+    "data/processed/window_features_20.csv": "714c87dbc914e74fd6134693e794ed78b366dc7e3db27fa9cdd482600be64d8c",
+    "data/processed/window_features_50.csv": "9d0d8df36f4bc6c6e863ed06deee821dba6f3de1076ece94968e1944e7c0da7b",
+    "data/splits/membership_10.csv": "70d36ec785dfec159fefff86bcc3aaa9e51eeac3b0350632c38e04ab65163f52",
+    "data/splits/membership_20.csv": "41b734b5c4bb9c70394358008b3cf68b34146b0f27aad4507d3f4e6bdac44c69",
+    "data/splits/membership_50.csv": "0f33563d16d8d6d0da524a7c6935d9b4dcd786706d33e02085247735b51f5de3",
+    "data/splits/split_manifest.json": "18157601cded40981d8f31250a04ef23c17e07f7cc9a14b7cc4a9bf4070f60b9",
+    "results/metrics/model_comparison.csv": "5177d822c28b7dcc2871f0a8b0583e86680d682eab16d0162a119b02a423ebe8",
+    "results/metrics/feature_ablation.csv": "608a5e4b6ea1b48f4cfea5bbad683d6edb6f547590a842400bbc3a68fdb3148b",
+    "models/selection_manifest.json": "bc59029d838448a4f22ef141d20113b89fb700384aa73d80fb57bb8766d2602f",
+    "results/ml_manifest.json": "24ef327ee1b97893e2ac89f894d37108253a1992de43b8122e5e31cf398ea690",
+    "results/temporal_fusion/calibration.json": "99c984d2543728c2209443a2e38a5651e3666daae273e961d0798b5c25195653",
+    "results/temporal_fusion/fusion_comparison.csv": "f3dbbe433ee644e75ea86490c2992f154773fe9a99e426ad74af0ad236ec6692",
+    "results/temporal_fusion/fusion_predictions.csv": "822da3c1d855faac6e9eab7486b06e7e59417126f52301c54fa2a9d76e149125",
+    "results/temporal_fusion/latency.json": "f1649de31fa07cc95493c79d7e4e2bca01541e070b7e46d291d04dfb06e8aea9",
+    "results/temporal_fusion/mahalanobis_trace.csv": "fff51528b3306dd6beadc24b7265d85d5a590549128d36c2074b3eec8ba108ae",
+    "results/temporal_fusion/overhead.json": "c04c115b445655540aa96e5a2409a25e6103886774edbfe45803a8e72aa0a6e5",
+    "results/temporal_fusion/standardized_euclidean_trace.csv": "621b195fe8b01b61a6d206b815e7aa0ae96906a85b1116bd2362e04e311025b6",
+    "results/temporal_fusion/temporal_comparison.csv": "ca595c8afa0106edbf89296fee6f496626011c483b2fe2927369c260c61d3892",
+    "results/temporal_fusion/verification.json": "a0f41f9110dab58f4a872cb98b4341fdac50983d23ac0fce12403699455fbcd4"
+  }
+}

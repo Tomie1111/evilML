@@ -1,0 +1,1390 @@
+{
+  "timestamp_utc": "2026-10-30T09:18:18.137226+00:00",
+  "random_seed": 42,
+  "versions": {
+    "python": "3.14.7",
+    "external": "TShark (Wireshark) 4.6.9 (v4.6.9-0-g2d548b197c75).",
+    "python_dependencies": "stdlib only"
+  },
+  "scope": "Full file inventory; direct packet-level audit of Evil_Twin and Rogue_AP only",
+  "labeled_beacons": 19407,
+  "attack_label_rows": 105661,
+  "pcaps": [
+    {
+      "pcap": "pcaps/1. Deauth.pcap",
+      "total_frames": 1626472,
+      "bytes": 696750712,
+      "first_epoch": "1608306178.482600",
+      "last_epoch": "1608306780.954633",
+      "sha256": "5959e9b0ddcbf98f26f7d9ef8598f9f390ba861d57f6bccb34a8213c38009d76",
+      "encapsulation": "ieee-802-11-radiotap",
+      "strict_time_order": "True",
+      "warnings": "** (capinfos:50319) 16:14:08.279431 [GLib CRITICAL] -- g_str_has_prefix: assertion 'str != NULL' failed",
+      "beacon_count": "",
+      "beacon_count_status": "not inspected",
+      "exact_filter_match_count": "",
+      "role": "original_capture"
+    },
+    {
+      "pcap": "pcaps/10. Malware.pcap",
+      "total_frames": 2312782,
+      "bytes": 1318660915,
+      "first_epoch": "1608038392.903835",
+      "last_epoch": "1608039025.095465",
+      "sha256": "d3946e2e64b535922a8907aba6092855a30c6aaaa68827771d1fcd9c7103d54a",
+      "encapsulation": "ieee-802-11-radiotap",
+      "strict_time_order": "True",
+      "warnings": "** (capinfos:50363) 16:14:11.445591 [GLib CRITICAL] -- g_str_has_prefix: assertion 'str != NULL' failed",
+      "beacon_count": "",
+      "beacon_count_status": "not inspected",
+      "exact_filter_match_count": "",
+      "role": "original_capture"
+    },
+    {
+      "pcap": "pcaps/11. SSDP.pcap",
+      "total_frames": 8141523,
+      "bytes": 2490578874,
+      "first_epoch": "1607885532.299324",
+      "last_epoch": "1607886174.522241",
+      "sha256": "10f61548295228c9a725bdb6a9f64763f220dfa8dbb56d63fe089f99396632c1",
+      "encapsulation": "ieee-802-11-radiotap",
+      "strict_time_order": "True",
+      "warnings": "** (capinfos:50424) 16:14:17.768508 [GLib CRITICAL] -- g_str_has_prefix: assertion 'str != NULL' failed",
+      "beacon_count": "",
+      "beacon_count_status": "not inspected",
+      "exact_filter_match_count": "",
+      "role": "original_capture"
+    },
+    {
+      "pcap": "pcaps/12. Botnet.pcap",
+      "total_frames": 3326083,
+      "bytes": 1668750278,
+      "first_epoch": "1607886698.347024",
+      "last_epoch": "1607887479.937528",
+      "sha256": "80835d2aaf97b8efd96e753f1f2a8eac83d746644d7f7065aa8b45f6fa147602",
+      "encapsulation": "ieee-802-11-radiotap",
+      "strict_time_order": "True",
+      "warnings": "** (capinfos:50535) 16:14:29.543509 [GLib CRITICAL] -- g_str_has_prefix: assertion 'str != NULL' failed",
+      "beacon_count": "",
+      "beacon_count_status": "not inspected",
+      "exact_filter_match_count": "",
+      "role": "original_capture"
+    },
+    {
+      "pcap": "pcaps/13. Website_spoofing.pcap",
+      "total_frames": 2668583,
+      "bytes": 1025086742,
+      "first_epoch": "1608060428.153078",
+      "last_epoch": "1608061049.913511",
+      "sha256": "fc7f460cfba9d60370a2449ebf2a541caa018171fff8fa09e83b0ed11ccecbd1",
+      "encapsulation": "ieee-802-11-radiotap",
+      "strict_time_order": "True",
+      "warnings": "** (capinfos:50616) 16:14:37.180552 [GLib CRITICAL] -- g_str_has_prefix: assertion 'str != NULL' failed",
+      "beacon_count": "",
+      "beacon_count_status": "not inspected",
+      "exact_filter_match_count": "",
+      "role": "original_capture"
+    },
+    {
+      "pcap": "pcaps/2. Disass.pcap",
+      "total_frames": 2013719,
+      "bytes": 838616598,
+      "first_epoch": "1608309677.261606",
+      "last_epoch": "1608310280.931902",
+      "sha256": "7eb284571500c1d2ef5c19f4b13804cf483282e8fd1b7fbc2df7f29d0b449d8d",
+      "encapsulation": "ieee-802-11-radiotap",
+      "strict_time_order": "True",
+      "warnings": "** (capinfos:50657) 16:14:41.905028 [GLib CRITICAL] -- g_str_has_prefix: assertion 'str != NULL' failed",
+      "beacon_count": "",
+      "beacon_count_status": "not inspected",
+      "exact_filter_match_count": "",
+      "role": "original_capture"
+    },
+    {
+      "pcap": "pcaps/3. (Re)Assoc.pcap",
+      "total_frames": 1843939,
+      "bytes": 955103301,
+      "first_epoch": "1608311352.039260",
+      "last_epoch": "1608311960.537486",
+      "sha256": "7b22af84e85b5dd4de67fcdf3c4898f89f570388e33a7aa4d5a4ee40376dcfc4",
+      "encapsulation": "ieee-802-11-radiotap",
+      "strict_time_order": "True",
+      "warnings": "** (capinfos:50698) 16:14:45.627706 [GLib CRITICAL] -- g_str_has_prefix: assertion 'str != NULL' failed",
+      "beacon_count": "",
+      "beacon_count_status": "not inspected",
+      "exact_filter_match_count": "",
+      "role": "original_capture"
+    },
+    {
+      "pcap": "pcaps/4. Rogue_AP.pcap",
+      "total_frames": 1973193,
+      "bytes": 869167299,
+      "first_epoch": "1608316401.972863",
+      "last_epoch": "1608317005.520731",
+      "sha256": "0030f04020517fc8c2e2e86eea162cbcf03be2ae1f785383062ca68700b3ccfe",
+      "encapsulation": "ieee-802-11-radiotap",
+      "strict_time_order": "True",
+      "warnings": "** (capinfos:50739) 16:14:50.029639 [GLib CRITICAL] -- g_str_has_prefix: assertion 'str != NULL' failed",
+      "beacon_count": 6946,
+      "beacon_count_status": "full direct PCAP extraction",
+      "exact_filter_match_count": 1310,
+      "role": "original_capture"
+    },
+    {
+      "pcap": "pcaps/5. Krack.pcap",
+      "total_frames": 1438493,
+      "bytes": 977962836,
+      "first_epoch": "1607629972.928242",
+      "last_epoch": "1607630604.029573",
+      "sha256": "95faf4ccc96870f21dcd9b90f5a2860953882a162879aa6f1669f8b0a16f93e3",
+      "encapsulation": "ieee-802-11-radiotap",
+      "strict_time_order": "True",
+      "warnings": "** (capinfos:50780) 16:14:54.018286 [GLib CRITICAL] -- g_str_has_prefix: assertion 'str != NULL' failed",
+      "beacon_count": "",
+      "beacon_count_status": "not inspected",
+      "exact_filter_match_count": "",
+      "role": "original_capture"
+    },
+    {
+      "pcap": "pcaps/6. Kr00k.pcap",
+      "total_frames": 2900458,
+      "bytes": 1329893905,
+      "first_epoch": "1609008998.824473",
+      "last_epoch": "1609009601.212053",
+      "sha256": "fa42ebb445209f2c86e1bac92957b15967b23d6099dec955fbbc00932be1f352",
+      "encapsulation": "ieee-802-11-radiotap",
+      "strict_time_order": "True",
+      "warnings": "** (capinfos:50826) 16:14:58.602815 [GLib CRITICAL] -- g_str_has_prefix: assertion 'str != NULL' failed",
+      "beacon_count": "",
+      "beacon_count_status": "not inspected",
+      "exact_filter_match_count": "",
+      "role": "original_capture"
+    },
+    {
+      "pcap": "pcaps/7. Evil_Twin.pcap",
+      "total_frames": 3778728,
+      "bytes": 2015353647,
+      "first_epoch": "1608065662.005638",
+      "last_epoch": "1608066564.824491",
+      "sha256": "a3fbdf8368d7ced383829540d2dd624073847c60411fa3934ea647446bda43a8",
+      "encapsulation": "ieee-802-11-radiotap",
+      "strict_time_order": "True",
+      "warnings": "** (capinfos:50893) 16:15:04.650585 [GLib CRITICAL] -- g_str_has_prefix: assertion 'str != NULL' failed",
+      "beacon_count": 12461,
+      "beacon_count_status": "full direct PCAP extraction",
+      "exact_filter_match_count": 104351,
+      "role": "original_capture"
+    },
+    {
+      "pcap": "pcaps/8. SQL_Injection.pcap",
+      "total_frames": 2598365,
+      "bytes": 1468226646,
+      "first_epoch": "1608651417.628379",
+      "last_epoch": "1608652021.321667",
+      "sha256": "c6e85c42dd01a7696eef97fab5320fc4536ca13a5211b47e73d7509667cda6bf",
+      "encapsulation": "ieee-802-11-radiotap",
+      "strict_time_order": "True",
+      "warnings": "** (capinfos:50974) 16:15:13.619260 [GLib CRITICAL] -- g_str_has_prefix: assertion 'str != NULL' failed",
+      "beacon_count": "",
+      "beacon_count_status": "not inspected",
+      "exact_filter_match_count": "",
+      "role": "original_capture"
+    },
+    {
+      "pcap": "pcaps/9. SSH.pcap",
+      "total_frames": 2440588,
+      "bytes": 1131910532,
+      "first_epoch": "1608064691.852032",
+      "last_epoch": "1608065322.892831",
+      "sha256": "327ff4d246c4d4415b9716175708919244c594afa868c8ac64a16463d4d67c04",
+      "encapsulation": "ieee-802-11-radiotap",
+      "strict_time_order": "True",
+      "warnings": "** (capinfos:51037) 16:15:20.127868 [GLib CRITICAL] -- g_str_has_prefix: assertion 'str != NULL' failed",
+      "beacon_count": "",
+      "beacon_count_status": "not inspected",
+      "exact_filter_match_count": "",
+      "role": "original_capture"
+    },
+    {
+      "pcap": "pcaps/AWID3_EvilTwin_Normal_Beacons.pcapng",
+      "total_frames": 8685,
+      "bytes": 3265668,
+      "first_epoch": "1608065662.005638",
+      "last_epoch": "1608066564.778781",
+      "sha256": "296e1884078e7ad0b2da236adc88d47b7320eb2082ae4fc569f64d059e96ad88",
+      "encapsulation": "ieee-802-11-radiotap",
+      "strict_time_order": "True",
+      "warnings": "** (capinfos:51080) 16:15:25.198936 [GLib CRITICAL] -- g_str_has_prefix: assertion 'str != NULL' failed",
+      "beacon_count": "",
+      "beacon_count_status": "not inspected",
+      "exact_filter_match_count": "",
+      "role": "derived_subset_do_not_treat_as_independent_session"
+    }
+  ],
+  "csv_schemas": [
+    {
+      "path": "pcaps/AWID3_EvilTwin_Normal_Beacons.csv",
+      "sha256": "7d90a7dea2939e29605974f4ea981985ac7c8ad94e7d8710931613801877eefc",
+      "rows": 8685,
+      "columns": [
+        {
+          "name": "original_frame_number",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "frame_time_epoch",
+          "inferred_type": "decimal",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "frame_len",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "bssid",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "ssid_hex",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "ap_tsf",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "beacon_interval_tu",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "capabilities",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "sequence_number",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "radiotap_rssi_dbm",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "radiotap_channel_freq",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "capture_scenario_label",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "beacon_role_label",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "label_provenance",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        }
+      ],
+      "duplicate_capture_frame_keys": null,
+      "duplicate_scope": "no capture-keyed frame schema; not a frame table or capture inferred separately",
+      "unique_values": {
+        "bssid": [
+          "0c:9d:92:54:fe:34"
+        ],
+        "ssid_hex": [
+          "415355535f3547"
+        ],
+        "beacon_role_label": [
+          "NORMAL"
+        ]
+      }
+    },
+    {
+      "path": "pcaps/Evil_Twin_beacons.csv",
+      "sha256": "5752b15ecf7656ed074479a8e6ad54ecf8f8ddc3bc21b9f022188785f0394b4a",
+      "rows": 12461,
+      "columns": [
+        {
+          "name": "frame.number",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "frame.time_epoch",
+          "inferred_type": "decimal",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "wlan.bssid",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "wlan.ssid",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "wlan.fixed.timestamp",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "wlan.fixed.beacon",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "wlan.fixed.capabilities",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "wlan.seq",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "radiotap.dbm_antsignal",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "radiotap.channel.freq",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        }
+      ],
+      "duplicate_capture_frame_keys": null,
+      "duplicate_scope": "no capture-keyed frame schema; not a frame table or capture inferred separately",
+      "unique_values": {
+        "wlan.bssid": [
+          "0c:9d:92:54:fe:34",
+          "0c:9d:92:54:fe:35"
+        ],
+        "wlan.ssid": [
+          "415355535f3547"
+        ]
+      }
+    },
+    {
+      "path": "pcaps/Evil_Twin_official_filter_streams.csv",
+      "sha256": "c15214ac1f59886ca7355b4e5c2bd6c88c990752321b722736b20468acce5f19",
+      "rows": 2,
+      "columns": [
+        {
+          "name": "bssid",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "capabilities",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "filter_matched_beacons",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        }
+      ],
+      "duplicate_capture_frame_keys": null,
+      "duplicate_scope": "no capture-keyed frame schema; not a frame table or capture inferred separately",
+      "unique_values": {
+        "bssid": [
+          "0c:9d:92:54:fe:35"
+        ]
+      }
+    },
+    {
+      "path": "pcaps/Rogue_AP.csv",
+      "sha256": "70dded3133da352271cdc65ab7bb5ccdce4c74d5cca50262cf76c32299701c39",
+      "rows": 6944,
+      "columns": [
+        {
+          "name": "frame.number",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "frame.time_epoch",
+          "inferred_type": "decimal",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "wlan.bssid",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "wlan.ssid",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "wlan.fixed.timestamp",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "wlan.fixed.beacon",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "wlan.fixed.capabilities",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "wlan.seq",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "radiotap.dbm_antsignal",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "radiotap.channel.freq",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        }
+      ],
+      "duplicate_capture_frame_keys": null,
+      "duplicate_scope": "no capture-keyed frame schema; not a frame table or capture inferred separately",
+      "unique_values": {
+        "wlan.bssid": [
+          "0c:9d:92:54:fe:34"
+        ],
+        "wlan.ssid": [
+          "415355535f3547"
+        ]
+      }
+    },
+    {
+      "path": "pcaps/Rogue_AP_beacon_details.csv",
+      "sha256": "af95589327e81c24169e5063c8b73c8c9c9ce2497b18a8cb70a63d131500d8ae",
+      "rows": 6944,
+      "columns": [
+        {
+          "name": "frame.number",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "frame.time_epoch",
+          "inferred_type": "decimal",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "wlan.ta",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "wlan.sa",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "wlan.bssid",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "wlan.seq",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "wlan.fc.retry",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "wlan.fixed.timestamp",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "wlan.fixed.capabilities",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "wlan.ssid",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "radiotap.dbm_antsignal",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "radiotap.channel.freq",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        }
+      ],
+      "duplicate_capture_frame_keys": null,
+      "duplicate_scope": "no capture-keyed frame schema; not a frame table or capture inferred separately",
+      "unique_values": {
+        "wlan.bssid": [
+          "0c:9d:92:54:fe:34"
+        ],
+        "wlan.ssid": [
+          "415355535f3547"
+        ]
+      }
+    },
+    {
+      "path": "pcaps/Rogue_AP_official_filter_streams.csv",
+      "sha256": "92f5130cbd822ce2c9f9c46f443b338747b7cc8af7b4978e8ce26154f4a06495",
+      "rows": 1,
+      "columns": [
+        {
+          "name": "bssid",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "capabilities",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "filter_matched_beacons",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        }
+      ],
+      "duplicate_capture_frame_keys": null,
+      "duplicate_scope": "no capture-keyed frame schema; not a frame table or capture inferred separately",
+      "unique_values": {
+        "bssid": [
+          "0c:9d:92:54:fe:34"
+        ]
+      }
+    },
+    {
+      "path": "pcaps/attack_frame_labels.csv",
+      "sha256": "7b40d318a56511dbecb454ba0a21726603637d8f525b30d22f042c1a0a576ff8",
+      "rows": 105661,
+      "columns": [
+        {
+          "name": "pcap",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "frame_number",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "attack_related_label",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "frame_time_epoch",
+          "inferred_type": "decimal",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "frame_len",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "wlan_fc_type_subtype",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "wlan_bssid",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 2,
+          "missing_fraction": 1.8928459885861386e-05
+        },
+        {
+          "name": "wlan_capabilities",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 100640,
+          "missing_fraction": 0.9524801014565449
+        }
+      ],
+      "duplicate_capture_frame_keys": 0,
+      "duplicate_scope": "capture+original frame",
+      "unique_values": {
+        "attack_related_label": [
+          "Evil_Twin",
+          "Rogue_AP"
+        ]
+      }
+    },
+    {
+      "path": "pcaps/attack_label_stream_summary.csv",
+      "sha256": "f6b567ebd6e48c22bbc681a2cae94a1ac4a16fe9dd600122baa53389e2a5606a",
+      "rows": 5,
+      "columns": [
+        {
+          "name": "attack_label",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "bssid",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "capabilities",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "ssid_hex",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "beacons_in_official_frame_range",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "filter_matched_beacons",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "filter_match_fraction",
+          "inferred_type": "decimal",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "unmatched_status",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        }
+      ],
+      "duplicate_capture_frame_keys": null,
+      "duplicate_scope": "no capture-keyed frame schema; not a frame table or capture inferred separately",
+      "unique_values": {
+        "bssid": [
+          "0c:9d:92:54:fe:34",
+          "0c:9d:92:54:fe:35"
+        ],
+        "ssid_hex": [
+          "415355535f3547"
+        ]
+      }
+    },
+    {
+      "path": "pcaps/attack_label_window_summary.csv",
+      "sha256": "8db516b152a5a50f2ca51dbb3d145e2a9076bad6b35fcbf39dfba442466f5b7c",
+      "rows": 6,
+      "columns": [
+        {
+          "name": "attack_label",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "window_seconds",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "windows_with_filter_matches",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "windows_in_first_to_last_match_span",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "windows_without_filter_match_unknown",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "first_match_epoch",
+          "inferred_type": "decimal",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "last_match_epoch",
+          "inferred_type": "decimal",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        }
+      ],
+      "duplicate_capture_frame_keys": null,
+      "duplicate_scope": "no capture-keyed frame schema; not a frame table or capture inferred separately",
+      "unique_values": {}
+    },
+    {
+      "path": "pcaps/labeled_beacon_stream_summary.csv",
+      "sha256": "055fd05102e09a5d3e325029d09e853a3063c37183ee977b13befc075977b907",
+      "rows": 7,
+      "columns": [
+        {
+          "name": "pcap",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "capture_label",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "candidate_stream_id",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "beacon_role_label",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "bssid",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "capabilities",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 2,
+          "missing_fraction": 0.2857142857142857
+        },
+        {
+          "name": "ssid_hex",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 2,
+          "missing_fraction": 0.2857142857142857
+        },
+        {
+          "name": "beacon_count",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "filter_matched_beacons",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "first_frame_number",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "last_frame_number",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "first_time_epoch",
+          "inferred_type": "decimal",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "last_time_epoch",
+          "inferred_type": "decimal",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "beacon_interval_tu",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 2,
+          "missing_fraction": 0.2857142857142857
+        },
+        {
+          "name": "channel_frequency_mhz",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "beacons_with_rsn_ie",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "beacons_without_rsn_ie",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "observed_profile_note",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 5,
+          "missing_fraction": 0.7142857142857143
+        }
+      ],
+      "duplicate_capture_frame_keys": null,
+      "duplicate_scope": "no capture-keyed frame schema; not a frame table or capture inferred separately",
+      "unique_values": {
+        "beacon_role_label": [
+          "EVIL_TWIN",
+          "NORMAL",
+          "unknown"
+        ],
+        "bssid": [
+          "00:0c:29:cf:08:aa",
+          "00:0c:29:cf:08:eb",
+          "0c:9d:92:54:fe:34",
+          "0c:9d:92:54:fe:35"
+        ],
+        "ssid_hex": [
+          "",
+          "415355535f3547"
+        ]
+      }
+    },
+    {
+      "path": "pcaps/labeled_beacons.csv",
+      "sha256": "5238cd48e5a80556dc591279ff5a3ed941dd9c005250c79da6a5b11b44d2a1e0",
+      "rows": 19407,
+      "columns": [
+        {
+          "name": "pcap",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "capture_label",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "frame_number",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "frame_time_epoch",
+          "inferred_type": "decimal",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "frame_len",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "bssid",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "ssid_hex",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 2,
+          "missing_fraction": 0.00010305559849538827
+        },
+        {
+          "name": "tsf",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 2,
+          "missing_fraction": 0.00010305559849538827
+        },
+        {
+          "name": "beacon_interval_tu",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 2,
+          "missing_fraction": 0.00010305559849538827
+        },
+        {
+          "name": "capabilities",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 2,
+          "missing_fraction": 0.00010305559849538827
+        },
+        {
+          "name": "sequence_number",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "ie_tag_ids",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 2,
+          "missing_fraction": 0.00010305559849538827
+        },
+        {
+          "name": "rsn_version",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 1851,
+          "missing_fraction": 0.09537795640748184
+        },
+        {
+          "name": "radiotap_rssi_dbm",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "radiotap_channel_freq",
+          "inferred_type": "integer",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "attack_related_label",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "attack_label_status",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "attack_label_source",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 14386,
+          "missing_fraction": 0.7412789199773278
+        },
+        {
+          "name": "beacon_role_label",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "beacon_role_source",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 6946,
+          "missing_fraction": 0.35791209357448345
+        },
+        {
+          "name": "candidate_stream_id",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 0,
+          "missing_fraction": 0.0
+        },
+        {
+          "name": "observed_profile_note",
+          "inferred_type": "string",
+          "storage": "string; preserve integer/Decimal timestamps",
+          "missing": 15631,
+          "missing_fraction": 0.8054310300407069
+        }
+      ],
+      "duplicate_capture_frame_keys": 0,
+      "duplicate_scope": "capture+original frame",
+      "unique_values": {
+        "bssid": [
+          "00:0c:29:cf:08:aa",
+          "00:0c:29:cf:08:eb",
+          "0c:9d:92:54:fe:34",
+          "0c:9d:92:54:fe:35"
+        ],
+        "ssid_hex": [
+          "",
+          "415355535f3547"
+        ],
+        "attack_related_label": [
+          "Evil_Twin",
+          "Rogue_AP",
+          "unknown"
+        ],
+        "attack_label_status": [
+          "matched_filter_label",
+          "not_selected_by_filter"
+        ],
+        "beacon_role_label": [
+          "EVIL_TWIN",
+          "NORMAL",
+          "unknown"
+        ]
+      }
+    }
+  ],
+  "checks": {
+    "duplicate_labeled_keys": 0,
+    "duplicate_attack_label_keys": 0,
+    "existing_label_join_mismatches": 0,
+    "pcap_beacon_mismatches": 0,
+    "pcap_official_filter_mismatches": 0,
+    "raw_csv_mismatches": 2,
+    "every_labeled_capture_inspected": true,
+    "scenario_annotations_consistent": true,
+    "attack_scenario_labels_consistent": true
+  },
+  "training_gate": {
+    "supervised_training_allowed": false,
+    "integrity_checks_passed": false,
+    "identity_counts": {
+      "verified_legitimate": 0,
+      "verified_evil_twin": 0,
+      "candidate_legitimate": 8685,
+      "candidate_evil_twin": 3776,
+      "unknown": 6946
+    },
+    "author_documented_candidate_roles_exist": true,
+    "blockers": [
+      "Resolve input/PCAP consistency failures",
+      "Approve the proposed author-documented dataset-role protocol, or supply independent device/session evidence"
+    ],
+    "independent_unseen_ap_evaluation_supported": false,
+    "normal_class_fpr_on_independently_verified_identity_supported": false,
+    "note": "Candidate roles are not automatically promoted. This audit does not train any classifier."
+  },
+  "unique_bssids": [
+    "00:0c:29:cf:08:aa",
+    "00:0c:29:cf:08:eb",
+    "0c:9d:92:54:fe:34",
+    "0c:9d:92:54:fe:35"
+  ],
+  "unique_ssid_hex": [
+    "",
+    "415355535f3547"
+  ],
+  "radiotap_fields_observed": {
+    "radiotap.dbm_antsignal": 19407,
+    "radiotap.channel.freq": 19407,
+    "radiotap.mactime": 19405,
+    "radiotap.antenna": 19407,
+    "radiotap.dbm_antnoise": 0
+  },
+  "tsf_fields_observed": {
+    "wlan.fixed.timestamp": 19405,
+    "radiotap.mactime": 19405
+  },
+  "flagged_beacon_records": 2,
+  "independent_labeled_evil_twin_sessions": 0,
+  "candidate_evil_twin_captures": 1,
+  "source_evidence": {
+    "id": "awid3-author-evil-twin",
+    "review_date": "2026-10-30",
+    "doi": "10.1109/ACCESS.2021.3061609",
+    "source_url": "https://www.researchgate.net/publication/349539294_Empirical_Evaluation_of_Attacks_Against_IEEE_80211_Enterprise_Networks_The_AWID3_Dataset",
+    "section": "III-B, Evil_Twin; published page 34196; footnote 8",
+    "access_method": "Author paper full text rendered by web tool; Evil_Twin section inspected, not search snippet alone.",
+    "supported_statement": "Authors describe the rogue AP using the legitimate AP's channel and SSID, with MAC ending in 5 instead of 4. The second implementation uses the same AP configuration. Footnote 8 explains that matching MAC addresses were avoided.",
+    "exact_full_bssid_anchor": "Local Read_me.txt Evil_Twin filter specifies wlan.addr == 0c:9d:92:54:fe:35. This is a filter anchor, not independent transmitter authentication.",
+    "inference": "Combining the author suffix description, local filter, and observed CSV roles supports the proposed capture-specific .fe:34/.fe:35 dataset-role mapping.",
+    "scope": "Author-documented dataset role; not independent per-device identity or attack-success verification.",
+    "original_pdf_url": "https://icsdweb.aegean.gr/awid/Empirical-evaluation-of-attacks-against-IEEE-802.11-enterprise-networks-The-AWID3-dataset.pdf",
+    "original_pdf_access": "404 during review",
+    "independent_device_logs_available": false,
+    "protocol_approval": null
+  },
+  "config": {
+    "schema_version": 1,
+    "random_seed": 42,
+    "dataset_root": "../../..",
+    "pcap_directory": "pcaps",
+    "labeled_csv": "pcaps/labeled_beacons.csv",
+    "attack_labels_csv": "pcaps/attack_frame_labels.csv",
+    "readme": "Read_me.txt",
+    "role_builder": "build_labeled_beacons.py",
+    "prior_windows": "evilML/time_shield/results/windows.csv",
+    "tshark": null,
+    "capinfos": null,
+    "captures": [
+      {
+        "scenario": "Evil_Twin",
+        "pcap": "pcaps/7. Evil_Twin.pcap",
+        "raw_csv": "pcaps/Evil_Twin_beacons.csv"
+      },
+      {
+        "scenario": "Rogue_AP",
+        "pcap": "pcaps/4. Rogue_AP.pcap",
+        "raw_csv": "pcaps/Rogue_AP.csv"
+      }
+    ],
+    "identity_evidence": "identity_evidence.json",
+    "label_policy": {
+      "id": "awid3-author-role-v1-proposed",
+      "approval": null,
+      "verified_definition": "Independent device/event evidence bound to this capture; CSV consistency alone does not qualify.",
+      "candidate_definition": "Role consistent with author testbed description and legacy annotation; physical identity not independently verified.",
+      "mappings": [
+        {
+          "pcap": "pcaps/7. Evil_Twin.pcap",
+          "bssid": "0c:9d:92:54:fe:34",
+          "legacy_role": "NORMAL",
+          "status": "candidate_legitimate",
+          "evidence_id": "awid3-author-evil-twin"
+        },
+        {
+          "pcap": "pcaps/7. Evil_Twin.pcap",
+          "bssid": "0c:9d:92:54:fe:35",
+          "legacy_role": "EVIL_TWIN",
+          "status": "candidate_evil_twin",
+          "evidence_id": "awid3-author-evil-twin"
+        }
+      ]
+    },
+    "planned_windows": [
+      10,
+      20,
+      50
+    ],
+    "planned_quality": {
+      "gap_factor": 1.5,
+      "reject_tsf_reset": true
+    },
+    "planned_split": "Chronological preliminary development only; validate class support before training. No independent AP test session available."
+  },
+  "inputs": {
+    "pcaps/labeled_beacons.csv": "5238cd48e5a80556dc591279ff5a3ed941dd9c005250c79da6a5b11b44d2a1e0",
+    "pcaps/attack_frame_labels.csv": "7b40d318a56511dbecb454ba0a21726603637d8f525b30d22f042c1a0a576ff8",
+    "Read_me.txt": "8673716cae16c0636db07f365b9dad40be614a0401a394b28c8f94500f4b6218",
+    "build_labeled_beacons.py": "be5eb56b36ad2a0411b3528827c0d4f79c53bcb6bfdacee90ba06f9336e143a8",
+    "evilML/time_shield/results/windows.csv": "fbc55c4b62fa6d75141adecb499590695bf13d4d2ea5572d5252c029ac100da7"
+  },
+  "code_sha256": {
+    "__init__.py": "2053e63e2f17565a3d59dd71e39fe57efb3a9e6ee075ff6c5bef2cd8efdeff90",
+    "common.py": "18b85050d1f1a55d38c3fa1757459405440d3278ffabca16a0b8b91a8c1f376e",
+    "dataset_audit.py": "87fd2b0112bfa2d7d8b4c9a57f6e22301b35819d3c93af3336dbb5864481b4be",
+    "feature_extraction.py": "038c00d119fdc75013360b28e40dbe6328ffdb7609cde4468ea1db5623c75c73",
+    "label_validation.py": "bef63a6fd05966c0238697b08b47478387cb5f1212ca126f05ca3f80966d490c",
+    "pcap_tools.py": "2adc6a1f425ece4eac36cdba2653901f09412338458ff9f7dd52c29cc3b69046",
+    "preprocessing.py": "77419b6e18e034744e69ce671f2c943e72cf4827ab219c8ecc82a005e3827655"
+  },
+  "config_sha256": "bc4d1708dce30fd80a5faecaf290fdd59b62fa78dec6babd47b9d887842909c7",
+  "evidence_sha256": "0905993289d131294d1ec0c525cc2eb7485f2f02290f4becd9f6e1e70f0b9631",
+  "extraction_manifest_sha256": "6eb560accfb53d362aa883cce0877c0ae11e45aecf442a196766eff440e923ea",
+  "pcap_hash_scope": "Full SHA256 computed at extraction time by capinfos; immutable source assumption between extraction and audit",
+  "experiments": {
+    "models_trained": 0,
+    "window_sets_built": 0,
+    "metrics_computed": 0,
+    "synthetic_records": 0,
+    "baseline_refit": false
+  }
+}

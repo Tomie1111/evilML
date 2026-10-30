@@ -1,0 +1,45 @@
+{
+  "model": "/Users/pannawatthawonwong/Downloads/AWID3_Dataset/evilML/evil-twin-detection/models/preliminary_non_temporal_v1/n10_decision_tree_configuration_radio_frame.joblib",
+  "model_size_bytes": 5602,
+  "eligibility_column": "ml_eligible",
+  "batch_size": 317,
+  "single_window": {
+    "repeats": 30,
+    "warmup": 5,
+    "median_ms": 1.921125,
+    "p95_ms": 2.0502019,
+    "cpu_seconds": 0.05907789599999999,
+    "cpu_percent_one_core_scale": 101.01224610535937,
+    "baseline_rss_mib": 163.96875,
+    "peak_rss_mib": 164.40625,
+    "rss_growth_mib": 0.4375,
+    "memory_sample_period_s": 0.002,
+    "elapsed_seconds": 0.058485875008045696,
+    "scope": "Warm inference incl preprocessing; sampled process RSS includes interpreter/libraries, not training peak"
+  },
+  "batch": {
+    "repeats": 30,
+    "warmup": 5,
+    "median_ms": 2.2642705,
+    "p95_ms": 2.39907515,
+    "cpu_seconds": 0.07004637600000005,
+    "cpu_percent_one_core_scale": 100.65912215452948,
+    "baseline_rss_mib": 164.765625,
+    "peak_rss_mib": 165.0,
+    "rss_growth_mib": 0.234375,
+    "memory_sample_period_s": 0.002,
+    "elapsed_seconds": 0.06958770799974445,
+    "scope": "Warm inference incl preprocessing; sampled process RSS includes interpreter/libraries, not training peak"
+  },
+  "batch_amortized_median_ms": 0.007142809148264984,
+  "platform": "macOS-15.7.9-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "cpu_logical": 8,
+  "physical_memory_bytes": 8589934592,
+  "model_n_jobs": null,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  }
+}

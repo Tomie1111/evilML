@@ -1,0 +1,9 @@
+shrinkage,method,threshold,percentile,calibration_windows,valid_smoothed_scores
+0.01,mahalanobis,7.339257788742586,99,104,72
+0.01,standardized_euclidean,7.300807400877844,99,104,72
+0.1,mahalanobis,7.334245195140204,99,104,72
+0.1,standardized_euclidean,7.300807400877844,99,104,72
+0.5,mahalanobis,7.315737385147832,99,104,72
+0.5,standardized_euclidean,7.300807400877844,99,104,72
+1.0,mahalanobis,7.300807400877844,99,104,72
+1.0,standardized_euclidean,7.300807400877844,99,104,72

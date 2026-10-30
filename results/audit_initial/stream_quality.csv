@@ -1,0 +1,8 @@
+pcap,bssid,capabilities,records,first_frame,last_frame,first_epoch,last_epoch,missing_tsf_or_interval,arrival_nonpositive,tsf_nonpositive,arrival_gaps,tsf_gaps,sequence_numeric_decreases,sequence_zero_increments,note
+pcaps/4. Rogue_AP.pcap,00:0c:29:cf:08:aa,,1,231295,231295,1608316619.996528000,1608316619.996528000,1,0,0,0,0,0,0,Numeric decreases may be wrap/reordering/reset; gap counts do not prove packet loss
+pcaps/4. Rogue_AP.pcap,00:0c:29:cf:08:eb,,1,211266,211266,1608316616.884126000,1608316616.884126000,1,0,0,0,0,0,0,Numeric decreases may be wrap/reordering/reset; gap counts do not prove packet loss
+pcaps/4. Rogue_AP.pcap,0c:9d:92:54:fe:34,0x0011,1310,1198551,1973111,1608316816.069170000,1608317005.511791000,0,0,0,251,251,15,0,Numeric decreases may be wrap/reordering/reset; gap counts do not prove packet loss
+pcaps/4. Rogue_AP.pcap,0c:9d:92:54:fe:34,0x1111,5634,1,1972411,1608316401.972863000,1608317005.428685000,0,0,0,243,243,3,0,Numeric decreases may be wrap/reordering/reset; gap counts do not prove packet loss
+pcaps/7. Evil_Twin.pcap,0c:9d:92:54:fe:34,0x1111,8685,1,3778637,1608065662.005638000,1608066564.778781000,0,0,0,127,127,4,0,Numeric decreases may be wrap/reordering/reset; gap counts do not prove packet loss
+pcaps/7. Evil_Twin.pcap,0c:9d:92:54:fe:35,0x0001,1849,1351181,2731272,1608066089.330485000,1608066321.575867000,0,0,0,320,320,0,0,Numeric decreases may be wrap/reordering/reset; gap counts do not prove packet loss
+pcaps/7. Evil_Twin.pcap,0c:9d:92:54:fe:35,0x0011,1927,2736921,3778728,1608066327.015370000,1608066564.824491000,0,0,1,282,281,1,0,Numeric decreases may be wrap/reordering/reset; gap counts do not prove packet loss

@@ -1,0 +1,6 @@
+pcap,legacy_role,identity_status,attack_label,attack_label_status,records
+pcaps/4. Rogue_AP.pcap,unknown,unknown,Rogue_AP,matched_filter_label,1310
+pcaps/4. Rogue_AP.pcap,unknown,unknown,unknown,not_selected_by_filter,5636
+pcaps/7. Evil_Twin.pcap,EVIL_TWIN,candidate_evil_twin,Evil_Twin,matched_filter_label,3711
+pcaps/7. Evil_Twin.pcap,EVIL_TWIN,candidate_evil_twin,unknown,not_selected_by_filter,65
+pcaps/7. Evil_Twin.pcap,NORMAL,candidate_legitimate,unknown,not_selected_by_filter,8685

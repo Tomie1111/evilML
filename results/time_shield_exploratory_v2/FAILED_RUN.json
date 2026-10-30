@@ -1,0 +1,7 @@
+{
+  "status": "failed_before_scoring_outputs",
+  "reason": "duplicate smoothed_distance keyword while combining EWMA and persistence state",
+  "retained_file": "enrollment_calibration_membership.csv",
+  "research_results_produced": false,
+  "replacement_output": "results/time_shield_exploratory_v2_1"
+}

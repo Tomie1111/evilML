@@ -1,0 +1,2 @@
+pcap,bssid,capabilities,previous_frame,current_frame,previous_epoch,current_epoch,previous_tsf_us,current_tsf_us,delta_arrival_ns,delta_tsf_us,interpretation
+pcaps/7. Evil_Twin.pcap,0c:9d:92:54:fe:35,0x0011,3292103,3317516,1608066446.927094000,1608066451.261631000,120012911,204835,4334537000,-119808076,Observed discontinuity; not independently verified reboot or attack onset

@@ -1,0 +1,14 @@
+{
+  "session_id": "REPLACE_WITH_UNIQUE_SESSION_ID",
+  "capture_path": "data/independent/captures/REPLACE.pcapng",
+  "capture_sha256": "REPLACE_WITH_64_HEX_SHA256",
+  "capture_start_epoch": "REPLACE_WITH_DECIMAL_UNIX_EPOCH",
+  "capture_end_epoch": "REPLACE_WITH_DECIMAL_UNIX_EPOCH",
+  "environment_id": "REPLACE_WITH_PSEUDONYMOUS_ENVIRONMENT_ID",
+  "receiver_id": "REPLACE_WITH_PSEUDONYMOUS_RECEIVER_ID",
+  "independent_from_development": true,
+  "authorized_testbed": true,
+  "evidence": [],
+  "devices": [],
+  "intervals": []
+}

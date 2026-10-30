@@ -1,0 +1,18 @@
+{
+  "id": "independent-evaluation-readiness-v1",
+  "registry": "data/independent/session_registry.json",
+  "frozen_selection_manifest": "models/preliminary_non_temporal_v1/selection_manifest.json",
+  "frozen_selection_manifest_sha256": "bcdb51cd92b38366420862b89940d1f762a66579cf8b83aaa9f20b68238c408b",
+  "development_capture_sha256s": [
+    "a3fbdf8368d7ced383829540d2dd624073847c60411fa3934ea647446bda43a8"
+  ],
+  "minimum_independent_sessions_per_class": 2,
+  "verified_roles": ["verified_legitimate", "verified_evil_twin"],
+  "allowed_evidence_types": ["device_inventory", "device_log", "event_log", "packet_injection_log", "synchronized_testbed_log"],
+  "allowed_scenarios": ["normal_operation", "receiver_movement", "ap_reboot", "ssid_clone", "ssid_bssid_clone", "configuration_clone"],
+  "countable_ground_truth_scope": "transmitter_identity",
+  "cloned_bssid_requires_frame_attribution": true,
+  "require_authorized_testbed": true,
+  "score_when_gate_fails": false,
+  "notes": "Readiness only. No session is inferred from AWID3 profiles, model output, BSSID, or attack filters."
+}

@@ -1,0 +1,26 @@
+{
+  "id": "non-temporal-exploratory-v1",
+  "declared_before_development_test_evaluation": true,
+  "scope": "preliminary same-capture evaluation; not final or independent-AP evidence",
+  "window_sizes": [10, 20],
+  "models": ["decision_tree", "random_forest", "logistic_regression"],
+  "primary_features": "configuration_radio_frame",
+  "ablations": {
+    "configuration_only": ["configuration"],
+    "radio_only": ["radio"],
+    "frame_only": ["frame"],
+    "configuration_radio": ["configuration", "radio"],
+    "configuration_frame": ["configuration", "frame"],
+    "radio_frame": ["radio", "frame"],
+    "configuration_radio_frame": ["configuration", "radio", "frame"],
+    "configuration_without_ie_radio_frame": ["configuration_without_ie", "radio", "frame"]
+  },
+  "ablation_model": "decision_tree",
+  "selection": "Fit train only; select hyperparameters by validation F1; freeze artifacts and manifest before development-test scoring",
+  "test": "One chronological development-test evaluation after selection; same original capture",
+  "threshold": 0.5,
+  "forbidden_claims": ["final model comparison", "unseen AP generalization", "independently verified FPR"],
+  "temporal_ablation": "not evaluated under this policy because temporal-invalid windows are retained and temporal values are masked",
+  "no_oversampling": true,
+  "no_smote": true
+}

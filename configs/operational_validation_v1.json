@@ -1,0 +1,18 @@
+{
+  "id": "operational-validation-v1",
+  "window_sizes": [10, 20, 50],
+  "gap_factors_descriptive_only": [1.5, 2.0, 3.0],
+  "primary_gap_factor": 1.5,
+  "covariance_shrinkage_sensitivity": [0.01, 0.1, 0.5, 1.0],
+  "primary_shrinkage": 0.1,
+  "beta": 0.3,
+  "K": 3,
+  "threshold": null,
+  "threshold_status": "blocked until verified enrollment and separate calibration observations exist",
+  "enrollment_role_required": "verified_legitimate",
+  "baseline_updates": false,
+  "fusion_engineering_low": 0.2,
+  "fusion_engineering_high": 0.8,
+  "fusion_threshold_scope": "fixed engineering fixtures only; not selected deployment thresholds",
+  "no_retraining": true
+}

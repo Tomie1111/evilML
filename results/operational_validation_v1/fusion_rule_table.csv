@@ -1,0 +1,121 @@
+score,temporal_status,baseline_available,ml_valid,temporal_valid,decision,scope
+0.1,STABLE,False,False,False,Pending,engineering truth table
+0.1,STABLE,False,False,True,Pending,engineering truth table
+0.1,STABLE,False,True,False,Pending,engineering truth table
+0.1,STABLE,False,True,True,Pending,engineering truth table
+0.1,STABLE,True,False,False,Pending,engineering truth table
+0.1,STABLE,True,False,True,Pending,engineering truth table
+0.1,STABLE,True,True,False,Pending,engineering truth table
+0.1,STABLE,True,True,True,Consistent with Trusted Baseline,engineering truth table
+0.1,DRIFT,False,False,False,Pending,engineering truth table
+0.1,DRIFT,False,False,True,Pending,engineering truth table
+0.1,DRIFT,False,True,False,Pending,engineering truth table
+0.1,DRIFT,False,True,True,Pending,engineering truth table
+0.1,DRIFT,True,False,False,Pending,engineering truth table
+0.1,DRIFT,True,False,True,Pending,engineering truth table
+0.1,DRIFT,True,True,False,Pending,engineering truth table
+0.1,DRIFT,True,True,True,Suspicious Trusted AP,engineering truth table
+0.1,UNAVAILABLE,False,False,False,Pending,engineering truth table
+0.1,UNAVAILABLE,False,False,True,Pending,engineering truth table
+0.1,UNAVAILABLE,False,True,False,Pending,engineering truth table
+0.1,UNAVAILABLE,False,True,True,Pending,engineering truth table
+0.1,UNAVAILABLE,True,False,False,Pending,engineering truth table
+0.1,UNAVAILABLE,True,False,True,Pending,engineering truth table
+0.1,UNAVAILABLE,True,True,False,Pending,engineering truth table
+0.1,UNAVAILABLE,True,True,True,Pending,engineering truth table
+0.2,STABLE,False,False,False,Pending,engineering truth table
+0.2,STABLE,False,False,True,Pending,engineering truth table
+0.2,STABLE,False,True,False,Pending,engineering truth table
+0.2,STABLE,False,True,True,Pending,engineering truth table
+0.2,STABLE,True,False,False,Pending,engineering truth table
+0.2,STABLE,True,False,True,Pending,engineering truth table
+0.2,STABLE,True,True,False,Pending,engineering truth table
+0.2,STABLE,True,True,True,Consistent with Trusted Baseline,engineering truth table
+0.2,DRIFT,False,False,False,Pending,engineering truth table
+0.2,DRIFT,False,False,True,Pending,engineering truth table
+0.2,DRIFT,False,True,False,Pending,engineering truth table
+0.2,DRIFT,False,True,True,Pending,engineering truth table
+0.2,DRIFT,True,False,False,Pending,engineering truth table
+0.2,DRIFT,True,False,True,Pending,engineering truth table
+0.2,DRIFT,True,True,False,Pending,engineering truth table
+0.2,DRIFT,True,True,True,Suspicious Trusted AP,engineering truth table
+0.2,UNAVAILABLE,False,False,False,Pending,engineering truth table
+0.2,UNAVAILABLE,False,False,True,Pending,engineering truth table
+0.2,UNAVAILABLE,False,True,False,Pending,engineering truth table
+0.2,UNAVAILABLE,False,True,True,Pending,engineering truth table
+0.2,UNAVAILABLE,True,False,False,Pending,engineering truth table
+0.2,UNAVAILABLE,True,False,True,Pending,engineering truth table
+0.2,UNAVAILABLE,True,True,False,Pending,engineering truth table
+0.2,UNAVAILABLE,True,True,True,Pending,engineering truth table
+0.5,STABLE,False,False,False,Pending,engineering truth table
+0.5,STABLE,False,False,True,Pending,engineering truth table
+0.5,STABLE,False,True,False,Pending,engineering truth table
+0.5,STABLE,False,True,True,Pending,engineering truth table
+0.5,STABLE,True,False,False,Pending,engineering truth table
+0.5,STABLE,True,False,True,Pending,engineering truth table
+0.5,STABLE,True,True,False,Pending,engineering truth table
+0.5,STABLE,True,True,True,Pending,engineering truth table
+0.5,DRIFT,False,False,False,Pending,engineering truth table
+0.5,DRIFT,False,False,True,Pending,engineering truth table
+0.5,DRIFT,False,True,False,Pending,engineering truth table
+0.5,DRIFT,False,True,True,Pending,engineering truth table
+0.5,DRIFT,True,False,False,Pending,engineering truth table
+0.5,DRIFT,True,False,True,Pending,engineering truth table
+0.5,DRIFT,True,True,False,Pending,engineering truth table
+0.5,DRIFT,True,True,True,Suspicious Trusted AP,engineering truth table
+0.5,UNAVAILABLE,False,False,False,Pending,engineering truth table
+0.5,UNAVAILABLE,False,False,True,Pending,engineering truth table
+0.5,UNAVAILABLE,False,True,False,Pending,engineering truth table
+0.5,UNAVAILABLE,False,True,True,Pending,engineering truth table
+0.5,UNAVAILABLE,True,False,False,Pending,engineering truth table
+0.5,UNAVAILABLE,True,False,True,Pending,engineering truth table
+0.5,UNAVAILABLE,True,True,False,Pending,engineering truth table
+0.5,UNAVAILABLE,True,True,True,Pending,engineering truth table
+0.8,STABLE,False,False,False,Pending,engineering truth table
+0.8,STABLE,False,False,True,Pending,engineering truth table
+0.8,STABLE,False,True,False,Evil Twin Suspected,engineering truth table
+0.8,STABLE,False,True,True,Evil Twin Suspected,engineering truth table
+0.8,STABLE,True,False,False,Pending,engineering truth table
+0.8,STABLE,True,False,True,Pending,engineering truth table
+0.8,STABLE,True,True,False,Evil Twin Suspected,engineering truth table
+0.8,STABLE,True,True,True,Evil Twin Suspected,engineering truth table
+0.8,DRIFT,False,False,False,Pending,engineering truth table
+0.8,DRIFT,False,False,True,Pending,engineering truth table
+0.8,DRIFT,False,True,False,Evil Twin Suspected,engineering truth table
+0.8,DRIFT,False,True,True,Evil Twin Suspected,engineering truth table
+0.8,DRIFT,True,False,False,Pending,engineering truth table
+0.8,DRIFT,True,False,True,Pending,engineering truth table
+0.8,DRIFT,True,True,False,Evil Twin Suspected,engineering truth table
+0.8,DRIFT,True,True,True,Evil Twin Suspected,engineering truth table
+0.8,UNAVAILABLE,False,False,False,Pending,engineering truth table
+0.8,UNAVAILABLE,False,False,True,Pending,engineering truth table
+0.8,UNAVAILABLE,False,True,False,Evil Twin Suspected,engineering truth table
+0.8,UNAVAILABLE,False,True,True,Evil Twin Suspected,engineering truth table
+0.8,UNAVAILABLE,True,False,False,Pending,engineering truth table
+0.8,UNAVAILABLE,True,False,True,Pending,engineering truth table
+0.8,UNAVAILABLE,True,True,False,Evil Twin Suspected,engineering truth table
+0.8,UNAVAILABLE,True,True,True,Evil Twin Suspected,engineering truth table
+0.9,STABLE,False,False,False,Pending,engineering truth table
+0.9,STABLE,False,False,True,Pending,engineering truth table
+0.9,STABLE,False,True,False,Evil Twin Suspected,engineering truth table
+0.9,STABLE,False,True,True,Evil Twin Suspected,engineering truth table
+0.9,STABLE,True,False,False,Pending,engineering truth table
+0.9,STABLE,True,False,True,Pending,engineering truth table
+0.9,STABLE,True,True,False,Evil Twin Suspected,engineering truth table
+0.9,STABLE,True,True,True,Evil Twin Suspected,engineering truth table
+0.9,DRIFT,False,False,False,Pending,engineering truth table
+0.9,DRIFT,False,False,True,Pending,engineering truth table
+0.9,DRIFT,False,True,False,Evil Twin Suspected,engineering truth table
+0.9,DRIFT,False,True,True,Evil Twin Suspected,engineering truth table
+0.9,DRIFT,True,False,False,Pending,engineering truth table
+0.9,DRIFT,True,False,True,Pending,engineering truth table
+0.9,DRIFT,True,True,False,Evil Twin Suspected,engineering truth table
+0.9,DRIFT,True,True,True,Evil Twin Suspected,engineering truth table
+0.9,UNAVAILABLE,False,False,False,Pending,engineering truth table
+0.9,UNAVAILABLE,False,False,True,Pending,engineering truth table
+0.9,UNAVAILABLE,False,True,False,Evil Twin Suspected,engineering truth table
+0.9,UNAVAILABLE,False,True,True,Evil Twin Suspected,engineering truth table
+0.9,UNAVAILABLE,True,False,False,Pending,engineering truth table
+0.9,UNAVAILABLE,True,False,True,Pending,engineering truth table
+0.9,UNAVAILABLE,True,True,False,Evil Twin Suspected,engineering truth table
+0.9,UNAVAILABLE,True,True,True,Evil Twin Suspected,engineering truth table

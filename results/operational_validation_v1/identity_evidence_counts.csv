@@ -1,0 +1,4 @@
+pcap,identity_status,frames
+pcaps/4. Rogue_AP.pcap,unknown,6946
+pcaps/7. Evil_Twin.pcap,candidate_evil_twin,3776
+pcaps/7. Evil_Twin.pcap,candidate_legitimate,8685

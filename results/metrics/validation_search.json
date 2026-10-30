@@ -1,0 +1,3902 @@
+[
+  {
+    "experiment_id": "n10_decision_tree_all",
+    "candidate_index": 0,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 3,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.022981290996540338,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_decision_tree_all",
+    "candidate_index": 1,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 3,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.0051413330002105795,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_decision_tree_all",
+    "candidate_index": 2,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 3,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.004965957996319048,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_decision_tree_all",
+    "candidate_index": 3,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 4,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.006400291000318248,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_decision_tree_all",
+    "candidate_index": 4,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 4,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.0068510409982991405,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_decision_tree_all",
+    "candidate_index": 5,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 4,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.0050240839991602115,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_decision_tree_all",
+    "candidate_index": 6,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004889125004410744,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_decision_tree_all",
+    "candidate_index": 7,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.004943958003423177,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_decision_tree_all",
+    "candidate_index": 8,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.038325625006109476,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_decision_tree_all",
+    "candidate_index": 9,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 6,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004862333000346553,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_decision_tree_all",
+    "candidate_index": 10,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 6,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.004970417001459282,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_decision_tree_all",
+    "candidate_index": 11,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 6,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.004897332997643389,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_decision_tree_all",
+    "candidate_index": 12,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 3,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.0050968750001629815,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_decision_tree_all",
+    "candidate_index": 13,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 3,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.005039458999817725,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_decision_tree_all",
+    "candidate_index": 14,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 3,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.005072833999292925,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_decision_tree_all",
+    "candidate_index": 15,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 4,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.006389499998476822,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_decision_tree_all",
+    "candidate_index": 16,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 4,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.005423292001069058,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_decision_tree_all",
+    "candidate_index": 17,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 4,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.00514645800285507,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_decision_tree_all",
+    "candidate_index": 18,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.005088791003799997,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_decision_tree_all",
+    "candidate_index": 19,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.004930458002490923,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_decision_tree_all",
+    "candidate_index": 20,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.005019416996219661,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_decision_tree_all",
+    "candidate_index": 21,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 6,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.005101167000248097,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_decision_tree_all",
+    "candidate_index": 22,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 6,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.00491337499988731,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_decision_tree_all",
+    "candidate_index": 23,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 6,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.005083958996692672,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_random_forest_all",
+    "candidate_index": 0,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 2,
+      "n_estimators": 50
+    },
+    "fit_seconds": 0.0466461249961867,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_random_forest_all",
+    "candidate_index": 1,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 2,
+      "n_estimators": 100
+    },
+    "fit_seconds": 0.07046912499936298,
+    "validation_precision": 1.0,
+    "validation_recall": 0.46875,
+    "validation_f1": 0.6382978723404256,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_random_forest_all",
+    "candidate_index": 2,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 5,
+      "n_estimators": 50
+    },
+    "fit_seconds": 0.044544750002387445,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_random_forest_all",
+    "candidate_index": 3,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 5,
+      "n_estimators": 100
+    },
+    "fit_seconds": 0.0702902919947519,
+    "validation_precision": 1.0,
+    "validation_recall": 0.46875,
+    "validation_f1": 0.6382978723404256,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_random_forest_all",
+    "candidate_index": 4,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 8,
+      "min_samples_leaf": 2,
+      "n_estimators": 50
+    },
+    "fit_seconds": 0.03672262500185752,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_random_forest_all",
+    "candidate_index": 5,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 8,
+      "min_samples_leaf": 2,
+      "n_estimators": 100
+    },
+    "fit_seconds": 0.07046829099999741,
+    "validation_precision": 1.0,
+    "validation_recall": 0.46875,
+    "validation_f1": 0.6382978723404256,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_random_forest_all",
+    "candidate_index": 6,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 8,
+      "min_samples_leaf": 5,
+      "n_estimators": 50
+    },
+    "fit_seconds": 0.03755720899789594,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_random_forest_all",
+    "candidate_index": 7,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 8,
+      "min_samples_leaf": 5,
+      "n_estimators": 100
+    },
+    "fit_seconds": 0.06821320799645036,
+    "validation_precision": 1.0,
+    "validation_recall": 0.46875,
+    "validation_f1": 0.6382978723404256,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_random_forest_all",
+    "candidate_index": 8,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 10,
+      "min_samples_leaf": 2,
+      "n_estimators": 50
+    },
+    "fit_seconds": 0.06330433399853064,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_random_forest_all",
+    "candidate_index": 9,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 10,
+      "min_samples_leaf": 2,
+      "n_estimators": 100
+    },
+    "fit_seconds": 0.07090466700174147,
+    "validation_precision": 1.0,
+    "validation_recall": 0.46875,
+    "validation_f1": 0.6382978723404256,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_random_forest_all",
+    "candidate_index": 10,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 10,
+      "min_samples_leaf": 5,
+      "n_estimators": 50
+    },
+    "fit_seconds": 0.037004999998316634,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_random_forest_all",
+    "candidate_index": 11,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 10,
+      "min_samples_leaf": 5,
+      "n_estimators": 100
+    },
+    "fit_seconds": 0.07152450000285171,
+    "validation_precision": 1.0,
+    "validation_recall": 0.46875,
+    "validation_f1": 0.6382978723404256,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_random_forest_all",
+    "candidate_index": 12,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 2,
+      "n_estimators": 50
+    },
+    "fit_seconds": 0.037800165999215096,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_random_forest_all",
+    "candidate_index": 13,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 2,
+      "n_estimators": 100
+    },
+    "fit_seconds": 0.06813962500018533,
+    "validation_precision": 1.0,
+    "validation_recall": 0.46875,
+    "validation_f1": 0.6382978723404256,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_random_forest_all",
+    "candidate_index": 14,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 5,
+      "n_estimators": 50
+    },
+    "fit_seconds": 0.03602487500029383,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_random_forest_all",
+    "candidate_index": 15,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 5,
+      "n_estimators": 100
+    },
+    "fit_seconds": 0.06891129099676618,
+    "validation_precision": 1.0,
+    "validation_recall": 0.46875,
+    "validation_f1": 0.6382978723404256,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_random_forest_all",
+    "candidate_index": 16,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 8,
+      "min_samples_leaf": 2,
+      "n_estimators": 50
+    },
+    "fit_seconds": 0.036538624997774605,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_random_forest_all",
+    "candidate_index": 17,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 8,
+      "min_samples_leaf": 2,
+      "n_estimators": 100
+    },
+    "fit_seconds": 0.06931062500370899,
+    "validation_precision": 1.0,
+    "validation_recall": 0.46875,
+    "validation_f1": 0.6382978723404256,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_random_forest_all",
+    "candidate_index": 18,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 8,
+      "min_samples_leaf": 5,
+      "n_estimators": 50
+    },
+    "fit_seconds": 0.03666995800449513,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_random_forest_all",
+    "candidate_index": 19,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 8,
+      "min_samples_leaf": 5,
+      "n_estimators": 100
+    },
+    "fit_seconds": 0.07255104099749587,
+    "validation_precision": 1.0,
+    "validation_recall": 0.46875,
+    "validation_f1": 0.6382978723404256,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_random_forest_all",
+    "candidate_index": 20,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 10,
+      "min_samples_leaf": 2,
+      "n_estimators": 50
+    },
+    "fit_seconds": 0.03978050000296207,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_random_forest_all",
+    "candidate_index": 21,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 10,
+      "min_samples_leaf": 2,
+      "n_estimators": 100
+    },
+    "fit_seconds": 0.0663658330013277,
+    "validation_precision": 1.0,
+    "validation_recall": 0.46875,
+    "validation_f1": 0.6382978723404256,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_random_forest_all",
+    "candidate_index": 22,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 10,
+      "min_samples_leaf": 5,
+      "n_estimators": 50
+    },
+    "fit_seconds": 0.03834287499921629,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_random_forest_all",
+    "candidate_index": 23,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 10,
+      "min_samples_leaf": 5,
+      "n_estimators": 100
+    },
+    "fit_seconds": 0.06605991600372363,
+    "validation_precision": 1.0,
+    "validation_recall": 0.46875,
+    "validation_f1": 0.6382978723404256,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_logistic_regression_all",
+    "candidate_index": 0,
+    "parameters": {
+      "C": 0.1,
+      "class_weight": null
+    },
+    "fit_seconds": 0.03454283299652161,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_logistic_regression_all",
+    "candidate_index": 1,
+    "parameters": {
+      "C": 0.1,
+      "class_weight": "balanced"
+    },
+    "fit_seconds": 0.006910583004355431,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_logistic_regression_all",
+    "candidate_index": 2,
+    "parameters": {
+      "C": 1,
+      "class_weight": null
+    },
+    "fit_seconds": 0.006502917000034358,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_logistic_regression_all",
+    "candidate_index": 3,
+    "parameters": {
+      "C": 1,
+      "class_weight": "balanced"
+    },
+    "fit_seconds": 0.007293249997019302,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_logistic_regression_all",
+    "candidate_index": 4,
+    "parameters": {
+      "C": 10,
+      "class_weight": null
+    },
+    "fit_seconds": 0.006015250000928063,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n10_logistic_regression_all",
+    "candidate_index": 5,
+    "parameters": {
+      "C": 10,
+      "class_weight": "balanced"
+    },
+    "fit_seconds": 0.006295917002717033,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_all",
+    "candidate_index": 0,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 3,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004586000002746005,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_all",
+    "candidate_index": 1,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 3,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.00433224999869708,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_all",
+    "candidate_index": 2,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 3,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.004276332998415455,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_all",
+    "candidate_index": 3,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 4,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004408708002301864,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_all",
+    "candidate_index": 4,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 4,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.0042873330021393485,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_all",
+    "candidate_index": 5,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 4,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.004277000000001863,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_all",
+    "candidate_index": 6,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004468417006137315,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_all",
+    "candidate_index": 7,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.004275375002180226,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_all",
+    "candidate_index": 8,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.004281375004211441,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_all",
+    "candidate_index": 9,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 6,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004265833005774766,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_all",
+    "candidate_index": 10,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 6,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.0042917910031974316,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_all",
+    "candidate_index": 11,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 6,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.00425533300585812,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_all",
+    "candidate_index": 12,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 3,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004561749999993481,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_all",
+    "candidate_index": 13,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 3,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.00470616699749371,
+    "validation_precision": 0.75,
+    "validation_recall": 0.6,
+    "validation_f1": 0.6666666666666666,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_all",
+    "candidate_index": 14,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 3,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.004525584001385141,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_all",
+    "candidate_index": 15,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 4,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004580250002618413,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_all",
+    "candidate_index": 16,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 4,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.0045291670030565,
+    "validation_precision": 0.75,
+    "validation_recall": 0.6,
+    "validation_f1": 0.6666666666666666,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_all",
+    "candidate_index": 17,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 4,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.004613750003045425,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_all",
+    "candidate_index": 18,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004578667001624126,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_all",
+    "candidate_index": 19,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.004554457998892758,
+    "validation_precision": 0.75,
+    "validation_recall": 0.6,
+    "validation_f1": 0.6666666666666666,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_all",
+    "candidate_index": 20,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.0047363750054501,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_all",
+    "candidate_index": 21,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 6,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004518958005064633,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_all",
+    "candidate_index": 22,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 6,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.00454316600371385,
+    "validation_precision": 0.75,
+    "validation_recall": 0.6,
+    "validation_f1": 0.6666666666666666,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_all",
+    "candidate_index": 23,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 6,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.0045156249980209395,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_random_forest_all",
+    "candidate_index": 0,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 2,
+      "n_estimators": 50
+    },
+    "fit_seconds": 0.040260875000967644,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_random_forest_all",
+    "candidate_index": 1,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 2,
+      "n_estimators": 100
+    },
+    "fit_seconds": 0.06695266599854222,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_random_forest_all",
+    "candidate_index": 2,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 5,
+      "n_estimators": 50
+    },
+    "fit_seconds": 0.03855462499632267,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_random_forest_all",
+    "candidate_index": 3,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 5,
+      "n_estimators": 100
+    },
+    "fit_seconds": 0.07191908299864735,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_random_forest_all",
+    "candidate_index": 4,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 8,
+      "min_samples_leaf": 2,
+      "n_estimators": 50
+    },
+    "fit_seconds": 0.05505374999484047,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_random_forest_all",
+    "candidate_index": 5,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 8,
+      "min_samples_leaf": 2,
+      "n_estimators": 100
+    },
+    "fit_seconds": 0.06727929200133076,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_random_forest_all",
+    "candidate_index": 6,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 8,
+      "min_samples_leaf": 5,
+      "n_estimators": 50
+    },
+    "fit_seconds": 0.03990595899813343,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_random_forest_all",
+    "candidate_index": 7,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 8,
+      "min_samples_leaf": 5,
+      "n_estimators": 100
+    },
+    "fit_seconds": 0.05808133300160989,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_random_forest_all",
+    "candidate_index": 8,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 10,
+      "min_samples_leaf": 2,
+      "n_estimators": 50
+    },
+    "fit_seconds": 0.03659916699689347,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_random_forest_all",
+    "candidate_index": 9,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 10,
+      "min_samples_leaf": 2,
+      "n_estimators": 100
+    },
+    "fit_seconds": 0.06925849999970524,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_random_forest_all",
+    "candidate_index": 10,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 10,
+      "min_samples_leaf": 5,
+      "n_estimators": 50
+    },
+    "fit_seconds": 0.037116165993211325,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_random_forest_all",
+    "candidate_index": 11,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 10,
+      "min_samples_leaf": 5,
+      "n_estimators": 100
+    },
+    "fit_seconds": 0.06181395799649181,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_random_forest_all",
+    "candidate_index": 12,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 2,
+      "n_estimators": 50
+    },
+    "fit_seconds": 0.038276833001873456,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_random_forest_all",
+    "candidate_index": 13,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 2,
+      "n_estimators": 100
+    },
+    "fit_seconds": 0.05956312500347849,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_random_forest_all",
+    "candidate_index": 14,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 5,
+      "n_estimators": 50
+    },
+    "fit_seconds": 0.03997924999566749,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_random_forest_all",
+    "candidate_index": 15,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 5,
+      "n_estimators": 100
+    },
+    "fit_seconds": 0.08502258399676066,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_random_forest_all",
+    "candidate_index": 16,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 8,
+      "min_samples_leaf": 2,
+      "n_estimators": 50
+    },
+    "fit_seconds": 0.03893233399867313,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_random_forest_all",
+    "candidate_index": 17,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 8,
+      "min_samples_leaf": 2,
+      "n_estimators": 100
+    },
+    "fit_seconds": 0.0681011659980868,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_random_forest_all",
+    "candidate_index": 18,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 8,
+      "min_samples_leaf": 5,
+      "n_estimators": 50
+    },
+    "fit_seconds": 0.04198295900278026,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_random_forest_all",
+    "candidate_index": 19,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 8,
+      "min_samples_leaf": 5,
+      "n_estimators": 100
+    },
+    "fit_seconds": 0.06509670899686171,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_random_forest_all",
+    "candidate_index": 20,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 10,
+      "min_samples_leaf": 2,
+      "n_estimators": 50
+    },
+    "fit_seconds": 0.036520999994536396,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_random_forest_all",
+    "candidate_index": 21,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 10,
+      "min_samples_leaf": 2,
+      "n_estimators": 100
+    },
+    "fit_seconds": 0.06844579199969303,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_random_forest_all",
+    "candidate_index": 22,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 10,
+      "min_samples_leaf": 5,
+      "n_estimators": 50
+    },
+    "fit_seconds": 0.036251083001843654,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_random_forest_all",
+    "candidate_index": 23,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 10,
+      "min_samples_leaf": 5,
+      "n_estimators": 100
+    },
+    "fit_seconds": 0.06976341600238811,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_logistic_regression_all",
+    "candidate_index": 0,
+    "parameters": {
+      "C": 0.1,
+      "class_weight": null
+    },
+    "fit_seconds": 0.008151916998031083,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_logistic_regression_all",
+    "candidate_index": 1,
+    "parameters": {
+      "C": 0.1,
+      "class_weight": "balanced"
+    },
+    "fit_seconds": 0.006191333006427158,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_logistic_regression_all",
+    "candidate_index": 2,
+    "parameters": {
+      "C": 1,
+      "class_weight": null
+    },
+    "fit_seconds": 0.014369875003467314,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_logistic_regression_all",
+    "candidate_index": 3,
+    "parameters": {
+      "C": 1,
+      "class_weight": "balanced"
+    },
+    "fit_seconds": 0.05728691699914634,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_logistic_regression_all",
+    "candidate_index": 4,
+    "parameters": {
+      "C": 10,
+      "class_weight": null
+    },
+    "fit_seconds": 0.006992249996983446,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_logistic_regression_all",
+    "candidate_index": 5,
+    "parameters": {
+      "C": 10,
+      "class_weight": "balanced"
+    },
+    "fit_seconds": 0.007603999998536892,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_only",
+    "candidate_index": 0,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 3,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.00463158300408395,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_only",
+    "candidate_index": 1,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 3,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.005311749999236781,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_only",
+    "candidate_index": 2,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 3,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.004931458999635652,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_only",
+    "candidate_index": 3,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 4,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004713791000540368,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_only",
+    "candidate_index": 4,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 4,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.004440541997610126,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_only",
+    "candidate_index": 5,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 4,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.004695666997577064,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_only",
+    "candidate_index": 6,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.0046287500008475035,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_only",
+    "candidate_index": 7,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.004839458997594193,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_only",
+    "candidate_index": 8,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.004326791997300461,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_only",
+    "candidate_index": 9,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 6,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004946792003465816,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_only",
+    "candidate_index": 10,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 6,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.005310833003022708,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_only",
+    "candidate_index": 11,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 6,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.004509209000389092,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_only",
+    "candidate_index": 12,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 3,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004510291997576132,
+    "validation_precision": 0.07142857142857142,
+    "validation_recall": 1.0,
+    "validation_f1": 0.13333333333333333,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_only",
+    "candidate_index": 13,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 3,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.004295624996302649,
+    "validation_precision": 0.07142857142857142,
+    "validation_recall": 1.0,
+    "validation_f1": 0.13333333333333333,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_only",
+    "candidate_index": 14,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 3,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.004271999998309184,
+    "validation_precision": 0.07142857142857142,
+    "validation_recall": 1.0,
+    "validation_f1": 0.13333333333333333,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_only",
+    "candidate_index": 15,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 4,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004225666998536326,
+    "validation_precision": 0.07142857142857142,
+    "validation_recall": 1.0,
+    "validation_f1": 0.13333333333333333,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_only",
+    "candidate_index": 16,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 4,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.004266625001037028,
+    "validation_precision": 0.07142857142857142,
+    "validation_recall": 1.0,
+    "validation_f1": 0.13333333333333333,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_only",
+    "candidate_index": 17,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 4,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.004209791994071566,
+    "validation_precision": 0.07142857142857142,
+    "validation_recall": 1.0,
+    "validation_f1": 0.13333333333333333,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_only",
+    "candidate_index": 18,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004346624999016058,
+    "validation_precision": 0.07142857142857142,
+    "validation_recall": 1.0,
+    "validation_f1": 0.13333333333333333,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_only",
+    "candidate_index": 19,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.004522542003542185,
+    "validation_precision": 0.07142857142857142,
+    "validation_recall": 1.0,
+    "validation_f1": 0.13333333333333333,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_only",
+    "candidate_index": 20,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.0042784170000231825,
+    "validation_precision": 0.07142857142857142,
+    "validation_recall": 1.0,
+    "validation_f1": 0.13333333333333333,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_only",
+    "candidate_index": 21,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 6,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004325083005824126,
+    "validation_precision": 0.07142857142857142,
+    "validation_recall": 1.0,
+    "validation_f1": 0.13333333333333333,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_only",
+    "candidate_index": 22,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 6,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.004378249999717809,
+    "validation_precision": 0.07142857142857142,
+    "validation_recall": 1.0,
+    "validation_f1": 0.13333333333333333,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_only",
+    "candidate_index": 23,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 6,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.00800320900452789,
+    "validation_precision": 0.07142857142857142,
+    "validation_recall": 1.0,
+    "validation_f1": 0.13333333333333333,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_radio_only",
+    "candidate_index": 0,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 3,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.008341165994352195,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_radio_only",
+    "candidate_index": 1,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 3,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.002682165999431163,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_radio_only",
+    "candidate_index": 2,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 3,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.002171874999476131,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_radio_only",
+    "candidate_index": 3,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 4,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.00265837500046473,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_radio_only",
+    "candidate_index": 4,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 4,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.0025004580020322464,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_radio_only",
+    "candidate_index": 5,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 4,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.0020576669994625263,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_radio_only",
+    "candidate_index": 6,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.002431000000797212,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_radio_only",
+    "candidate_index": 7,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.002004791997023858,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_radio_only",
+    "candidate_index": 8,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.002278916996147018,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_radio_only",
+    "candidate_index": 9,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 6,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.002093832998070866,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_radio_only",
+    "candidate_index": 10,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 6,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.002068583999061957,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_radio_only",
+    "candidate_index": 11,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 6,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.0019147090060869232,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_radio_only",
+    "candidate_index": 12,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 3,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.0022515420059789903,
+    "validation_precision": 0.5,
+    "validation_recall": 0.2,
+    "validation_f1": 0.2857142857142857,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_radio_only",
+    "candidate_index": 13,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 3,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.0021421249984996393,
+    "validation_precision": 0.5,
+    "validation_recall": 0.2,
+    "validation_f1": 0.2857142857142857,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_radio_only",
+    "candidate_index": 14,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 3,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.002878040999348741,
+    "validation_precision": 0.7142857142857143,
+    "validation_recall": 1.0,
+    "validation_f1": 0.8333333333333334,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_radio_only",
+    "candidate_index": 15,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 4,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.002148624997062143,
+    "validation_precision": 0.5,
+    "validation_recall": 0.2,
+    "validation_f1": 0.2857142857142857,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_radio_only",
+    "candidate_index": 16,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 4,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.002247374999569729,
+    "validation_precision": 0.5,
+    "validation_recall": 0.2,
+    "validation_f1": 0.2857142857142857,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_radio_only",
+    "candidate_index": 17,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 4,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.002128749998519197,
+    "validation_precision": 0.7142857142857143,
+    "validation_recall": 1.0,
+    "validation_f1": 0.8333333333333334,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_radio_only",
+    "candidate_index": 18,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.002206000004662201,
+    "validation_precision": 0.5,
+    "validation_recall": 0.2,
+    "validation_f1": 0.2857142857142857,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_radio_only",
+    "candidate_index": 19,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.0021204169970587827,
+    "validation_precision": 0.5,
+    "validation_recall": 0.2,
+    "validation_f1": 0.2857142857142857,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_radio_only",
+    "candidate_index": 20,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.002141416996892076,
+    "validation_precision": 0.7142857142857143,
+    "validation_recall": 1.0,
+    "validation_f1": 0.8333333333333334,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_radio_only",
+    "candidate_index": 21,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 6,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.002219792004325427,
+    "validation_precision": 0.5,
+    "validation_recall": 0.2,
+    "validation_f1": 0.2857142857142857,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_radio_only",
+    "candidate_index": 22,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 6,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.0021324580011423677,
+    "validation_precision": 0.5,
+    "validation_recall": 0.2,
+    "validation_f1": 0.2857142857142857,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_radio_only",
+    "candidate_index": 23,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 6,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.002129207998223137,
+    "validation_precision": 0.7142857142857143,
+    "validation_recall": 1.0,
+    "validation_f1": 0.8333333333333334,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_frame_only",
+    "candidate_index": 0,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 3,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.002041333995293826,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_frame_only",
+    "candidate_index": 1,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 3,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.0021693340022466145,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_frame_only",
+    "candidate_index": 2,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 3,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.0020619580027414486,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_frame_only",
+    "candidate_index": 3,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 4,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.001977833002456464,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_frame_only",
+    "candidate_index": 4,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 4,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.0019249169999966398,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_frame_only",
+    "candidate_index": 5,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 4,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.001927541001350619,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_frame_only",
+    "candidate_index": 6,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.0019201670002075844,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_frame_only",
+    "candidate_index": 7,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.0019605829947977327,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_frame_only",
+    "candidate_index": 8,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.001913290994707495,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_frame_only",
+    "candidate_index": 9,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 6,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.0023442089950549416,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_frame_only",
+    "candidate_index": 10,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 6,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.0019423329940764233,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_frame_only",
+    "candidate_index": 11,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 6,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.0019213749983464368,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_frame_only",
+    "candidate_index": 12,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 3,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.002164167002774775,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_frame_only",
+    "candidate_index": 13,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 3,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.0021433750007417984,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_frame_only",
+    "candidate_index": 14,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 3,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.0021436250026454218,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_frame_only",
+    "candidate_index": 15,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 4,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.0021648330002790317,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_frame_only",
+    "candidate_index": 16,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 4,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.002351082999666687,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_frame_only",
+    "candidate_index": 17,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 4,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.0026070000021718442,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_frame_only",
+    "candidate_index": 18,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.0024462090004817583,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_frame_only",
+    "candidate_index": 19,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.0032488330034539104,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_frame_only",
+    "candidate_index": 20,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.0044572909973794594,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_frame_only",
+    "candidate_index": 21,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 6,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.002817915999912657,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_frame_only",
+    "candidate_index": 22,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 6,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.00226808300067205,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_frame_only",
+    "candidate_index": 23,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 6,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.0024842499988153577,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_temporal_only",
+    "candidate_index": 0,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 3,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.002140292002877686,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_temporal_only",
+    "candidate_index": 1,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 3,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.0024025419988902286,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_temporal_only",
+    "candidate_index": 2,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 3,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.002521791997423861,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_temporal_only",
+    "candidate_index": 3,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 4,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.00256808300036937,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_temporal_only",
+    "candidate_index": 4,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 4,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.0024977499997476116,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_temporal_only",
+    "candidate_index": 5,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 4,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.003022249999048654,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_temporal_only",
+    "candidate_index": 6,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.002480999995896127,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_temporal_only",
+    "candidate_index": 7,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.0021703750026063062,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_temporal_only",
+    "candidate_index": 8,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.005425374998594634,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_temporal_only",
+    "candidate_index": 9,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 6,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.0024476249964209273,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_temporal_only",
+    "candidate_index": 10,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 6,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.002352957999391947,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_temporal_only",
+    "candidate_index": 11,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 6,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.002408542000921443,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_temporal_only",
+    "candidate_index": 12,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 3,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.0025322910005343147,
+    "validation_precision": 0.0625,
+    "validation_recall": 0.2,
+    "validation_f1": 0.09523809523809523,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_temporal_only",
+    "candidate_index": 13,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 3,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.0026847499975701794,
+    "validation_precision": 0.10526315789473684,
+    "validation_recall": 0.4,
+    "validation_f1": 0.16666666666666666,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_temporal_only",
+    "candidate_index": 14,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 3,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.002192125000874512,
+    "validation_precision": 0.10526315789473684,
+    "validation_recall": 0.4,
+    "validation_f1": 0.16666666666666666,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_temporal_only",
+    "candidate_index": 15,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 4,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.002188124999520369,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_temporal_only",
+    "candidate_index": 16,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 4,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.0022279170007095672,
+    "validation_precision": 0.10526315789473684,
+    "validation_recall": 0.4,
+    "validation_f1": 0.16666666666666666,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_temporal_only",
+    "candidate_index": 17,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 4,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.0023136669988161884,
+    "validation_precision": 0.10526315789473684,
+    "validation_recall": 0.4,
+    "validation_f1": 0.16666666666666666,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_temporal_only",
+    "candidate_index": 18,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.0022499589977087453,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_temporal_only",
+    "candidate_index": 19,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.00222349999967264,
+    "validation_precision": 0.10526315789473684,
+    "validation_recall": 0.4,
+    "validation_f1": 0.16666666666666666,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_temporal_only",
+    "candidate_index": 20,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.0021990829991409555,
+    "validation_precision": 0.10526315789473684,
+    "validation_recall": 0.4,
+    "validation_f1": 0.16666666666666666,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_temporal_only",
+    "candidate_index": 21,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 6,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.0022350409999489784,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_temporal_only",
+    "candidate_index": 22,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 6,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.002183083997806534,
+    "validation_precision": 0.10526315789473684,
+    "validation_recall": 0.4,
+    "validation_f1": 0.16666666666666666,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_temporal_only",
+    "candidate_index": 23,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 6,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.00224612499732757,
+    "validation_precision": 0.10526315789473684,
+    "validation_recall": 0.4,
+    "validation_f1": 0.16666666666666666,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio",
+    "candidate_index": 0,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 3,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004595874997903593,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio",
+    "candidate_index": 1,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 3,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.00413579199812375,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio",
+    "candidate_index": 2,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 3,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.0042715829986264,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio",
+    "candidate_index": 3,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 4,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004168791994743515,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio",
+    "candidate_index": 4,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 4,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.0042492499997024424,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio",
+    "candidate_index": 5,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 4,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.004596625003614463,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio",
+    "candidate_index": 6,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004145165999943856,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio",
+    "candidate_index": 7,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.004135333001613617,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio",
+    "candidate_index": 8,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.004107334003492724,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio",
+    "candidate_index": 9,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 6,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004161167002166621,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio",
+    "candidate_index": 10,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 6,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.004294208003557287,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio",
+    "candidate_index": 11,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 6,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.004081582999788225,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio",
+    "candidate_index": 12,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 3,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004408166001667269,
+    "validation_precision": 0.5,
+    "validation_recall": 0.2,
+    "validation_f1": 0.2857142857142857,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio",
+    "candidate_index": 13,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 3,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.004366332999779843,
+    "validation_precision": 0.5,
+    "validation_recall": 0.2,
+    "validation_f1": 0.2857142857142857,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio",
+    "candidate_index": 14,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 3,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.005458334002469201,
+    "validation_precision": 0.7142857142857143,
+    "validation_recall": 1.0,
+    "validation_f1": 0.8333333333333334,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio",
+    "candidate_index": 15,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 4,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004935958000714891,
+    "validation_precision": 0.5,
+    "validation_recall": 0.2,
+    "validation_f1": 0.2857142857142857,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio",
+    "candidate_index": 16,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 4,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.0046971249976195395,
+    "validation_precision": 0.5,
+    "validation_recall": 0.2,
+    "validation_f1": 0.2857142857142857,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio",
+    "candidate_index": 17,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 4,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.004590625001583248,
+    "validation_precision": 0.7142857142857143,
+    "validation_recall": 1.0,
+    "validation_f1": 0.8333333333333334,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio",
+    "candidate_index": 18,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004868875003012363,
+    "validation_precision": 0.5,
+    "validation_recall": 0.2,
+    "validation_f1": 0.2857142857142857,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio",
+    "candidate_index": 19,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.004904665998765267,
+    "validation_precision": 0.5,
+    "validation_recall": 0.2,
+    "validation_f1": 0.2857142857142857,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio",
+    "candidate_index": 20,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.004994333001377527,
+    "validation_precision": 0.7142857142857143,
+    "validation_recall": 1.0,
+    "validation_f1": 0.8333333333333334,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio",
+    "candidate_index": 21,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 6,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004658083002141211,
+    "validation_precision": 0.5,
+    "validation_recall": 0.2,
+    "validation_f1": 0.2857142857142857,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio",
+    "candidate_index": 22,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 6,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.004651041002944112,
+    "validation_precision": 0.5,
+    "validation_recall": 0.2,
+    "validation_f1": 0.2857142857142857,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio",
+    "candidate_index": 23,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 6,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.004577083003823645,
+    "validation_precision": 0.7142857142857143,
+    "validation_recall": 1.0,
+    "validation_f1": 0.8333333333333334,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_frame",
+    "candidate_index": 0,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 3,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.00436262500443263,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_frame",
+    "candidate_index": 1,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 3,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.004177500006335322,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_frame",
+    "candidate_index": 2,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 3,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.004283374997612555,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_frame",
+    "candidate_index": 3,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 4,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004252541999449022,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_frame",
+    "candidate_index": 4,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 4,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.005419249995611608,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_frame",
+    "candidate_index": 5,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 4,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.004551250000076834,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_frame",
+    "candidate_index": 6,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004551707999780774,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_frame",
+    "candidate_index": 7,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.005135833998792805,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_frame",
+    "candidate_index": 8,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.004314083002100233,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_frame",
+    "candidate_index": 9,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 6,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004328790993895382,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_frame",
+    "candidate_index": 10,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 6,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.004854334001720417,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_frame",
+    "candidate_index": 11,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 6,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.004432916997757275,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_frame",
+    "candidate_index": 12,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 3,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004431291999935638,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_frame",
+    "candidate_index": 13,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 3,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.004368583002360538,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_frame",
+    "candidate_index": 14,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 3,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.004351415998826269,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_frame",
+    "candidate_index": 15,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 4,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004551250000076834,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_frame",
+    "candidate_index": 16,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 4,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.004320166997786146,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_frame",
+    "candidate_index": 17,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 4,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.004328750001150183,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_frame",
+    "candidate_index": 18,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004324833003920503,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_frame",
+    "candidate_index": 19,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.004319499996199738,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_frame",
+    "candidate_index": 20,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.004369374997622799,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_frame",
+    "candidate_index": 21,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 6,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004344832996139303,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_frame",
+    "candidate_index": 22,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 6,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.004332207994593773,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_frame",
+    "candidate_index": 23,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 6,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.005055834000813775,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio_frame",
+    "candidate_index": 0,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 3,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004409875000419561,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio_frame",
+    "candidate_index": 1,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 3,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.004239334004523698,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio_frame",
+    "candidate_index": 2,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 3,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.0043507919981493615,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio_frame",
+    "candidate_index": 3,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 4,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004176750000624452,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio_frame",
+    "candidate_index": 4,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 4,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.004142749996390194,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio_frame",
+    "candidate_index": 5,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 4,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.00414699999964796,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio_frame",
+    "candidate_index": 6,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.0041890409993357025,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio_frame",
+    "candidate_index": 7,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.004736708004202228,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio_frame",
+    "candidate_index": 8,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 5,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.005052499996963888,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio_frame",
+    "candidate_index": 9,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 6,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004845916999329347,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio_frame",
+    "candidate_index": 10,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 6,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.007728207994659897,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio_frame",
+    "candidate_index": 11,
+    "parameters": {
+      "class_weight": null,
+      "max_depth": 6,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.004961708000337239,
+    "validation_precision": 0.0,
+    "validation_recall": 0.0,
+    "validation_f1": 0.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio_frame",
+    "candidate_index": 12,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 3,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.005977290995360818,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio_frame",
+    "candidate_index": 13,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 3,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.006236916997295339,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio_frame",
+    "candidate_index": 14,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 3,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.00500066700624302,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio_frame",
+    "candidate_index": 15,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 4,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.008535499997378793,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio_frame",
+    "candidate_index": 16,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 4,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.005228250003710855,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio_frame",
+    "candidate_index": 17,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 4,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.004931333001877647,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio_frame",
+    "candidate_index": 18,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004939416998240631,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio_frame",
+    "candidate_index": 19,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.004961291997460648,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio_frame",
+    "candidate_index": 20,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 5,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.00489591700170422,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio_frame",
+    "candidate_index": 21,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 6,
+      "min_samples_leaf": 5
+    },
+    "fit_seconds": 0.004751041000417899,
+    "validation_precision": 1.0,
+    "validation_recall": 1.0,
+    "validation_f1": 1.0,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio_frame",
+    "candidate_index": 22,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 6,
+      "min_samples_leaf": 10
+    },
+    "fit_seconds": 0.004928292000840884,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  },
+  {
+    "experiment_id": "n20_decision_tree_configuration_radio_frame",
+    "candidate_index": 23,
+    "parameters": {
+      "class_weight": "balanced",
+      "max_depth": 6,
+      "min_samples_leaf": 20
+    },
+    "fit_seconds": 0.005521209001017269,
+    "validation_precision": 0.8333333333333334,
+    "validation_recall": 1.0,
+    "validation_f1": 0.9090909090909091,
+    "warnings": []
+  }
+]

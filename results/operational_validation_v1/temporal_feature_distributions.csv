@@ -1,0 +1,10 @@
+window_size,feature,n,median,p05,p95,scope
+10,median_interarrival_ms,752,102.402,102.2631,102.58435,candidate legitimate feature distribution; not trusted drift scores
+10,mad_interarrival_ms,752,0.08849999999999625,0.009999999999998722,1.376600000000002,candidate legitimate feature distribution; not trusted drift scores
+10,tsf_slope_s_per_s,752,0.9999846627179028,0.9999464218268104,1.000021329690623,candidate legitimate feature distribution; not trusted drift scores
+20,median_interarrival_ms,325,102.403,102.3486,102.47879999999999,candidate legitimate feature distribution; not trusted drift scores
+20,mad_interarrival_ms,325,0.09300000000000352,0.012000000000000455,1.0177999999999998,candidate legitimate feature distribution; not trusted drift scores
+20,tsf_slope_s_per_s,325,0.9999830308619859,0.999966140559763,0.9999999666268615,candidate legitimate feature distribution; not trusted drift scores
+50,median_interarrival_ms,89,102.402,102.3814,102.42620000000001,candidate legitimate feature distribution; not trusted drift scores
+50,mad_interarrival_ms,89,0.07200000000000273,0.013999999999995794,0.5651999999999957,candidate legitimate feature distribution; not trusted drift scores
+50,tsf_slope_s_per_s,89,0.9999838190064575,0.9999785140163855,0.9999885614376848,candidate legitimate feature distribution; not trusted drift scores

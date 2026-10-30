@@ -1,0 +1,14 @@
+{
+  "status": "accepted_for_preliminary_dataset_role_training",
+  "user_instruction": "ถ้าเกิดว่าไม่มีการ falsification ก็ทำต่อได้เลย",
+  "recorded_at_utc": "2026-10-30T09:29:36.591836+00:00",
+  "original_protocol_sha256": "5cb915b0fd68bbb58b7d6b52deb4c1aa6339817587386d4693941ae1e698ddbd",
+  "accepted_protocol_sha256": "92755b67beadfea2818c78d0308b37ad4b51a213680adb7533cbfe027c8dc4ac",
+  "independent_identity_verification": false,
+  "candidate_statuses_preserved": true,
+  "conditions": [
+    "No fabricated observations, labels, metrics or independent sessions",
+    "Report all planned results including failures",
+    "Do not claim unseen-AP generalization"
+  ]
+}

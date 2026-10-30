@@ -1,0 +1,92 @@
+{
+  "timestamp_utc": "2026-10-30T14:51:47.378473+00:00",
+  "protocol": {
+    "id": "window-attrition-v1",
+    "planned_before_analysis": "2026-10-30; evaluates data availability and physical quality only, not classifier scores",
+    "session_definition": "Original PCAP capture; profile streams within the same PCAP are not independent sessions",
+    "class_source": "Previously accepted author-documented candidate roles; original labels unchanged",
+    "policies": [
+      {
+        "id": "strict_fixed_1p5",
+        "construction": "fixed",
+        "grouping": "bssid_capabilities",
+        "gap_factor": 1.5,
+        "role": "frozen_strict_baseline"
+      },
+      {
+        "id": "fixed_2p0",
+        "construction": "fixed",
+        "grouping": "bssid_capabilities",
+        "gap_factor": 2.0,
+        "role": "gap_threshold_sensitivity_only"
+      },
+      {
+        "id": "fixed_3p0",
+        "construction": "fixed",
+        "grouping": "bssid_capabilities",
+        "gap_factor": 3.0,
+        "role": "gap_threshold_sensitivity_only"
+      },
+      {
+        "id": "segmented_1p5",
+        "construction": "gap_segmented",
+        "grouping": "bssid_capabilities",
+        "gap_factor": 1.5,
+        "role": "window_boundary_sensitivity_only"
+      },
+      {
+        "id": "bssid_fixed_1p5",
+        "construction": "fixed",
+        "grouping": "bssid",
+        "gap_factor": 1.5,
+        "role": "grouping_sensitivity_only"
+      },
+      {
+        "id": "stable_profile_fixed_1p5",
+        "construction": "fixed",
+        "grouping": "stable_profile",
+        "gap_factor": 1.5,
+        "role": "grouping_sensitivity_only"
+      }
+    ],
+    "window_sizes": [
+      10,
+      20,
+      50
+    ],
+    "recommended_ml_quality": "Full capture-ordered non-overlapping windows; complete and consistent configuration/radio/frame fields; accepted single candidate role; temporal gaps and TSF resets do not disqualify non-temporal features. Use only configuration+radio+frame features on such windows.",
+    "recommended_time_shield_quality": "Retain original fixed-window 1.5 gap criterion, incoming-boundary check and TSF reset rejection. No slope across TSF reset.",
+    "preliminary_support_heuristic": {
+      "minimum_train_windows_per_class": 20,
+      "minimum_validation_windows_per_class": 10,
+      "minimum_development_test_windows_per_class": 10
+    },
+    "final_evaluation_requirement": {
+      "minimum_independent_labeled_sessions_per_class": 2,
+      "currently_available_independent_test_sessions": 0
+    },
+    "selection_rule": "Recommendations are based on which feature groups remain valid under capture artifacts. No final-test classifier scores are used. Gap-threshold relaxations are descriptive only."
+  },
+  "protocol_sha256": "b58ee0da9ee9f37156e114863454bd70e6fbde2531df643f8157816b473bc975",
+  "source_beacons_sha256": "f06bf7b9c392e00ab8c36fa48aff1a9f86d072f6fa92bd25cc594853227dd58a",
+  "identity_table_sha256": "3c665927cb4b0deec4703c9b85d792ffb286b10d07f8f19d17afa0fdf3c1d960",
+  "strict_checkpoint_sha256": "8d24a3f140cb8d8d22d24d8879292f2a5f44818b4762d77afceb7cde48b0b2e0",
+  "checks": {
+    "strict_windows_match": true,
+    "frame_conservation": true,
+    "unique_membership": true,
+    "strict_files_unchanged": true
+  },
+  "original_frames": 12461,
+  "policies": 6,
+  "window_sizes": [
+    10,
+    20,
+    50
+  ],
+  "synthetic_windows": 0,
+  "oversampling": false,
+  "final_test_classifier_scores_used": false,
+  "original_strict_artifacts_modified": false,
+  "code_sha256": "d9f135b0d615a00f8459590c3db34d7d38e020c653bd4dda72d9f6dce6ead19e"
+}

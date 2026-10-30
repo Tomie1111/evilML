@@ -1,0 +1,241 @@
+{
+  "timestamp_utc": "2026-10-30T09:31:19.193140+00:00",
+  "config": {
+    "run_id": "preliminary_v1",
+    "random_seed": 42,
+    "audit_config": "experiment.yaml",
+    "acceptance": "label_protocol_acceptance.json",
+    "source_beacons": "data/raw/audit/Evil_Twin_beacons.csv",
+    "audited_identities": "results/audit/identity_label_audit.csv",
+    "canonical_pcap": "pcaps/7. Evil_Twin.pcap",
+    "grouping": "bssid_capabilities",
+    "window_sizes": [
+      10,
+      20,
+      50
+    ],
+    "primary_window_size": 20,
+    "quality": {
+      "gap_factor": 1.5,
+      "check_incoming_boundary": true,
+      "reject_incomplete": true,
+      "reject_tsf_reset": true
+    },
+    "split": {
+      "method": "global_capture_time",
+      "train_fraction": 0.6,
+      "validation_fraction": 0.2,
+      "cross_boundary_policy": "exclude",
+      "evaluation_scope": "previously_audited_same_capture_development_test_not_untouched_or_unseen_AP"
+    },
+    "hyperparameters": {
+      "decision_tree": {
+        "max_depth": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "min_samples_leaf": [
+          5,
+          10,
+          20
+        ],
+        "class_weight": [
+          null,
+          "balanced"
+        ]
+      },
+      "random_forest": {
+        "n_estimators": [
+          50,
+          100
+        ],
+        "max_depth": [
+          5,
+          8,
+          10
+        ],
+        "min_samples_leaf": [
+          2,
+          5
+        ],
+        "class_weight": [
+          null,
+          "balanced"
+        ]
+      },
+      "logistic_regression": {
+        "C": [
+          0.1,
+          1,
+          10
+        ],
+        "class_weight": [
+          null,
+          "balanced"
+        ]
+      }
+    },
+    "model_selection": {
+      "metric": "validation_positive_f1",
+      "tie_break": "first_in_declared_parameter_grid",
+      "classification_threshold": 0.5,
+      "refit_on_validation": false
+    },
+    "ablation_model": "decision_tree",
+    "primary_model": "decision_tree",
+    "temporal": {
+      "baseline_path_relative_to_dataset": "evilML/time_shield/results/baseline_model.json",
+      "enrollment_path_relative_to_dataset": "evilML/time_shield/results/valid_windows.csv",
+      "trusted_bssid": "0c:9d:92:54:fe:34",
+      "beta": 0.3,
+      "percentile": 99,
+      "K": 3,
+      "methods": [
+        "mahalanobis",
+        "standardized_euclidean"
+      ],
+      "selection": "fixed_before_ML_evaluation; thresholds_estimated_from_new_validation_trusted_windows_only",
+      "baseline_updates": false
+    },
+    "fusion": {
+      "high_threshold_candidates": [
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9
+      ],
+      "low_threshold_candidates": [
+        0.1,
+        0.2,
+        0.3,
+        0.4
+      ],
+      "high_selection": "maximize_validation_positive_f1_then_first",
+      "low_selection": "largest_candidate_with_zero_observed_rogue_acceptances_on_validation",
+      "temporal_method": "mahalanobis"
+    },
+    "resource_benchmark": {
+      "repeats": 30,
+      "warmup": 5,
+      "memory_sample_period_s": 0.002
+    },
+    "allow_independently_verified_fpr": false,
+    "independent_test_session_available": false
+  },
+  "config_sha256": "b3daeafde1a02b089df4ade72e9d849eeb4f15d32905905037c92ab5fd9fa2ee",
+  "acceptance": {
+    "status": "accepted_for_preliminary_dataset_role_training",
+    "user_instruction": "ถ้าเกิดว่าไม่มีการ falsification ก็ทำต่อได้เลย",
+    "recorded_at_utc": "2026-10-30T09:29:36.591836+00:00",
+    "original_protocol_sha256": "5cb915b0fd68bbb58b7d6b52deb4c1aa6339817587386d4693941ae1e698ddbd",
+    "accepted_protocol_sha256": "92755b67beadfea2818c78d0308b37ad4b51a213680adb7533cbfe027c8dc4ac",
+    "independent_identity_verification": false,
+    "candidate_statuses_preserved": true,
+    "conditions": [
+      "No fabricated observations, labels, metrics or independent sessions",
+      "Report all planned results including failures",
+      "Do not claim unseen-AP generalization"
+    ]
+  },
+  "acceptance_sha256": "289f2676faf7a43c49cbdfb245b6a9e125a244db6401ac2c61e4dff17a30c229",
+  "source_beacons_sha256": "f06bf7b9c392e00ab8c36fa48aff1a9f86d072f6fa92bd25cc594853227dd58a",
+  "identity_table_sha256": "3c665927cb4b0deec4703c9b85d792ffb286b10d07f8f19d17afa0fdf3c1d960",
+  "capture_first_ns": 1608065662005638000,
+  "capture_last_ns": 1608066564824491000,
+  "train_end_ns": 1608066203696949800,
+  "validation_end_ns": 1608066384260720400,
+  "boundary_source": "0.6/0.8 of full capture time, fixed before modeling, independent of class or model scores",
+  "window_sets": {
+    "10": {
+      "frame_conservation": true,
+      "disjoint_membership": true,
+      "global_chronology": true,
+      "support": {
+        "train": {
+          "0": 449,
+          "1": 18
+        },
+        "validation": {
+          "0": 149,
+          "1": 32
+        },
+        "development_test": {
+          "0": 152,
+          "1": 39
+        }
+      },
+      "trainable": true,
+      "limitation": "One previously inspected capture; no independent session or AP generalization"
+    },
+    "20": {
+      "frame_conservation": true,
+      "disjoint_membership": true,
+      "global_chronology": true,
+      "support": {
+        "train": {
+          "0": 192,
+          "1": 2
+        },
+        "validation": {
+          "0": 65,
+          "1": 5
+        },
+        "development_test": {
+          "0": 66,
+          "1": 6
+        }
+      },
+      "trainable": true,
+      "limitation": "One previously inspected capture; no independent session or AP generalization"
+    },
+    "50": {
+      "frame_conservation": true,
+      "disjoint_membership": true,
+      "global_chronology": true,
+      "support": {
+        "train": {
+          "0": 55,
+          "1": 0
+        },
+        "validation": {
+          "0": 16,
+          "1": 0
+        },
+        "development_test": {
+          "0": 17,
+          "1": 0
+        }
+      },
+      "trainable": false,
+      "limitation": "One previously inspected capture; no independent session or AP generalization"
+    }
+  },
+  "outputs_sha256": {
+    "data/processed/window_features_10.csv": "a571b4189cf3d4406607d441c0b9fa9dcc8fbf891449e479ee4974555b586075",
+    "data/splits/membership_10.csv": "70d36ec785dfec159fefff86bcc3aaa9e51eeac3b0350632c38e04ab65163f52",
+    "data/processed/window_features_20.csv": "714c87dbc914e74fd6134693e794ed78b366dc7e3db27fa9cdd482600be64d8c",
+    "data/splits/membership_20.csv": "41b734b5c4bb9c70394358008b3cf68b34146b0f27aad4507d3f4e6bdac44c69",
+    "data/processed/window_features_50.csv": "9d0d8df36f4bc6c6e863ed06deee821dba6f3de1076ece94968e1944e7c0da7b",
+    "data/splits/membership_50.csv": "0f33563d16d8d6d0da524a7c6935d9b4dcd786706d33e02085247735b51f5de3"
+  },
+  "code_sha256": {
+    "__init__.py": "2053e63e2f17565a3d59dd71e39fe57efb3a9e6ee075ff6c5bef2cd8efdeff90",
+    "common.py": "18b85050d1f1a55d38c3fa1757459405440d3278ffabca16a0b8b91a8c1f376e",
+    "dataset_audit.py": "2c7e5839cc97034434c9be81d5e0676d8999d5e9b1cdbead1150b1bddcfbbe67",
+    "dataset_splitting.py": "26163fafeed578e2a2428e38d2db0297f3c12bc5f156db90f663d7506cacb7bf",
+    "evaluate_models.py": "64d37b1ed9ff422e2eaa177295061969d183dc0ac11df15c84c95eec193ac6b3",
+    "feature_ablation.py": "981a61b0871aba182e200a96cd3b0ff4c1ac01f7273c9d0192af31681f97e05a",
+    "feature_extraction.py": "1ac68b6fbd1487fecb56685da279e48092c2212a26cd9b99837c52370ba14998",
+    "label_validation.py": "bef63a6fd05966c0238697b08b47478387cb5f1212ca126f05ca3f80966d490c",
+    "pcap_tools.py": "2adc6a1f425ece4eac36cdba2653901f09412338458ff9f7dd52c29cc3b69046",
+    "preprocessing.py": "77419b6e18e034744e69ce671f2c943e72cf4827ab219c8ecc82a005e3827655",
+    "stream_grouping.py": "dc551fef382d0f1de5b31091260e7ac4549421ae58e4364c113dfafbc7ff7838",
+    "train_models.py": "1946ba14ce3315ade232197b1a2dfcb8245ffd692d7f2d205d257885c98ddfda",
+    "window_aggregation.py": "51a851a0d32a0fe19c3e3ee1d6b0ecefd5151730c64ba5be33d64ffda05b968e"
+  },
+  "verified_device_identity": false,
+  "author_documented_role_protocol_accepted": true
+}

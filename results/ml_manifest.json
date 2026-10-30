@@ -1,0 +1,177 @@
+{
+  "timestamp_utc": "2026-10-30T09:36:20.550005+00:00",
+  "config": {
+    "run_id": "preliminary_v1",
+    "random_seed": 42,
+    "audit_config": "experiment.yaml",
+    "acceptance": "label_protocol_acceptance.json",
+    "source_beacons": "data/raw/audit/Evil_Twin_beacons.csv",
+    "audited_identities": "results/audit/identity_label_audit.csv",
+    "canonical_pcap": "pcaps/7. Evil_Twin.pcap",
+    "grouping": "bssid_capabilities",
+    "window_sizes": [
+      10,
+      20,
+      50
+    ],
+    "primary_window_size": 20,
+    "quality": {
+      "gap_factor": 1.5,
+      "check_incoming_boundary": true,
+      "reject_incomplete": true,
+      "reject_tsf_reset": true
+    },
+    "split": {
+      "method": "global_capture_time",
+      "train_fraction": 0.6,
+      "validation_fraction": 0.2,
+      "cross_boundary_policy": "exclude",
+      "evaluation_scope": "previously_audited_same_capture_development_test_not_untouched_or_unseen_AP"
+    },
+    "hyperparameters": {
+      "decision_tree": {
+        "max_depth": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "min_samples_leaf": [
+          5,
+          10,
+          20
+        ],
+        "class_weight": [
+          null,
+          "balanced"
+        ]
+      },
+      "random_forest": {
+        "n_estimators": [
+          50,
+          100
+        ],
+        "max_depth": [
+          5,
+          8,
+          10
+        ],
+        "min_samples_leaf": [
+          2,
+          5
+        ],
+        "class_weight": [
+          null,
+          "balanced"
+        ]
+      },
+      "logistic_regression": {
+        "C": [
+          0.1,
+          1,
+          10
+        ],
+        "class_weight": [
+          null,
+          "balanced"
+        ]
+      }
+    },
+    "model_selection": {
+      "metric": "validation_positive_f1",
+      "tie_break": "first_in_declared_parameter_grid",
+      "classification_threshold": 0.5,
+      "refit_on_validation": false
+    },
+    "ablation_model": "decision_tree",
+    "primary_model": "decision_tree",
+    "temporal": {
+      "baseline_path_relative_to_dataset": "evilML/time_shield/results/baseline_model.json",
+      "enrollment_path_relative_to_dataset": "evilML/time_shield/results/valid_windows.csv",
+      "trusted_bssid": "0c:9d:92:54:fe:34",
+      "beta": 0.3,
+      "percentile": 99,
+      "K": 3,
+      "methods": [
+        "mahalanobis",
+        "standardized_euclidean"
+      ],
+      "selection": "fixed_before_ML_evaluation; thresholds_estimated_from_new_validation_trusted_windows_only",
+      "baseline_updates": false
+    },
+    "fusion": {
+      "high_threshold_candidates": [
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9
+      ],
+      "low_threshold_candidates": [
+        0.1,
+        0.2,
+        0.3,
+        0.4
+      ],
+      "high_selection": "maximize_validation_positive_f1_then_first",
+      "low_selection": "largest_candidate_with_zero_observed_rogue_acceptances_on_validation",
+      "temporal_method": "mahalanobis"
+    },
+    "resource_benchmark": {
+      "repeats": 30,
+      "warmup": 5,
+      "memory_sample_period_s": 0.002
+    },
+    "allow_independently_verified_fpr": false,
+    "independent_test_session_available": false
+  },
+  "config_sha256": "b3daeafde1a02b089df4ade72e9d849eeb4f15d32905905037c92ab5fd9fa2ee",
+  "selection_manifest_sha256": "bc59029d838448a4f22ef141d20113b89fb700384aa73d80fb57bb8766d2602f",
+  "split_manifest_sha256": "18157601cded40981d8f31250a04ef23c17e07f7cc9a14b7cc4a9bf4070f60b9",
+  "acceptance": {
+    "status": "accepted_for_preliminary_dataset_role_training",
+    "user_instruction": "ถ้าเกิดว่าไม่มีการ falsification ก็ทำต่อได้เลย",
+    "recorded_at_utc": "2026-10-30T09:29:36.591836+00:00",
+    "original_protocol_sha256": "5cb915b0fd68bbb58b7d6b52deb4c1aa6339817587386d4693941ae1e698ddbd",
+    "accepted_protocol_sha256": "92755b67beadfea2818c78d0308b37ad4b51a213680adb7533cbfe027c8dc4ac",
+    "independent_identity_verification": false,
+    "candidate_statuses_preserved": true,
+    "conditions": [
+      "No fabricated observations, labels, metrics or independent sessions",
+      "Report all planned results including failures",
+      "Do not claim unseen-AP generalization"
+    ]
+  },
+  "code_sha256": {
+    "src/__init__.py": "2053e63e2f17565a3d59dd71e39fe57efb3a9e6ee075ff6c5bef2cd8efdeff90",
+    "src/common.py": "18b85050d1f1a55d38c3fa1757459405440d3278ffabca16a0b8b91a8c1f376e",
+    "src/dataset_audit.py": "2c7e5839cc97034434c9be81d5e0676d8999d5e9b1cdbead1150b1bddcfbbe67",
+    "src/dataset_splitting.py": "26163fafeed578e2a2428e38d2db0297f3c12bc5f156db90f663d7506cacb7bf",
+    "src/decision_fusion.py": "e63b4ed489827ace0901f65dc96324bb253ff15823bf9dd5a47169c41d8558bb",
+    "src/evaluate_models.py": "64d37b1ed9ff422e2eaa177295061969d183dc0ac11df15c84c95eec193ac6b3",
+    "src/feature_ablation.py": "981a61b0871aba182e200a96cd3b0ff4c1ac01f7273c9d0192af31681f97e05a",
+    "src/feature_extraction.py": "1ac68b6fbd1487fecb56685da279e48092c2212a26cd9b99837c52370ba14998",
+    "src/label_validation.py": "bef63a6fd05966c0238697b08b47478387cb5f1212ca126f05ca3f80966d490c",
+    "src/ml_io.py": "e882f8ece4d0a8079f2c27d432395ee74d1990c1315840a9494de63f51264d15",
+    "src/pcap_tools.py": "2adc6a1f425ece4eac36cdba2653901f09412338458ff9f7dd52c29cc3b69046",
+    "src/preprocessing.py": "77419b6e18e034744e69ce671f2c943e72cf4827ab219c8ecc82a005e3827655",
+    "src/resource_benchmark.py": "6591c8ed1b5999327daf8bfd6c4618dc48c070d78882cad8bf2dfe4f955e4208",
+    "src/stream_grouping.py": "dc551fef382d0f1de5b31091260e7ac4549421ae58e4364c113dfafbc7ff7838",
+    "src/temporal_drift.py": "8fcae92e403b54525dfc606433e1c7b09f4c9da8a55af7539aeca995b4229da3",
+    "src/train_models.py": "1946ba14ce3315ade232197b1a2dfcb8245ffd692d7f2d205d257885c98ddfda",
+    "src/window_aggregation.py": "51a851a0d32a0fe19c3e3ee1d6b0ecefd5151730c64ba5be33d64ffda05b968e",
+    "scripts/build_windows.py": "6ad2550404232849b9dd31f6d9d274301e9dddcc958b1390a26b9e8037bdfd32",
+    "scripts/extract_audit_inputs.py": "57813fd72b98c06f5446a0c16ca5751d33c20d5da258cddc3455c96ebb522d0c",
+    "scripts/run_ml.py": "1f27519e936e26814ec59499de15af6d106985cd55db5ce5081c9f2ee86127d1",
+    "scripts/verify_audit.py": "2cffd4eab54929fe44d3778b816b990467c45ed2b72150cfe9139d6714a09e61"
+  },
+  "versions": {
+    "python": "3.14.7",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "sklearn": "1.9.1"
+  },
+  "no_synthetic_experiment_records": true,
+  "model_count": 13,
+  "label_scope": "preliminary_author_documented_roles"
+}

@@ -1,0 +1,6 @@
+identity_status,records,source,source_url,independent_identity_verified,approved_as_training_target,interpretation
+verified_legitimate,0,,,True,False,No independently verified records available
+verified_evil_twin,0,,,True,False,No independently verified records available
+candidate_legitimate,8685,awid3-author-evil-twin,https://www.researchgate.net/publication/349539294_Empirical_Evaluation_of_Attacks_Against_IEEE_80211_Enterprise_Networks_The_AWID3_Dataset,False,False,"Author-documented candidate role, capture-specific assumption"
+candidate_evil_twin,3776,awid3-author-evil-twin,https://www.researchgate.net/publication/349539294_Empirical_Evaluation_of_Attacks_Against_IEEE_80211_Enterprise_Networks_The_AWID3_Dataset,False,False,"Author-documented candidate role, capture-specific assumption"
+unknown,6946,no_capture_specific_identity_evidence,,False,False,Excluded; filter non-match never converted to NORMAL

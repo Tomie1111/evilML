@@ -1,0 +1,3 @@
+split,windows,temporal_valid,STABLE,DRIFT,UNAVAILABLE,unavailable_invalid,unavailable_persistence_warmup
+validation,86,65,37,0,49,21,28
+development_test,87,66,32,0,55,21,34

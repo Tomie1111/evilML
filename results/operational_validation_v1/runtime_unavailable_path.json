@@ -1,0 +1,14 @@
+{
+  "repeats": 30,
+  "warmup": 5,
+  "median_ms": 4.289146000000001,
+  "p95_ms": 13.06424564999997,
+  "cpu_seconds": 0.14443612800000005,
+  "cpu_percent_one_core_scale": 89.94491349714603,
+  "baseline_rss_mib": 212.59375,
+  "peak_rss_mib": 212.59375,
+  "rss_growth_mib": 0.0,
+  "memory_sample_period_s": 0.002,
+  "elapsed_seconds": 0.16058287498890422,
+  "scope": "UNAVAILABLE path on real candidate windows; excludes covariance scoring and PCAP extraction"
+}
